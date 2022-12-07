@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<!--
+TO READ THIS XML IN HUMAN_READABLE TABLE FORMAT, DUMP THE XML INTO THIS UTILITY:
+http://codebeautify.org/xml-to-excel-converter
+-->
+
+
+<colors>	
+	<palletteName>Generic Lego (The Works Museum Pallette)</palletteName>
+	
+	<!-- /////////////////////////////////////////////////
+	///////// LEGO /////////////////////////////////////
+	RGB Values pulled from http://ryanhowerter.net/colors.html
+	////////////////////////////////////////////////// -->
+	<color colorIndex="0">
+		<name>White</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>244</red>
+		<green>244</green>
+		<blue>244</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<!--
+	<color colorIndex="1">
+		<name>Tan (Brick Yellow)</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>204</red>
+		<green>185</green>
+		<blue>141</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	-->
+	<color colorIndex="1">
+		<name>Dark Purple</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<!--<red>68</red>-->
+		<red>126</red>
+		<green>26</green>
+		<blue>145</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="2">
+		<name>Red</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>180</red>
+		<green>0</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="3">
+		<name>Dark Blue</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>30</red>
+		<green>90</green>
+		<blue>168</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="4">
+		<name>Yellow</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>250</red>
+		<green>200</green>
+		<blue>10</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="5">
+		<name>Black</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>0</red>
+		<green>0</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="6">
+		<name>Dark Green</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>0</red>
+		<green>133</green>
+		<blue>43</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="7">
+		<name>Orange</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>214</red>
+		<green>121</green>
+		<blue>35</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="8">
+		<name>Brown</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>95</red>
+		<green>49</green>
+		<blue>9</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="9">
+		<name>Light Gray</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>150</red>
+		<green>150</green>
+		<blue>150</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<!--
+	<color colorIndex="8">
+		<name>Lime (Bright Yellow-Green)</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>165</red>
+		<green>202</green>
+		<blue>24</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	-->
+	<!--
+	<color colorIndex="11">
+		<name>Dark Stone Grey</name>
+		<productCode></productCode>
+		<brand>Generic Lego</brand>
+		<red>100</red>
+		<green>100</green>
+		<blue>100</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	-->
+</colors>

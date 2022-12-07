@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<!--
+TO READ THIS XML IN HUMAN_READABLE TABLE FORMAT, DUMP THE XML INTO THIS UTILITY:
+http://codebeautify.org/xml-to-excel-converter
+-->
+
+<!--
+The new artkal colors (S92 - S159) were added in Dec 2017 to this default pallette file
+-->
+
+<!--
+[I'm not even sure if I want to implement the mapRed, mapGreen and mapBlue fields yet, but this is how they'd work:]...
+The red, green and blue values are the colors of the actual beads (used for realistic color rendering).
+The mapRed, mapGreen and mapBlue values are the values used for mapping the pixels in your image to the bead color.
+99% of the time, these values will be the same.
+-->
+
+
+
+<colors>	
+	<palletteName>Perler Biggie Beads</palletteName>
+	
+	<!-- /////////////////////////////////////////////////
+	///////// PERLER /////////////////////////////////////
+	////////////////////////////////////////////////// -->
+	<color colorIndex="0">
+		<name>White</name>
+		<productCode>P01</productCode>
+		<brand>Perler</brand>
+		<red>241</red>
+		<green>241</green>
+		<blue>241</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="1">
+		<name>Black</name>
+		<productCode>P18</productCode>
+		<brand>Perler</brand>
+		<red>46</red>
+		<green>47</green>
+		<blue>50</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="2">
+		<name>Orange</name>
+		<productCode>P04</productCode>
+		<brand>Perler</brand>
+		<red>237</red>
+		<green>97</green>
+		<blue>32</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="3">
+		<name>Cheddar</name>
+		<productCode>P57</productCode>
+		<brand>Perler</brand>
+		<red>241</red>
+		<green>170</green>
+		<blue>12</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="4">
+		<name>Kiwi Lime</name>
+		<productCode>P61</productCode>
+		<brand>Perler</brand>
+		<red>108</red>
+		<green>190</green>
+		<blue>19</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="5">
+		<name>Light Blue</name>
+		<productCode>P09</productCode>
+		<brand>Perler</brand>
+		<red>51</red>
+		<green>112</green>
+		<blue>192</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="6">
+		<name>Purple</name>
+		<productCode>P07</productCode>
+		<brand>Perler</brand>
+		<red>96</red>
+		<green>64</green>
+		<blue>137</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="7">
+		<name>Magenta</name>
+		<productCode>P38</productCode>
+		<brand>Perler</brand>
+		<red>242</red>
+		<green>42</green>
+		<blue>123</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+</colors>

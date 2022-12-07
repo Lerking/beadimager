@@ -1,0 +1,2071 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<!--
+TO READ THIS XML IN HUMAN_READABLE TABLE FORMAT, DUMP THE XML INTO THIS UTILITY:
+http://codebeautify.org/xml-to-excel-converter
+-->
+
+<!--
+The new artkal colors (S92 - S159) were added in Dec 2017 to this default pallette file
+-->
+
+<!--
+[I'm not even sure if I want to implement the mapRed, mapGreen and mapBlue fields yet, but this is how they'd work:]...
+The red, green and blue values are the colors of the actual beads (used for realistic color rendering).
+The mapRed, mapGreen and mapBlue values are the values used for mapping the pixels in your image to the bead color.
+99% of the time, these values will be the same.
+-->
+
+
+
+<colors>	
+	<palletteName>All Colors, Artkal Factory RGBs</palletteName>
+	
+	<!-- /////////////////////////////////////////////////
+	///////// PERLER /////////////////////////////////////
+	////////////////////////////////////////////////// -->
+	<color colorIndex="0">
+		<name>White</name>
+		<productCode>P01</productCode>
+		<brand>Perler</brand>
+		<red>241</red>
+		<green>241</green>
+		<blue>241</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="1">
+		<name>Light Gray</name>
+		<productCode>P81</productCode>
+		<brand>Perler</brand>
+		<!--
+		<red>238</red>
+		<green>227</green>
+		<blue>207</blue>
+		-->
+		<!-- The Light Gray above was a limited run(Toasted Marshmallow??), the new Light Gray appears to be here to stay -->
+		<!-- These are not actual sampled values, but an average between White and Grey. -->
+		<red>190</red>
+		<green>191</green>
+		<blue>193</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="2">
+		<name>Grey</name>
+		<productCode>P17</productCode>
+		<brand>Perler</brand>
+		<red>138</red>
+		<green>141</green>
+		<blue>145</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="3">
+		<name>Silver / [Pearl Silver?]</name>
+		<productCode>P105</productCode>
+		<brand>Perler</brand>
+		<red>119</red>
+		<green>123</green>
+		<blue>129</blue>
+		<isPearl>1</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="4">
+		<name>Dark Grey</name>
+		<productCode>P92</productCode>
+		<brand>Perler</brand>
+		<red>77</red>
+		<green>81</green>
+		<blue>86</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="5">
+		<name>Black</name>
+		<productCode>P18</productCode>
+		<brand>Perler</brand>
+		<red>46</red>
+		<green>47</green>
+		<blue>50</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="6">
+		<name>Pearl Coral</name>
+		<productCode>P100</productCode>
+		<brand>Perler</brand>
+		<red>249</red>
+		<green>126</green>
+		<blue>121</blue>
+		<isPearl>1</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="7">
+		<name>Pearl Light Pink</name>
+		<productCode>P104</productCode>
+		<brand>Perler</brand>
+		<red>215</red>
+		<green>168</green>
+		<blue>162</blue>
+		<isPearl>1</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="8">
+		<name>Rust</name>
+		<productCode>P20</productCode>
+		<brand>Perler</brand>
+		<red>140</red>
+		<green>55</green>
+		<blue>44</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="9">
+		<name>Peach</name>
+		<productCode>P33</productCode>
+		<brand>Perler</brand>
+		<red>238</red>
+		<green>186</green>
+		<blue>178</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="10">
+		<name>Brown</name>
+		<productCode>P12</productCode>
+		<brand>Perler</brand>
+		<red>81</red>
+		<green>57</green>
+		<blue>49</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="11">
+		<name>Orange</name>
+		<productCode>P04</productCode>
+		<brand>Perler</brand>
+		<red>237</red>
+		<green>97</green>
+		<blue>32</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="12">
+		<name>Tan</name>
+		<productCode>P35</productCode>
+		<brand>Perler</brand>
+		<red>188</red>
+		<green>147</green>
+		<blue>113</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="13">
+		<name>Sand</name>
+		<productCode>P98</productCode>
+		<brand>Perler</brand>
+		<red>228</red>
+		<green>182</green>
+		<blue>144</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="14">
+		<name>Neon Orange</name>
+		<productCode>P48</productCode>
+		<brand>Perler</brand>
+		<red>255</red>
+		<green>119</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="15">
+		<name>Gold</name>
+		<productCode>P85</productCode>
+		<brand>Perler</brand>
+		<red>187</red>
+		<green>118</green>
+		<blue>52</blue>
+		<isPearl>1</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="16">
+		<name>Butterscotch</name>
+		<productCode>P90</productCode>
+		<brand>Perler</brand>
+		<red>212</red>
+		<green>132</green>
+		<blue>55</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="17">
+		<name>Light Brown</name>
+		<productCode>P21</productCode>
+		<brand>Perler</brand>
+		<red>129</red>
+		<green>93</green>
+		<blue>52</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="18">
+		<name>Cheddar</name>
+		<productCode>P57</productCode>
+		<brand>Perler</brand>
+		<red>241</red>
+		<green>170</green>
+		<blue>12</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="19">
+		<name>Yellow</name>
+		<productCode>P03</productCode>
+		<brand>Perler</brand>
+		<red>236</red>
+		<green>216</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="20">
+		<name>Pearl Yellow</name>
+		<productCode>P103</productCode>
+		<brand>Perler</brand>
+		<red>202</red>
+		<green>192</green>
+		<blue>51</blue>
+		<isPearl>1</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="21">
+		<name>Cream / Creme</name>
+		<productCode>P02</productCode>
+		<brand>Perler</brand>
+		<red>224</red>
+		<green>222</green>
+		<blue>169</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="22">
+		<name>Pastel Yellow</name>
+		<productCode>P56</productCode>
+		<brand>Perler</brand>
+		<red>254</red>
+		<green>248</green>
+		<blue>117</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="23">
+		<name>Neon Yellow</name>
+		<productCode>P47</productCode>
+		<brand>Perler</brand>
+		<red>220</red>
+		<green>224</green>
+		<blue>2</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="24">
+		<name>Prickly Pear</name>
+		<productCode>P97</productCode>
+		<brand>Perler</brand>
+		<red>189</red>
+		<green>218</green>
+		<blue>1</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="25">
+		<name>Glow Green</name>
+		<productCode>P75</productCode>
+		<brand>Perler</brand>
+		<red>190</red>
+		<green>198</green>
+		<blue>150</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="26">
+		<name>Kiwi Lime</name>
+		<productCode>P61</productCode>
+		<brand>Perler</brand>
+		<red>108</red>
+		<green>190</green>
+		<blue>19</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="27">
+		<name>Bright Green</name>
+		<productCode>P80</productCode>
+		<brand>Perler</brand>
+		<red>79</red>
+		<green>173</green>
+		<blue>66</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="28">
+		<name>Pastel Green</name>
+		<productCode>P53</productCode>
+		<brand>Perler</brand>
+		<red>118</red>
+		<green>200</green>
+		<blue>130</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="29">
+		<name>Pearl Green</name>
+		<productCode>P102</productCode>
+		<brand>Perler</brand>
+		<red>132</red>
+		<green>183</green>
+		<blue>145</blue>
+		<isPearl>1</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="30">
+		<name>Dark Green</name>
+		<productCode>P10</productCode>
+		<brand>Perler</brand>
+		<red>28</red>
+		<green>117</green>
+		<blue>62</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="31">
+		<name>Neon Green</name>
+		<productCode>P49</productCode>
+		<brand>Perler</brand>
+		<red>1</red>
+		<green>158</green>
+		<blue>67</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="32">
+		<name>Evergreen</name>
+		<productCode>P179</productCode>
+		<brand>Perler</brand>
+		<red>17</red>
+		<green>73</green>
+		<blue>56</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="33">
+		<name>Light Green</name>
+		<productCode>P11</productCode>
+		<brand>Perler</brand>
+		<red>86</red>
+		<green>186</green>
+		<blue>159</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="34">
+		<name>Pearl Light Blue</name>
+		<productCode>P101</productCode>
+		<brand>Perler</brand>
+		<red>122</red>
+		<green>174</green>
+		<blue>162</blue>
+		<isPearl>1</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="35">
+		<name>Parrot Green</name>
+		<productCode>P91</productCode>
+		<brand>Perler</brand>
+		<red>6</red>
+		<green>124</green>
+		<blue>129</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="36">
+		<name>Toothpaste</name>
+		<productCode>P58</productCode>
+		<brand>Perler</brand>
+		<red>147</red>
+		<green>200</green>
+		<blue>212</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="37">
+		<name>Pastel Blue</name>
+		<productCode>P52</productCode>
+		<brand>Perler</brand>
+		<red>83</red>
+		<green>144</green>
+		<blue>209</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="38">
+		<name>Light Blue</name>
+		<productCode>P09</productCode>
+		<brand>Perler</brand>
+		<red>51</red>
+		<green>112</green>
+		<blue>192</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="39">
+		<name>Periwinkle Blue</name>
+		<productCode>P70</productCode>
+		<brand>Perler</brand>
+		<red>100</red>
+		<green>124</green>
+		<blue>190</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="40">
+		<name>Blueberry Cream</name>
+		<productCode>P93</productCode>
+		<brand>Perler</brand>
+		<red>130</red>
+		<green>151</green>
+		<blue>217</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="41">
+		<name>Dark Blue</name>
+		<productCode>P08</productCode>
+		<brand>Perler</brand>
+		<red>43</red>
+		<green>63</green>
+		<blue>135</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="42">
+		<name>Pastel Lavender</name>
+		<productCode>P54</productCode>
+		<brand>Perler</brand>
+		<red>138</red>
+		<green>114</green>
+		<blue>193</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="43">
+		<name>Purple</name>
+		<productCode>P07</productCode>
+		<brand>Perler</brand>
+		<red>96</red>
+		<green>64</green>
+		<blue>137</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="44">
+		<name>Plum</name>
+		<productCode>P60</productCode>
+		<brand>Perler</brand>
+		<red>162</red>
+		<green>75</green>
+		<blue>156</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="45">
+		<name>Light Pink</name>
+		<productCode>P79</productCode>
+		<brand>Perler</brand>
+		<red>246</red>
+		<green>179</green>
+		<blue>221</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="46">
+		<name>Pink</name>
+		<productCode>P83</productCode>
+		<brand>Perler</brand>
+		<red>228</red>
+		<green>72</green>
+		<blue>146</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="47">
+		<name>Bubblegum</name>
+		<productCode>P06</productCode>
+		<brand>Perler</brand>
+		<red>221</red>
+		<green>102</green>
+		<blue>155</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="48">
+		<name>Neon Pink</name>
+		<productCode>P50</productCode>
+		<brand>Perler</brand>
+		<red>255</red>
+		<green>57</green>
+		<blue>145</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="49">
+		<name>Raspberry</name>
+		<productCode>P88</productCode>
+		<brand>Perler</brand>
+		<red>165</red>
+		<green>48</green>
+		<blue>97</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="50">
+		<name>Magenta</name>
+		<productCode>P38</productCode>
+		<brand>Perler</brand>
+		<red>242</red>
+		<green>42</green>
+		<blue>123</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<!-- ############################### -->
+	<!-- Original Cranapple from LThanda -->
+	<!-- ############################### -->
+	<!--
+	<color colorIndex="51">
+		<name>Cranapple</name>
+		<productCode>P96</productCode>
+		<brand>Perler</brand>
+		<red>128</red>
+		<green>50</green>
+		<blue>69</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	-->
+	<!-- ################################# -->
+	<!-- Adjusted Cranapple from SafetyDad -->
+	<!-- ################################# -->
+	<color colorIndex="51">
+		<name>Cranapple</name>
+		<productCode>P96</productCode>
+		<brand>Perler</brand>
+		<red>128</red>
+		<green>25</green>
+		<blue>34</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<!-- ######################### -->
+	<!-- Original Red from LThanda -->
+	<!-- ######################### -->
+	<!--
+	<color colorIndex="52">
+		<name>Red</name>
+		<productCode>P05</productCode>
+		<brand>Perler</brand>
+		<red>192</red>
+		<green>46</green>
+		<blue>64</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	-->
+	<!-- ########################### -->
+	<!-- Adjusted Red from SafetyDad -->
+	<!-- ########################### -->
+	<color colorIndex="52">
+		<name>Red</name>
+		<productCode>P05</productCode>
+		<brand>Perler</brand>
+		<red>240</red>
+		<green>24</green>
+		<blue>32</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="53">
+		<name>Hot Coral</name>
+		<productCode>P59</productCode>
+		<brand>Perler</brand>
+		<red>255</red>
+		<green>56</green>
+		<blue>81</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="54">
+		<name>Blush</name>
+		<productCode>P63</productCode>
+		<brand>Perler</brand>
+		<red>255</red>
+		<green>130</green>
+		<blue>133</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="55">
+		<name>Turquoise/Cyan</name>
+		<productCode>P62</productCode>
+		<brand>Perler</brand>
+		<red>43</red>
+		<green>137</green>
+		<blue>198</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="56">
+		<name>Light Lavender/Lavender</name>
+		<productCode>P82</productCode>
+		<brand>Perler</brand>
+		<red>173</red>
+		<green>152</green>
+		<blue>212</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<!-- /////////////////////////////////////////////////
+	///////// ARTKAL-S (5mm "midi" beads) ////////////////
+	////////////////////////////////////////////////// -->
+	<color colorIndex="57">
+		<name>White</name>
+		<productCode>S01</productCode>
+		<brand>Artkal-S</brand>
+		<red>255</red>
+		<green>255</green>
+		<blue>255</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="58">
+		<name>Ghost White</name>
+		<productCode>S77</productCode>
+		<brand>Artkal-S</brand>
+		<red>239</red>
+		<green>239</green>
+		<blue>239</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="59">
+		<name>Ash Gray</name>
+		<productCode>S78</productCode>
+		<brand>Artkal-S</brand>
+		<red>209</red>
+		<green>209</green>
+		<blue>209</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="60">
+		<name>Light Gray / [Gray 1]</name>
+		<productCode>S79</productCode>
+		<brand>Artkal-S</brand>
+		<red>187</red>
+		<green>188</green>
+		<blue>188</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="61">
+		<name>Gray / [Gray 2]</name>
+		<productCode>S07</productCode>
+		<brand>Artkal-S</brand>
+		<red>155</red>
+		<green>155</green>
+		<blue>155</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="62">
+		<name>Dark Gray / [Gray 3]</name>
+		<productCode>S43</productCode>
+		<brand>Artkal-S</brand>
+		<red>118</red>
+		<green>119</green>
+		<blue>119</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="63">
+		<name>Charcoal Gray / [Gray 4]</name>
+		<productCode>S89</productCode>
+		<brand>Artkal-S</brand>
+		<red>72</red>
+		<green>73</green>
+		<blue>73</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="64">
+		<name>Mine Shaft</name>
+		<productCode>S69</productCode>
+		<brand>Artkal-S</brand>
+		<red>35</red>
+		<green>40</green>
+		<blue>43</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="65">
+		<name>Black</name>
+		<productCode>S13</productCode>
+		<brand>Artkal-S</brand>
+		<red>0</red>
+		<green>0</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="66">
+		<name>Silver</name>
+		<productCode>S42</productCode>
+		<brand>Artkal-S</brand>
+		<red>160</red>
+		<green>159</green>
+		<blue>157</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>1</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="67">
+		<name>Copper</name>
+		<productCode>S41</productCode>
+		<brand>Artkal-S</brand>
+		<red>154</red>
+		<green>85</green>
+		<blue>22</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="68">
+		<name>Metallic Gold</name>
+		<productCode>S63</productCode>
+		<brand>Artkal-S</brand>
+		<red>76</red>
+		<green>89</green>
+		<blue>20</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="69">
+		<name>Picasso</name>
+		<productCode>S52</productCode>
+		<brand>Artkal-S</brand>
+		<red>242</red>
+		<green>240</green>
+		<blue>161</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="70">
+		<name>Pastel Yellow</name>
+		<productCode>S29</productCode>
+		<brand>Artkal-S</brand>
+		<red>246</red>
+		<green>235</green>
+		<blue>97</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="71">
+		<name>Sandstorm</name>
+		<productCode>S14</productCode>
+		<brand>Artkal-S</brand>
+		<red>250</red>
+		<green>224</green>
+		<blue>83</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="72">
+		<name>Yellow</name>
+		<productCode>S27</productCode>
+		<brand>Artkal-S</brand>
+		<red>255</red>
+		<green>209</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="73">
+		<name>Corn</name>
+		<productCode>S48</productCode>
+		<brand>Artkal-S</brand>
+		<red>255</red>
+		<green>199</green>
+		<blue>44</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="74">
+		<name>Goldenrod</name>
+		<productCode>S86</productCode>
+		<brand>Artkal-S</brand>
+		<red>234</red>
+		<green>170</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="75">
+		<name>Pastel orange</name>
+		<productCode>S90</productCode>
+		<brand>Artkal-S</brand>
+		<red>255</red>
+		<green>197</green>
+		<blue>110</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="76">
+		<name>Tangerine</name>
+		<productCode>S03</productCode>
+		<brand>Artkal-S</brand>
+		<red>246</red>
+		<green>173</green>
+		<blue>76</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="77">
+		<name>Yellow Orange</name>
+		<productCode>S39</productCode>
+		<brand>Artkal-S</brand>
+		<red>237</red>
+		<green>139</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="78">
+		<name>Bright Carrot</name>
+		<productCode>S56</productCode>
+		<brand>Artkal-S</brand>
+		<red>255</red>
+		<green>106</green>
+		<blue>19</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="79">
+		<name>Orange</name>
+		<productCode>S04</productCode>
+		<brand>Artkal-S</brand>
+		<red>255</red>
+		<green>103</green>
+		<blue>31</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="80">
+		<name>Blaze Orange</name>
+		<productCode>S66</productCode>
+		<brand>Artkal-S</brand>
+		<red>244</red>
+		<green>99</green>
+		<blue>58</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="81">
+		<name>Coral Red</name>
+		<productCode>S87</productCode>
+		<brand>Artkal-S</brand>
+		<red>255</red>
+		<green>109</green>
+		<blue>106</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="82">
+		<name>Burning Sand</name>
+		<productCode>S02</productCode>
+		<brand>Artkal-S</brand>
+		<red>255</red>
+		<green>163</green>
+		<blue>139</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="83">
+		<name>Mandys Pink</name>
+		<productCode>S50</productCode>
+		<brand>Artkal-S</brand>
+		<red>250</red>
+		<green>170</green>
+		<blue>141</blue>
+		<isPearl>1</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="84">
+		<name>Mona Lisa</name>
+		<productCode>S35</productCode>
+		<brand>Artkal-S</brand>
+		<red>247</red>
+		<green>206</green>
+		<blue>215</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="85">
+		<name>Lily Pink</name>
+		<productCode>S28</productCode>
+		<brand>Artkal-S</brand>
+		<red>234</red>
+		<green>184</green>
+		<blue>228</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="86">
+		<name>Carnation Pink</name>
+		<productCode>S40</productCode>
+		<brand>Artkal-S</brand>
+		<red>241</red>
+		<green>167</green>
+		<blue>220</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="87">
+		<name>Raspberry Pink</name>
+		<productCode>S06</productCode>
+		<brand>Artkal-S</brand>
+		<red>236</red>
+		<green>134</green>
+		<blue>208</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="88">
+		<name>Hot Pink</name>
+		<productCode>S25</productCode>
+		<brand>Artkal-S</brand>
+		<red>255</red>
+		<green>52</green>
+		<blue>179</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="89">
+		<name>Magenta</name>
+		<productCode>S26</productCode>
+		<brand>Artkal-S</brand>
+		<red>219</red>
+		<green>33</green>
+		<blue>82</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="90">
+		<name>Tall Poppy</name>
+		<productCode>S05</productCode>
+		<brand>Artkal-S</brand>
+		<red>225</red>
+		<green>6</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="91">
+		<name>Red</name>
+		<productCode>S34</productCode>
+		<brand>Artkal-S</brand>
+		<red>186</red>
+		<green>12</green>
+		<blue>47</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="92">
+		<name>Paprika</name>
+		<productCode>S58</productCode>
+		<brand>Artkal-S</brand>
+		<red>165</red>
+		<green>0</green>
+		<blue>52</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="93">
+		<name>Burgundy</name>
+		<productCode>S38</productCode>
+		<brand>Artkal-S</brand>
+		<red>171</red>
+		<green>37</green>
+		<blue>86</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="94">
+		<name>Mulberry Wood</name>
+		<productCode>S49</productCode>
+		<brand>Artkal-S</brand>
+		<red>114</red>
+		<green>25</green>
+		<blue>95</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="95">
+		<name>Dark Pink</name>
+		<productCode>S88</productCode>
+		<brand>Artkal-S</brand>
+		<red>218</red>
+		<green>24</green>
+		<blue>132</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="96">
+		<name>Vanilla</name>
+		<productCode>S67</productCode>
+		<brand>Artkal-S</brand>
+		<red>243</red>
+		<green>207</green>
+		<blue>179</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="97">
+		<name>Sand</name>
+		<productCode>S18</productCode>
+		<brand>Artkal-S</brand>
+		<red>204</red>
+		<green>153</green>
+		<blue>102</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="98">
+		<name>Canary</name>
+		<productCode>S65</productCode>
+		<brand>Artkal-S</brand>
+		<red>243</red>
+		<green>234</green>
+		<blue>93</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="99">
+		<name>Bright Green</name>
+		<productCode>S46</productCode>
+		<brand>Artkal-S</brand>
+		<red>115</red>
+		<green>211</green>
+		<blue>60</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="100">
+		<name>Emerald</name>
+		<productCode>S08</productCode>
+		<brand>Artkal-S</brand>
+		<red>36</red>
+		<green>222</green>
+		<blue>91</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>1</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="101">
+		<name>Key Lemon Pie</name>
+		<productCode>S61</productCode>
+		<brand>Artkal-S</brand>
+		<red>206</red>
+		<green>220</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="102">
+		<name>Dark Algae</name>
+		<productCode>S70</productCode>
+		<brand>Artkal-S</brand>
+		<red>155</red>
+		<green>188</green>
+		<blue>17</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="103">
+		<name>Dark Olive</name>
+		<productCode>S80</productCode>
+		<brand>Artkal-S</brand>
+		<red>153</red>
+		<green>155</green>
+		<blue>48</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="104">
+		<name>Pistachio</name>
+		<productCode>S55</productCode>
+		<brand>Artkal-S</brand>
+		<red>173</red>
+		<green>220</green>
+		<blue>145</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="105">
+		<name>Pastel Green</name>
+		<productCode>S21</productCode>
+		<brand>Artkal-S</brand>
+		<red>135</red>
+		<green>216</green>
+		<blue>57</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="106">
+		<name>Green</name>
+		<productCode>S20</productCode>
+		<brand>Artkal-S</brand>
+		<red>36</red>
+		<green>158</green>
+		<blue>107</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="107">
+		<name>Jade Green</name>
+		<productCode>S71</productCode>
+		<brand>Artkal-S</brand>
+		<red>0</red>
+		<green>133</green>
+		<blue>43</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="108">
+		<name>Green Tea</name>
+		<productCode>S62</productCode>
+		<brand>Artkal-S</brand>
+		<red>0</red>
+		<green>124</green>
+		<blue>88</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="109">
+		<name>Dark Green</name>
+		<productCode>S09</productCode>
+		<brand>Artkal-S</brand>
+		<red>0</red>
+		<green>104</green>
+		<blue>94</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="110">
+		<name>Brunswick Green</name>
+		<productCode>S91</productCode>
+		<brand>Artkal-S</brand>
+		<red>24</red>
+		<green>48</green>
+		<blue>40</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="111">
+		<name>Maverick</name>
+		<productCode>S33</productCode>
+		<brand>Artkal-S</brand>
+		<red>197</red>
+		<green>180</green>
+		<blue>227</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="112">
+		<name>Lavender</name>
+		<productCode>S60</productCode>
+		<brand>Artkal-S</brand>
+		<red>167</red>
+		<green>123</green>
+		<blue>202</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="113">
+		<name>Pastel Lavender</name>
+		<productCode>S12</productCode>
+		<brand>Artkal-S</brand>
+		<red>160</red>
+		<green>94</green>
+		<blue>181</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="114">
+		<name>Royal Purple</name>
+		<productCode>S23</productCode>
+		<brand>Artkal-S</brand>
+		<red>100</red>
+		<green>53</green>
+		<blue>155</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="115">
+		<name>Butterfly Bush</name>
+		<productCode>S59</productCode>
+		<brand>Artkal-S</brand>
+		<red>74</red>
+		<green>31</green>
+		<blue>135</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="116">
+		<name>Purple</name>
+		<productCode>S22</productCode>
+		<brand>Artkal-S</brand>
+		<red>51</red>
+		<green>0</green>
+		<blue>114</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="117">
+		<name>Black Rock</name>
+		<productCode>S64</productCode>
+		<brand>Artkal-S</brand>
+		<red>5</red>
+		<green>8</green>
+		<blue>73</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="118">
+		<name>Sky Blue</name>
+		<productCode>S44</productCode>
+		<brand>Artkal-S</brand>
+		<red>141</red>
+		<green>200</green>
+		<blue>232</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="119">
+		<name>baby Blue</name>
+		<productCode>S10</productCode>
+		<brand>Artkal-S</brand>
+		<red>65</red>
+		<green>182</green>
+		<blue>230</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="120">
+		<name>Blue Enchantress</name>
+		<productCode>S53</productCode>
+		<brand>Artkal-S</brand>
+		<red>105</red>
+		<green>179</green>
+		<blue>231</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="121">
+		<name>Light Blue</name>
+		<productCode>S54</productCode>
+		<brand>Artkal-S</brand>
+		<red>0</red>
+		<green>144</green>
+		<blue>218</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="122">
+		<name>True Blue</name>
+		<productCode>S24</productCode>
+		<brand>Artkal-S</brand>
+		<red>20</red>
+		<green>123</green>
+		<blue>209</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="123">
+		<name>Dark Blue</name>
+		<productCode>S11</productCode>
+		<brand>Artkal-S</brand>
+		<red>0</red>
+		<green>51</green>
+		<blue>153</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="124">
+		<name>Shadow Green</name>
+		<productCode>S30</productCode>
+		<brand>Artkal-S</brand>
+		<red>153</red>
+		<green>214</green>
+		<blue>234</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="125">
+		<name>Sea Mist</name>
+		<productCode>S31</productCode>
+		<brand>Artkal-S</brand>
+		<red>158</red>
+		<green>229</green>
+		<blue>176</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="126">
+		<name>Blue-Green</name>
+		<productCode>S37</productCode>
+		<brand>Artkal-S</brand>
+		<red>113</red>
+		<green>216</green>
+		<blue>191</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="127">
+		<name>Light Sea Blue</name>
+		<productCode>S72</productCode>
+		<brand>Artkal-S</brand>
+		<red>89</red>
+		<green>213</green>
+		<blue>216</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="128">
+		<name>Medium Turquoise</name>
+		<productCode>S45</productCode>
+		<brand>Artkal-S</brand>
+		<red>0</red>
+		<green>178</green>
+		<blue>169</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="129">
+		<name>Sea Blue</name>
+		<productCode>S76</productCode>
+		<brand>Artkal-S</brand>
+		<red>0</red>
+		<green>174</green>
+		<blue>199</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="130">
+		<name>Steel Blue</name>
+		<productCode>S73</productCode>
+		<brand>Artkal-S</brand>
+		<red>72</red>
+		<green>169</green>
+		<blue>197</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="131">
+		<name>Azure</name>
+		<productCode>S74</productCode>
+		<brand>Artkal-S</brand>
+		<red>0</red>
+		<green>174</green>
+		<blue>214</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="132">
+		<name>Dark Steel Blue</name>
+		<productCode>S75</productCode>
+		<brand>Artkal-S</brand>
+		<red>0</red>
+		<green>133</green>
+		<blue>173</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="133">
+		<name>Deep Chestnut</name>
+		<productCode>S84</productCode>
+		<brand>Artkal-S</brand>
+		<red>170</red>
+		<green>87</green>
+		<blue>97</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="134">
+		<name>Old Pink</name>
+		<productCode>S36</productCode>
+		<brand>Artkal-S</brand>
+		<red>201</red>
+		<green>128</green>
+		<blue>158</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="135">
+		<name>Bubble Gum</name>
+		<productCode>S19</productCode>
+		<brand>Artkal-S</brand>
+		<red>252</red>
+		<green>191</green>
+		<blue>169</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="136">
+		<name>Spring Sun</name>
+		<productCode>S51</productCode>
+		<brand>Artkal-S</brand>
+		<red>252</red>
+		<green>251</green>
+		<blue>205</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="137">
+		<name>Beeswax</name>
+		<productCode>S32</productCode>
+		<brand>Artkal-S</brand>
+		<red>255</red>
+		<green>231</green>
+		<blue>128</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="138">
+		<name>Tan</name>
+		<productCode>S68</productCode>
+		<brand>Artkal-S</brand>
+		<red>225</red>
+		<green>192</green>
+		<blue>120</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="139">
+		<name>Deer</name>
+		<productCode>S81</productCode>
+		<brand>Artkal-S</brand>
+		<red>205</red>
+		<green>178</green>
+		<blue>119</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="140">
+		<name>Clay</name>
+		<productCode>S82</productCode>
+		<brand>Artkal-S</brand>
+		<red>181</red>
+		<green>129</green>
+		<blue>80</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="141">
+		<name>Light Brown</name>
+		<productCode>S17</productCode>
+		<brand>Artkal-S</brand>
+		<red>123</red>
+		<green>77</green>
+		<blue>53</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="142">
+		<name>Brown</name>
+		<productCode>S16</productCode>
+		<brand>Artkal-S</brand>
+		<red>92</red>
+		<green>71</green>
+		<blue>56</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>1</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="143">
+		<name>Red Wine</name>
+		<productCode>S85</productCode>
+		<brand>Artkal-S</brand>
+		<red>66</red>
+		<green>3</green>
+		<blue>26</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="144">
+		<name>Redwood</name>
+		<productCode>S15</productCode>
+		<brand>Artkal-S</brand>
+		<red>121</red>
+		<green>62</green>
+		<blue>44</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="145">
+		<name>Buccaneer</name>
+		<productCode>S57</productCode>
+		<brand>Artkal-S</brand>
+		<red>164</red>
+		<green>73</green>
+		<blue>61</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="146">
+		<name>Sienna</name>
+		<productCode>S83</productCode>
+		<brand>Artkal-S</brand>
+		<red>184</red>
+		<green>97</green>
+		<blue>37</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="147">
+		<name>Marigold</name>
+		<productCode>S47</productCode>
+		<brand>Artkal-S</brand>
+		<red>180</red>
+		<green>126</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+	</color>
+	<color colorIndex="148"><name>Dandelion</name>			<productCode>S92</productCode><brand>Artkal-S</brand><red>222</red><green>185</green><blue>71</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="149"><name>Pale Skin</name>			<productCode>S93</productCode><brand>Artkal-S</brand><red>218</red><green>182</green><blue>152</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="150"><name>Warm Blush</name>			<productCode>S94</productCode><brand>Artkal-S</brand><red>244</red><green>169</green><blue>153</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="151"><name>Salmon</name>				<productCode>S95</productCode><brand>Artkal-S</brand><red>238</red><green>125</green><blue>103</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="152"><name>Apricot</name>			<productCode>S96</productCode><brand>Artkal-S</brand><red>240</red><green>134</green><blue>97</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="153"><name>Papaya</name>				<productCode>S97</productCode><brand>Artkal-S</brand><red>212</red><green>114</green><blue>42</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="154"><name>Himalaya Blue</name>		<productCode>S98</productCode><brand>Artkal-S</brand><red>100</red><green>172</green><blue>223</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="155"><name>Waterfall</name>			<productCode>S99</productCode><brand>Artkal-S</brand><red>100</red><green>194</green><blue>220</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="156"><name>Lagoon</name>				<productCode>S100</productCode><brand>Artkal-S</brand><red>79</red><green>159</green><blue>179</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="157"><name>Electric Blue</name>		<productCode>S101</productCode><brand>Artkal-S</brand><red>49</red><green>150</green><blue>221</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="158"><name>Pool Blue</name>			<productCode>S102</productCode><brand>Artkal-S</brand><red>27</red><green>108</green><blue>182</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="159"><name>Caribbian Blue</name>		<productCode>S103</productCode><brand>Artkal-S</brand><red>8</red><green>57</green><blue>128</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="160"><name>Deep Water</name>			<productCode>S104</productCode><brand>Artkal-S</brand><red>10</red><green>102</green><blue>139</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="161"><name>Petrol Blue</name>		<productCode>S105</productCode><brand>Artkal-S</brand><red>8</red><green>91</green><blue>110</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="162"><name>Wegdewood Blue</name>		<productCode>S106</productCode><brand>Artkal-S</brand><red>0</red><green>78</green><blue>120</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="163"><name>Pond Blue</name>			<productCode>S107</productCode><brand>Artkal-S</brand><red>0</red><green>85</green><blue>116</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="164"><name>Seashell Beige</name>		<productCode>S108</productCode><brand>Artkal-S</brand><red>204</red><green>190</green><blue>128</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="165"><name>Beige</name>				<productCode>S109</productCode><brand>Artkal-S</brand><red>164</red><green>147</green><blue>80</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="166"><name>Beach Beige</name>		<productCode>S110</productCode><brand>Artkal-S</brand><red>158</red><green>136</green><blue>60</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="167"><name>Caffe Latté</name>		<productCode>S111</productCode><brand>Artkal-S</brand><red>118</red><green>108</green><blue>43</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="168"><name>Oaktree Brown</name>		<productCode>S112</productCode><brand>Artkal-S</brand><red>121</red><green>95</green><blue>38</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="169"><name>Khaki</name>				<productCode>S113</productCode><brand>Artkal-S</brand><red>186</red><green>184</green><blue>162</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="170"><name>Light Greengray</name>	<productCode>S114</productCode><brand>Artkal-S</brand><red>114</red><green>140</green><blue>84</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="171"><name>Mossy Green</name>		<productCode>S115</productCode><brand>Artkal-S</brand><red>126</red><green>124</green><blue>68</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="172"><name>Earth Green</name>		<productCode>S116</productCode><brand>Artkal-S</brand><red>100</red><green>105</green><blue>46</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="173"><name>Sage Green</name>			<productCode>S117</productCode><brand>Artkal-S</brand><red>78</red><green>88</green><blue>44</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="174"><name>Pinetree Green</name>		<productCode>S118</productCode><brand>Artkal-S</brand><red>74</red><green>94</green><blue>45</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="175"><name>Frosty Blue</name>		<productCode>S119</productCode><brand>Artkal-S</brand><red>113</red><green>196</green><blue>82</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="176"><name>Polar Mint</name>			<productCode>S120</productCode><brand>Artkal-S</brand><red>102</red><green>204</green><blue>153</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="177"><name>Celadon Green</name>		<productCode>S121</productCode><brand>Artkal-S</brand><red>86</red><green>154</green><blue>131</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="178"><name>Eucalyptus</name>			<productCode>S122</productCode><brand>Artkal-S</brand><red>20</red><green>194</green><blue>91</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="179"><name>Clover Field</name>		<productCode>S123</productCode><brand>Artkal-S</brand><red>24</red><green>168</green><blue>24</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="180"><name>Pooltable Felt</name>		<productCode>S124</productCode><brand>Artkal-S</brand><red>4</red><green>85</green><blue>46</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="181"><name>Snake Green</name>		<productCode>S125</productCode><brand>Artkal-S</brand><red>19</red><green>107</green><blue>90</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="182"><name>Dark Eucalyptus</name>	<productCode>S126</productCode><brand>Artkal-S</brand><red>5</red><green>70</green><blue>65</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="183"><name>Marsmallow Rose</name>	<productCode>S127</productCode><brand>Artkal-S</brand><red>217</red><green>182</green><blue>214</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="184"><name>Light Grape</name>		<productCode>S128</productCode><brand>Artkal-S</brand><red>173</red><green>98</green><blue>164</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="185"><name>Rosebud Pink</name>		<productCode>S129</productCode><brand>Artkal-S</brand><red>230</red><green>140</green><blue>163</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="186"><name>Fuschia</name>			<productCode>S130</productCode><brand>Artkal-S</brand><red>222</red><green>84</green><blue>121</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="187"><name>Candy Violet</name>		<productCode>S131</productCode><brand>Artkal-S</brand><red>158</red><green>130</green><blue>186</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="188"><name>Flamingo</name>			<productCode>S132</productCode><brand>Artkal-S</brand><red>232</red><green>65</green><blue>107</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="189"><name>Pink Plum</name>			<productCode>S133</productCode><brand>Artkal-S</brand><red>183</red><green>56</green><blue>143</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="190"><name>Amethyst</name>			<productCode>S134</productCode><brand>Artkal-S</brand><red>88</red><green>31</green><blue>126</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="191"><name>Moonlight Blue</name>		<productCode>S135</productCode><brand>Artkal-S</brand><red>140</red><green>163</green><blue>212</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="192"><name>Summer Rain</name>		<productCode>S136</productCode><brand>Artkal-S</brand><red>154</red><green>154</green><blue>204</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="193"><name>Azur Blue</name>			<productCode>S137</productCode><brand>Artkal-S</brand><red>89</red><green>129</green><blue>193</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="194"><name>Cornflower Blue</name>	<productCode>S138</productCode><brand>Artkal-S</brand><red>65</red><green>102</green><blue>176</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="195"><name>Forget Me Not</name>		<productCode>S139</productCode><brand>Artkal-S</brand><red>71</red><green>95</green><blue>171</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="196"><name>Indigo</name>				<productCode>S140</productCode><brand>Artkal-S</brand><red>55</red><green>69</green><blue>147</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="197"><name>Horizon Blue</name>		<productCode>S141</productCode><brand>Artkal-S</brand><red>61</red><green>86</green><blue>165</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="198"><name>Cobolt</name>				<productCode>S142</productCode><brand>Artkal-S</brand><red>41</red><green>66</green><blue>153</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="199"><name>Royal Blue</name>			<productCode>S143</productCode><brand>Artkal-S</brand><red>37</red><green>38</green><blue>138</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="200"><name>Marine</name>				<productCode>S144</productCode><brand>Artkal-S</brand><red>26</red><green>47</green><blue>111</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="201"><name>Pale Yellow Moss</name>	<productCode>S145</productCode><brand>Artkal-S</brand><red>211</red><green>201</green><blue>93</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="202"><name>Bloodrose Red</name>		<productCode>S146</productCode><brand>Artkal-S</brand><red>81</red><green>9</green><blue>24</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="203"><name>Spearmint</name>			<productCode>S147</productCode><brand>Artkal-S</brand><red>100</red><green>179</green><blue>158</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="204"><name>Mocha</name>				<productCode>S148</productCode><brand>Artkal-S</brand><red>99</red><green>67</green><blue>56</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="205"><name>Creme</name>				<productCode>S149</productCode><brand>Artkal-S</brand><red>237</red><green>211</green><blue>158</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="206"><name>Iris Violet</name>		<productCode>S150</productCode><brand>Artkal-S</brand><red>105</red><green>99</green><blue>171</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="207"><name>Forrest Green</name>		<productCode>S151</productCode><brand>Artkal-S</brand><red>43</red><green>63</green><blue>31</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="208"><name>Lilac</name>				<productCode>S152</productCode><brand>Artkal-S</brand><red>151</red><green>145</green><blue>197</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="209"><name>Pale Lilac</name>			<productCode>S153</productCode><brand>Artkal-S</brand><red>184</red><green>189</green><blue>224</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>0</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="210"><name>Sahara Sand</name>		<productCode>S154</productCode><brand>Artkal-S</brand><red>249</red><green>200</green><blue>152</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="211"><name>Sunkissed Teint</name>	<productCode>S155</productCode><brand>Artkal-S</brand><red>195</red><green>144</green><blue>105</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>0</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="212"><name>Steel Grey</name>			<productCode>S156</productCode><brand>Artkal-S</brand><red>68</red><green>80</green><blue>91</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>1</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="213"><name>Iron Grey</name>			<productCode>S157</productCode><brand>Artkal-S</brand><red>62</red><green>73</green><blue>85</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>1</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="214"><name>Pepper</name>				<productCode>S158</productCode><brand>Artkal-S</brand><red>32</red><green>40</green><blue>48</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>1</isGrayscale><disabled>0</disabled></color>
+	<color colorIndex="215"><name>Oslo Gray</name>			<productCode>S159</productCode><brand>Artkal-S</brand><red>136</red><green>139</green><blue>141</blue><isPearl>0</isPearl><isTranslucent>0</isTranslucent><isNeutral>1</isNeutral><isGrayscale>1</isGrayscale><disabled>0</disabled></color>
+</colors>

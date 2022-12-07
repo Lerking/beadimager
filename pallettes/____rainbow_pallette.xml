@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<!--
+TO READ THIS XML IN HUMAN_READABLE TABLE FORMAT, DUMP THE XML INTO THIS UTILITY:
+http://codebeautify.org/xml-to-excel-converter
+-->
+
+<!--
+[I'm not even sure if I want to implement the mapRed, mapGreen and mapBlue fields yet, but this is how they'd work:]...
+The red, green and blue values are the colors of the actual beads (used for realistic color rendering).
+The mapRed, mapGreen and mapBlue values are the values used for mapping the pixels in your image to the bead color.
+99% of the time, these values will be the same.
+-->
+
+
+
+<colors>	
+	<palletteName>Rainbow</palletteName>
+	
+	<color colorIndex="0">
+		<name>Red</name>
+		<productCode>P05</productCode>
+		<brand>Perler</brand>
+		<red>240</red>
+		<green>24</green>
+		<blue>32</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>7</mapRed>
+		<mapGreen>7</mapGreen>
+		<mapBlue>7</mapBlue>
+	</color>
+	<color colorIndex="1">
+		<name>Hot Coral</name>
+		<productCode>P59</productCode>
+		<brand>Perler</brand>
+		<red>255</red>
+		<green>56</green>
+		<blue>81</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>20</mapRed>
+		<mapGreen>20</mapGreen>
+		<mapBlue>20</mapBlue>
+	</color>
+	<color colorIndex="2">
+		<name>Orange</name>
+		<productCode>P04</productCode>
+		<brand>Perler</brand>
+		<red>237</red>
+		<green>97</green>
+		<blue>32</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>34</mapRed>
+		<mapGreen>34</mapGreen>
+		<mapBlue>34</mapBlue>
+	</color>
+	<color colorIndex="3">
+		<name>Butterscotch</name>
+		<productCode>P90</productCode>
+		<brand>Perler</brand>
+		<red>212</red>
+		<green>132</green>
+		<blue>55</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>47</mapRed>
+		<mapGreen>47</mapGreen>
+		<mapBlue>47</mapBlue>
+	</color>
+	<color colorIndex="4">
+		<name>Cheddar</name>
+		<productCode>P57</productCode>
+		<brand>Perler</brand>
+		<red>241</red>
+		<green>170</green>
+		<blue>12</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>61</mapRed>
+		<mapGreen>61</mapGreen>
+		<mapBlue>61</mapBlue>
+	</color>
+	<color colorIndex="5">
+		<name>Yellow</name>
+		<productCode>P03</productCode>
+		<brand>Perler</brand>
+		<red>236</red>
+		<green>216</green>
+		<blue>0</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>74</mapRed>
+		<mapGreen>74</mapGreen>
+		<mapBlue>74</mapBlue>
+	</color>
+	<color colorIndex="6">
+		<name>Prickly Pear</name>
+		<productCode>P97</productCode>
+		<brand>Perler</brand>
+		<red>189</red>
+		<green>218</green>
+		<blue>1</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>88</mapRed>
+		<mapGreen>88</mapGreen>
+		<mapBlue>88</mapBlue>
+	</color>
+	<color colorIndex="7">
+		<name>Kiwi Lime</name>
+		<productCode>P61</productCode>
+		<brand>Perler</brand>
+		<red>108</red>
+		<green>190</green>
+		<blue>19</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>101</mapRed>
+		<mapGreen>101</mapGreen>
+		<mapBlue>101</mapBlue>
+	</color>
+	<color colorIndex="8">
+		<name>Bright Green</name>
+		<productCode>P80</productCode>
+		<brand>Perler</brand>
+		<red>79</red>
+		<green>173</green>
+		<blue>66</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>115</mapRed>
+		<mapGreen>115</mapGreen>
+		<mapBlue>115</mapBlue>
+	</color>
+	<color colorIndex="9">
+		<name>Parrot Green</name>
+		<productCode>P91</productCode>
+		<brand>Perler</brand>
+		<red>6</red>
+		<green>124</green>
+		<blue>129</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>128</mapRed>
+		<mapGreen>128</mapGreen>
+		<mapBlue>128</mapBlue>
+	</color>
+	<color colorIndex="10">
+		<name>Turquoise/Cyan</name>
+		<productCode>P62</productCode>
+		<brand>Perler</brand>
+		<red>43</red>
+		<green>137</green>
+		<blue>198</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>141</mapRed>
+		<mapGreen>141</mapGreen>
+		<mapBlue>141</mapBlue>
+	</color>
+	<color colorIndex="11">
+		<name>Pastel Blue</name>
+		<productCode>P52</productCode>
+		<brand>Perler</brand>
+		<red>83</red>
+		<green>144</green>
+		<blue>209</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>155</mapRed>
+		<mapGreen>155</mapGreen>
+		<mapBlue>155</mapBlue>
+	</color>
+	<color colorIndex="12">
+		<name>Light Blue</name>
+		<productCode>P09</productCode>
+		<brand>Perler</brand>
+		<red>51</red>
+		<green>112</green>
+		<blue>192</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>168</mapRed>
+		<mapGreen>168</mapGreen>
+		<mapBlue>168</mapBlue>
+	</color>
+	<color colorIndex="13">
+		<name>Periwinkle Blue</name>
+		<productCode>P70</productCode>
+		<brand>Perler</brand>
+		<red>100</red>
+		<green>124</green>
+		<blue>190</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>182</mapRed>
+		<mapGreen>182</mapGreen>
+		<mapBlue>182</mapBlue>
+	</color>
+	<color colorIndex="14">
+		<name>Pastel Lavender</name>
+		<productCode>P54</productCode>
+		<brand>Perler</brand>
+		<red>138</red>
+		<green>114</green>
+		<blue>193</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>195</mapRed>
+		<mapGreen>195</mapGreen>
+		<mapBlue>195</mapBlue>
+	</color>
+	<color colorIndex="15">
+		<name>Plum</name>
+		<productCode>P60</productCode>
+		<brand>Perler</brand>
+		<red>162</red>
+		<green>75</green>
+		<blue>156</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>209</mapRed>
+		<mapGreen>209</mapGreen>
+		<mapBlue>209</mapBlue>
+	</color>
+	<color colorIndex="16">
+		<name>Raspberry</name>
+		<productCode>P88</productCode>
+		<brand>Perler</brand>
+		<red>165</red>
+		<green>48</green>
+		<blue>97</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>222</mapRed>
+		<mapGreen>222</mapGreen>
+		<mapBlue>222</mapBlue>
+	</color>
+	<color colorIndex="17">
+		<name>Pink</name>
+		<productCode>P83</productCode>
+		<brand>Perler</brand>
+		<red>228</red>
+		<green>72</green>
+		<blue>146</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>236</mapRed>
+		<mapGreen>236</mapGreen>
+		<mapBlue>236</mapBlue>
+	</color>
+	<color colorIndex="18">
+		<name>Magenta</name>
+		<productCode>P38</productCode>
+		<brand>Perler</brand>
+		<red>242</red>
+		<green>42</green>
+		<blue>123</blue>
+		<isPearl>0</isPearl>
+		<isTranslucent>0</isTranslucent>
+		<isNeutral>0</isNeutral>
+		<isGrayscale>0</isGrayscale>
+		<disabled>0</disabled>
+		<mapRed>249</mapRed>
+		<mapGreen>249</mapGreen>
+		<mapBlue>249</mapBlue>
+	</color>
+</colors>
