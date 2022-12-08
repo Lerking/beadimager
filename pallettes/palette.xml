@@ -19,11 +19,11 @@
                     <red>229</red>
                     <green>236</green>
                     <blue>241</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="02">
                     <name>Creme</name>
@@ -32,11 +32,11 @@
                     <red>228</red>
                     <green>228</green>
                     <blue>197</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="03">
                     <name>Yellow</name>
@@ -45,11 +45,11 @@
                     <red>233</red>
                     <green>199</green>
                     <blue>4</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="04">
                     <name>Orange</name>
@@ -58,11 +58,11 @@
                     <red>209</red>
                     <green>72</green>
                     <blue>3</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="05">
                     <name>Red</name>
@@ -71,11 +71,11 @@
                     <red>180</red>
                     <green>6</green>
                     <blue>14</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="06">
                     <name>Pink</name>
@@ -84,11 +84,11 @@
                     <red>234</red>
                     <green>138</green>
                     <blue>165</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="07">
                     <name>Purple</name>
@@ -97,11 +97,11 @@
                     <red>113</red>
                     <green>34</green>
                     <blue>151</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="08">
                     <name>Blue</name>
@@ -110,11 +110,11 @@
                     <red>2</red>
                     <green>57</green>
                     <blue>163</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="09">
                     <name>Light blue</name>
@@ -123,11 +123,11 @@
                     <red>2</red>
                     <green>91</green>
                     <blue>195</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="10">
                     <name>Green</name>
@@ -136,11 +136,11 @@
                     <red>2</red>
                     <green>118</green>
                     <blue>67</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="11">
                     <name>Light green</name>
@@ -149,11 +149,11 @@
                     <red>25</red>
                     <green>205</green>
                     <blue>167</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="12">
                     <name>Brown</name>
@@ -162,11 +162,11 @@
                     <red>62</red>
                     <green>39</green>
                     <blue>26</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="13">
                     <name>Translucent red</name>
@@ -175,11 +175,11 @@
                     <red>192</red>
                     <green>36</green>
                     <blue>53</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>1</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>true</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="14">
                     <name>Translucent yellow</name>
@@ -188,11 +188,11 @@
                     <red>228</red>
                     <green>170</green>
                     <blue>50</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>1</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>true</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="15">
                     <name>Translucent blue</name>
@@ -201,11 +201,11 @@
                     <red>72</red>
                     <green>126</green>
                     <blue>213</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>1</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>true</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="16">
                     <name>Translucent green</name>
@@ -214,11 +214,11 @@
                     <red>55</red>
                     <green>184</green>
                     <blue>118</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>1</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>true</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="17">
                     <name>Grey</name>
@@ -227,11 +227,11 @@
                     <red>131</red>
                     <green>143</green>
                     <blue>152</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>1</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>true</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="18">
                     <name>Black</name>
@@ -240,11 +240,11 @@
                     <red>20</red>
                     <green>19</green>
                     <blue>21</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>1</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>true</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="19">
                     <name>Clear</name>
@@ -253,11 +253,11 @@
                     <red>216</red>
                     <green>210</green>
                     <blue>206</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>1</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>true</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="20">
                     <name>Red brown</name>
@@ -266,11 +266,11 @@
                     <red>141</red>
                     <green>42</green>
                     <blue>15</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="21">
                     <name>Light brown</name>
@@ -279,11 +279,11 @@
                     <red>190</red>
                     <green>108</green>
                     <blue>33</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="22">
                     <name>Dark red</name>
@@ -292,11 +292,11 @@
                     <red>145</red>
                     <green>2</green>
                     <blue>10</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="24">
                     <name>Translucent purple</name>
@@ -305,11 +305,11 @@
                     <red>104</red>
                     <green>62</green>
                     <blue>154</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>1</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>true</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="25">
                     <name>Translucent brown</name>
@@ -318,11 +318,11 @@
                     <red>135</red>
                     <green>89</green>
                     <blue>61</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>1</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>true</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="26">
                     <name>Flesh</name>
@@ -331,11 +331,11 @@
                     <red>232</red>
                     <green>164</green>
                     <blue>152</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="27">
                     <name>Beige</name>
@@ -344,11 +344,11 @@
                     <red>220</red>
                     <green>177</green>
                     <blue>142</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="28">
                     <name>Dark green</name>
@@ -357,11 +357,11 @@
                     <red>30</red>
                     <green>44</green>
                     <blue>28</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="29">
                     <name>Rapsberry</name>
@@ -370,11 +370,11 @@
                     <red>191</red>
                     <green>1</green>
                     <blue>66</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="30">
                     <name>Burgrundy</name>
@@ -383,11 +383,11 @@
                     <red>78</red>
                     <green>12</green>
                     <blue>27</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="31">
                     <name>Turquoise</name>
@@ -396,11 +396,11 @@
                     <red>72</red>
                     <green>154</green>
                     <blue>185</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="32">
                     <name>Neon Fuchsia</name>
@@ -409,11 +409,11 @@
                     <red>255</red>
                     <green>32</green>
                     <blue>141</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="33">
                     <name>Fluorescent cerise</name>
@@ -422,11 +422,11 @@
                     <red>255</red>
                     <green>57</green>
                     <blue>86</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="34">
                     <name>Neon yellow</name>
@@ -435,11 +435,11 @@
                     <red>229</red>
                     <green>239</green>
                     <blue>19</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="35">
                     <name>Neon red</name>
@@ -448,11 +448,11 @@
                     <red>255</red>
                     <green>40</green>
                     <blue>51</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="36">
                     <name>Neon blue</name>
@@ -461,11 +461,11 @@
                     <red>35</red>
                     <green>83</green>
                     <blue>176</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="37">
                     <name>Neon green</name>
@@ -474,11 +474,11 @@
                     <red>6</red>
                     <green>183</green>
                     <blue>60</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="38">
                     <name>Neon orange</name>
@@ -487,11 +487,11 @@
                     <red>253</red>
                     <green>134</green>
                     <blue>0</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="39">
                     <name>Fluorescent yellow</name>
@@ -500,11 +500,11 @@
                     <red>241</red>
                     <green>242</green>
                     <blue>28</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="40">
                     <name>Fluorescent orange</name>
@@ -513,11 +513,11 @@
                     <red>254</red>
                     <green>99</green>
                     <blue>11</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="41">
                     <name>Fluroescent blue</name>
@@ -526,11 +526,11 @@
                     <red>38</red>
                     <green>89</green>
                     <blue>178</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="42">
                     <name>Flourecent green</name>
@@ -539,11 +539,11 @@
                     <red>12</red>
                     <green>189</green>
                     <blue>81</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="43">
                     <name>Pastel yellow</name>
@@ -552,11 +552,11 @@
                     <red>231</red>
                     <green>228</green>
                     <blue>90</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="44">
                     <name>Pastel coral</name>
@@ -565,11 +565,11 @@
                     <red>249</red>
                     <green>97</green>
                     <blue>96</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="45">
                     <name>Pastel purple</name>
@@ -578,11 +578,11 @@
                     <red>142</red>
                     <green>105</green>
                     <blue>205</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="46">
                     <name>Pastel blue</name>
@@ -591,11 +591,11 @@
                     <red>81</red>
                     <green>174</green>
                     <blue>228</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="47">
                     <name>pastel green</name>
@@ -604,11 +604,11 @@
                     <red>128</red>
                     <green>223</green>
                     <blue>150</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="48">
                     <name>pastel pink</name>
@@ -617,11 +617,11 @@
                     <red>214</red>
                     <green>122</green>
                     <blue>209</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="49">
                     <name>Azure</name>
@@ -630,11 +630,11 @@
                     <red>15</red>
                     <green>172</green>
                     <blue>209</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="55">
                     <name>Flourecent green</name>
@@ -643,11 +643,11 @@
                     <red>250</red>
                     <green>248</green>
                     <blue>237</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="56">
                     <name>Flourecent red</name>
@@ -656,11 +656,11 @@
                     <red>237</red>
                     <green>191</green>
                     <blue>159</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="57">
                     <name>Flourecent blue</name>
@@ -669,11 +669,11 @@
                     <red>196</red>
                     <green>208</green>
                     <blue>227</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="60">
                     <name>Teddybear brown</name>
@@ -682,11 +682,11 @@
                     <red>240</red>
                     <green>152</green>
                     <blue>30</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="61">
                     <name>Gold</name>
@@ -695,11 +695,11 @@
                     <red>217</red>
                     <green>147</green>
                     <blue>80</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="62">
                     <name>Silver</name>
@@ -708,11 +708,11 @@
                     <red>72</red>
                     <green>71</green>
                     <blue>74</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="63">
                     <name>Bronze</name>
@@ -721,11 +721,11 @@
                     <red>66</red>
                     <green>49</green>
                     <blue>47</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="64">
                     <name>Pearl</name>
@@ -734,11 +734,11 @@
                     <red>239</red>
                     <green>235</green>
                     <blue>228</blue>
-                    <isPearl>1</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>true</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="70">
                     <name>Light grey</name>
@@ -747,11 +747,11 @@
                     <red>165</red>
                     <green>179</green>
                     <blue>192</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>1</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>true</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="71">
                     <name>Dark grey</name>
@@ -760,11 +760,11 @@
                     <red>68</red>
                     <green>80</green>
                     <blue>89</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>1</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>true</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="72">
                     <name>Translucent pink</name>
@@ -773,11 +773,11 @@
                     <red>240</red>
                     <green>151</green>
                     <blue>176</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>1</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>true</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="73">
                     <name>Translucent aqua</name>
@@ -786,11 +786,11 @@
                     <red>89</red>
                     <green>174</green>
                     <blue>245</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>1</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>true</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="74">
                     <name>Translucent lilac</name>
@@ -799,11 +799,11 @@
                     <red>91</red>
                     <green>85</green>
                     <blue>189</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>1</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>true</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="75">
                     <name>Tan</name>
@@ -812,11 +812,11 @@
                     <red>183</red>
                     <green>140</green>
                     <blue>109</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="76">
                     <name>Nougat</name>
@@ -825,11 +825,11 @@
                     <red>138</red>
                     <green>89</green>
                     <blue>55</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="77">
                     <name>Cloudy white</name>
@@ -838,11 +838,11 @@
                     <red>206</red>
                     <green>209</green>
                     <blue>200</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="78">
                     <name>Light peach</name>
@@ -851,11 +851,11 @@
                     <red>247</red>
                     <green>193</green>
                     <blue>170</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="79">
                     <name>Apricot</name>
@@ -864,11 +864,11 @@
                     <red>248</red>
                     <green>118</green>
                     <blue>51</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="82">
                     <name>Plum</name>
@@ -877,11 +877,11 @@
                     <red>145</red>
                     <green>23</green>
                     <blue>90</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="83">
                     <name>Petrol Blue</name>
@@ -890,11 +890,11 @@
                     <red>3</red>
                     <green>122</green>
                     <blue>159</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="84">
                     <name>Olive</name>
@@ -903,11 +903,11 @@
                     <red>104</red>
                     <green>120</green>
                     <blue>54</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>1</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>true</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="95">
                     <name>Pastel rosa</name>
@@ -916,11 +916,11 @@
                     <red>221</red>
                     <green>155</green>
                     <blue>163</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="96">
                     <name>Pastel lilac</name>
@@ -929,11 +929,11 @@
                     <red>180</red>
                     <green>145</green>
                     <blue>173</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="97">
                     <name>Pastel ice blue</name>
@@ -942,11 +942,11 @@
                     <red>138</red>
                     <green>175</green>
                     <blue>194</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
                 <color colorIndex="98">
                     <name>Pastel mint</name>
@@ -955,11 +955,11 @@
                     <red>148</red>
                     <green>204</green>
                     <blue>164</blue>
-                    <isPearl>0</isPearl>
-                    <isTranslucent>0</isTranslucent>
-                    <isNeutral>0</isNeutral>
-                    <isGrayscale>0</isGrayscale>
-                    <disabled>0</disabled>
+                    <isPearl>false</isPearl>
+                    <isTranslucent>false</isTranslucent>
+                    <isNeutral>false</isNeutral>
+                    <isGrayscale>false</isGrayscale>
+                    <disabled>false</disabled>
                 </color>
             </beads>
         </series>
