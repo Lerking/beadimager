@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pallette>
+    <pallettename>Pallette</pallettename>
+    <brands>
+        <brandsname>Brands</brandsname>
+        <brand>
+            <brandname>Hama</brandname>
+            <series>
+                <serie>
+                    <seriename>Midi</seriename>
+                    <pegboards>
+                        <pegboard>
+                            <type>Big</type>
+                            <width>29</width>
+                            <height>29</height>
+                        </pegboard>
+                    </pegboards>
+                    <beads>
+                        <color colorIndex="01">
+                            <colorname>White</colorname>
+                            <productCode>H01</productCode>
+                            <brand>Hama</brand>
+                            <red>229</red>
+                            <green>236</green>
+                            <blue>241</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="02">
+                            <colorname>Creme</colorname>
+                            <productCode>H02</productCode>
+                            <brand>Hama</brand>
+                            <red>228</red>
+                            <green>228</green>
+                            <blue>197</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="03">
+                            <colorname>Yellow</colorname>
+                            <productCode>H03</productCode>
+                            <brand>Hama</brand>
+                            <red>233</red>
+                            <green>199</green>
+                            <blue>4</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="04">
+                            <colorname>Orange</colorname>
+                            <productCode>H04</productCode>
+                            <brand>Hama</brand>
+                            <red>209</red>
+                            <green>72</green>
+                            <blue>3</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="05">
+                            <colorname>Red</colorname>
+                            <productCode>H05</productCode>
+                            <brand>Hama</brand>
+                            <red>180</red>
+                            <green>6</green>
+                            <blue>14</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="06">
+                            <colorname>Pink</colorname>
+                            <productCode>H06</productCode>
+                            <brand>Hama</brand>
+                            <red>234</red>
+                            <green>138</green>
+                            <blue>165</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="07">
+                            <colorname>Purple</colorname>
+                            <productCode>H07</productCode>
+                            <brand>Hama</brand>
+                            <red>113</red>
+                            <green>34</green>
+                            <blue>151</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="08">
+                            <colorname>Blue</colorname>
+                            <productCode>H08</productCode>
+                            <brand>Hama</brand>
+                            <red>2</red>
+                            <green>57</green>
+                            <blue>163</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="09">
+                            <colorname>Light blue</colorname>
+                            <productCode>H09</productCode>
+                            <brand>Hama</brand>
+                            <red>2</red>
+                            <green>91</green>
+                            <blue>195</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="10">
+                            <colorname>Green</colorname>
+                            <productCode>H10</productCode>
+                            <brand>Hama</brand>
+                            <red>2</red>
+                            <green>118</green>
+                            <blue>67</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="11">
+                            <colorname>Light green</colorname>
+                            <productCode>H11</productCode>
+                            <brand>Hama</brand>
+                            <red>25</red>
+                            <green>205</green>
+                            <blue>167</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="12">
+                            <colorname>Brown</colorname>
+                            <productCode>H12</productCode>
+                            <brand>Hama</brand>
+                            <red>62</red>
+                            <green>39</green>
+                            <blue>26</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="13">
+                            <colorname>Translucent red</colorname>
+                            <productCode>H13</productCode>
+                            <brand>Hama</brand>
+                            <red>192</red>
+                            <green>36</green>
+                            <blue>53</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>true</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="14">
+                            <colorname>Translucent yellow</colorname>
+                            <productCode>H14</productCode>
+                            <brand>Hama</brand>
+                            <red>228</red>
+                            <green>170</green>
+                            <blue>50</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>true</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="15">
+                            <colorname>Translucent blue</colorname>
+                            <productCode>H15</productCode>
+                            <brand>Hama</brand>
+                            <red>72</red>
+                            <green>126</green>
+                            <blue>213</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>true</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="16">
+                            <colorname>Translucent green</colorname>
+                            <productCode>H16</productCode>
+                            <brand>Hama</brand>
+                            <red>55</red>
+                            <green>184</green>
+                            <blue>118</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>true</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="17">
+                            <colorname>Grey</colorname>
+                            <productCode>H17</productCode>
+                            <brand>Hama</brand>
+                            <red>131</red>
+                            <green>143</green>
+                            <blue>152</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>true</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="18">
+                            <colorname>Black</colorname>
+                            <productCode>H18</productCode>
+                            <brand>Hama</brand>
+                            <red>20</red>
+                            <green>19</green>
+                            <blue>21</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>true</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="19">
+                            <colorname>Clear</colorname>
+                            <productCode>H19</productCode>
+                            <brand>Hama</brand>
+                            <red>216</red>
+                            <green>210</green>
+                            <blue>206</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>true</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="20">
+                            <colorname>Red brown</colorname>
+                            <productCode>H20</productCode>
+                            <brand>Hama</brand>
+                            <red>141</red>
+                            <green>42</green>
+                            <blue>15</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="21">
+                            <colorname>Light brown</colorname>
+                            <productCode>H21</productCode>
+                            <brand>Hama</brand>
+                            <red>190</red>
+                            <green>108</green>
+                            <blue>33</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="22">
+                            <colorname>Dark red</colorname>
+                            <productCode>H22</productCode>
+                            <brand>Hama</brand>
+                            <red>145</red>
+                            <green>2</green>
+                            <blue>10</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="24">
+                            <colorname>Translucent purple</colorname>
+                            <productCode>H24</productCode>
+                            <brand>Hama</brand>
+                            <red>104</red>
+                            <green>62</green>
+                            <blue>154</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>true</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="25">
+                            <colorname>Translucent brown</colorname>
+                            <productCode>H25</productCode>
+                            <brand>Hama</brand>
+                            <red>135</red>
+                            <green>89</green>
+                            <blue>61</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>true</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="26">
+                            <colorname>Flesh</colorname>
+                            <productCode>H26</productCode>
+                            <brand>Hama</brand>
+                            <red>232</red>
+                            <green>164</green>
+                            <blue>152</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="27">
+                            <colorname>Beige</colorname>
+                            <productCode>H27</productCode>
+                            <brand>Hama</brand>
+                            <red>220</red>
+                            <green>177</green>
+                            <blue>142</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="28">
+                            <colorname>Dark green</colorname>
+                            <productCode>H28</productCode>
+                            <brand>Hama</brand>
+                            <red>30</red>
+                            <green>44</green>
+                            <blue>28</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="29">
+                            <colorname>Rapsberry</colorname>
+                            <productCode>H29</productCode>
+                            <brand>Hama</brand>
+                            <red>191</red>
+                            <green>1</green>
+                            <blue>66</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="30">
+                            <colorname>Burgrundy</colorname>
+                            <productCode>H30</productCode>
+                            <brand>Hama</brand>
+                            <red>78</red>
+                            <green>12</green>
+                            <blue>27</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="31">
+                            <colorname>Turquoise</colorname>
+                            <productCode>H31</productCode>
+                            <brand>Hama</brand>
+                            <red>72</red>
+                            <green>154</green>
+                            <blue>185</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="32">
+                            <colorname>Neon Fuchsia</colorname>
+                            <productCode>H32</productCode>
+                            <brand>Hama</brand>
+                            <red>255</red>
+                            <green>32</green>
+                            <blue>141</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="33">
+                            <colorname>Fluorescent cerise</colorname>
+                            <productCode>H33</productCode>
+                            <brand>Hama</brand>
+                            <red>255</red>
+                            <green>57</green>
+                            <blue>86</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="34">
+                            <colorname>Neon yellow</colorname>
+                            <productCode>H34</productCode>
+                            <brand>Hama</brand>
+                            <red>229</red>
+                            <green>239</green>
+                            <blue>19</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="35">
+                            <colorname>Neon red</colorname>
+                            <productCode>H35</productCode>
+                            <brand>Hama</brand>
+                            <red>255</red>
+                            <green>40</green>
+                            <blue>51</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="36">
+                            <colorname>Neon blue</colorname>
+                            <productCode>H36</productCode>
+                            <brand>Hama</brand>
+                            <red>35</red>
+                            <green>83</green>
+                            <blue>176</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="37">
+                            <colorname>Neon green</colorname>
+                            <productCode>H37</productCode>
+                            <brand>Hama</brand>
+                            <red>6</red>
+                            <green>183</green>
+                            <blue>60</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="38">
+                            <colorname>Neon orange</colorname>
+                            <productCode>H38</productCode>
+                            <brand>Hama</brand>
+                            <red>253</red>
+                            <green>134</green>
+                            <blue>0</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="39">
+                            <colorname>Fluorescent yellow</colorname>
+                            <productCode>H39</productCode>
+                            <brand>Hama</brand>
+                            <red>241</red>
+                            <green>242</green>
+                            <blue>28</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="40">
+                            <colorname>Fluorescent orange</colorname>
+                            <productCode>H40</productCode>
+                            <brand>Hama</brand>
+                            <red>254</red>
+                            <green>99</green>
+                            <blue>11</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="41">
+                            <colorname>Fluroescent blue</colorname>
+                            <productCode>H41</productCode>
+                            <brand>Hama</brand>
+                            <red>38</red>
+                            <green>89</green>
+                            <blue>178</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="42">
+                            <colorname>Flourecent green</colorname>
+                            <productCode>H42</productCode>
+                            <brand>Hama</brand>
+                            <red>12</red>
+                            <green>189</green>
+                            <blue>81</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="43">
+                            <colorname>Pastel yellow</colorname>
+                            <productCode>H43</productCode>
+                            <brand>Hama</brand>
+                            <red>231</red>
+                            <green>228</green>
+                            <blue>90</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="44">
+                            <colorname>Pastel coral</colorname>
+                            <productCode>H44</productCode>
+                            <brand>Hama</brand>
+                            <red>249</red>
+                            <green>97</green>
+                            <blue>96</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="45">
+                            <colorname>Pastel purple</colorname>
+                            <productCode>H45</productCode>
+                            <brand>Hama</brand>
+                            <red>142</red>
+                            <green>105</green>
+                            <blue>205</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="46">
+                            <colorname>Pastel blue</colorname>
+                            <productCode>H46</productCode>
+                            <brand>Hama</brand>
+                            <red>81</red>
+                            <green>174</green>
+                            <blue>228</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="47">
+                            <colorname>pastel green</colorname>
+                            <productCode>H47</productCode>
+                            <brand>Hama</brand>
+                            <red>128</red>
+                            <green>223</green>
+                            <blue>150</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="48">
+                            <colorname>pastel pink</colorname>
+                            <productCode>H48</productCode>
+                            <brand>Hama</brand>
+                            <red>214</red>
+                            <green>122</green>
+                            <blue>209</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="49">
+                            <colorname>Azure</colorname>
+                            <productCode>H49</productCode>
+                            <brand>Hama</brand>
+                            <red>15</red>
+                            <green>172</green>
+                            <blue>209</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="55">
+                            <colorname>Flourecent green</colorname>
+                            <productCode>H55</productCode>
+                            <brand>Hama</brand>
+                            <red>250</red>
+                            <green>248</green>
+                            <blue>237</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="56">
+                            <colorname>Flourecent red</colorname>
+                            <productCode>H56</productCode>
+                            <brand>Hama</brand>
+                            <red>237</red>
+                            <green>191</green>
+                            <blue>159</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="57">
+                            <colorname>Flourecent blue</colorname>
+                            <productCode>H57</productCode>
+                            <brand>Hama</brand>
+                            <red>196</red>
+                            <green>208</green>
+                            <blue>227</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="60">
+                            <colorname>Teddybear brown</colorname>
+                            <productCode>H60</productCode>
+                            <brand>Hama</brand>
+                            <red>240</red>
+                            <green>152</green>
+                            <blue>30</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="61">
+                            <colorname>Gold</colorname>
+                            <productCode>H61</productCode>
+                            <brand>Hama</brand>
+                            <red>217</red>
+                            <green>147</green>
+                            <blue>80</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="62">
+                            <colorname>Silver</colorname>
+                            <productCode>H62</productCode>
+                            <brand>Hama</brand>
+                            <red>72</red>
+                            <green>71</green>
+                            <blue>74</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="63">
+                            <colorname>Bronze</colorname>
+                            <productCode>H63</productCode>
+                            <brand>Hama</brand>
+                            <red>66</red>
+                            <green>49</green>
+                            <blue>47</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="64">
+                            <colorname>Pearl</colorname>
+                            <productCode>H64</productCode>
+                            <brand>Hama</brand>
+                            <red>239</red>
+                            <green>235</green>
+                            <blue>228</blue>
+                            <isPearl>true</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="70">
+                            <colorname>Light grey</colorname>
+                            <productCode>H70</productCode>
+                            <brand>Hama</brand>
+                            <red>165</red>
+                            <green>179</green>
+                            <blue>192</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>true</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="71">
+                            <colorname>Dark grey</colorname>
+                            <productCode>H71</productCode>
+                            <brand>Hama</brand>
+                            <red>68</red>
+                            <green>80</green>
+                            <blue>89</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>true</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="72">
+                            <colorname>Translucent pink</colorname>
+                            <productCode>H72</productCode>
+                            <brand>Hama</brand>
+                            <red>240</red>
+                            <green>151</green>
+                            <blue>176</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>true</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="73">
+                            <colorname>Translucent aqua</colorname>
+                            <productCode>H73</productCode>
+                            <brand>Hama</brand>
+                            <red>89</red>
+                            <green>174</green>
+                            <blue>245</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>true</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="74">
+                            <colorname>Translucent lilac</colorname>
+                            <productCode>H74</productCode>
+                            <brand>Hama</brand>
+                            <red>91</red>
+                            <green>85</green>
+                            <blue>189</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>true</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="75">
+                            <colorname>Tan</colorname>
+                            <productCode>H75</productCode>
+                            <brand>Hama</brand>
+                            <red>183</red>
+                            <green>140</green>
+                            <blue>109</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="76">
+                            <colorname>Nougat</colorname>
+                            <productCode>H76</productCode>
+                            <brand>Hama</brand>
+                            <red>138</red>
+                            <green>89</green>
+                            <blue>55</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="77">
+                            <colorname>Cloudy white</colorname>
+                            <productCode>H77</productCode>
+                            <brand>Hama</brand>
+                            <red>206</red>
+                            <green>209</green>
+                            <blue>200</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="78">
+                            <colorname>Light peach</colorname>
+                            <productCode>H78</productCode>
+                            <brand>Hama</brand>
+                            <red>247</red>
+                            <green>193</green>
+                            <blue>170</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="79">
+                            <colorname>Apricot</colorname>
+                            <productCode>H79</productCode>
+                            <brand>Hama</brand>
+                            <red>248</red>
+                            <green>118</green>
+                            <blue>51</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="82">
+                            <colorname>Plum</colorname>
+                            <productCode>H82</productCode>
+                            <brand>Hama</brand>
+                            <red>145</red>
+                            <green>23</green>
+                            <blue>90</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="83">
+                            <colorname>Petrol Blue</colorname>
+                            <productCode>H83</productCode>
+                            <brand>Hama</brand>
+                            <red>3</red>
+                            <green>122</green>
+                            <blue>159</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="84">
+                            <colorname>Olive</colorname>
+                            <productCode>H84</productCode>
+                            <brand>Hama</brand>
+                            <red>104</red>
+                            <green>120</green>
+                            <blue>54</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>true</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="95">
+                            <colorname>Pastel rosa</colorname>
+                            <productCode>H95</productCode>
+                            <brand>Hama</brand>
+                            <red>221</red>
+                            <green>155</green>
+                            <blue>163</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="96">
+                            <colorname>Pastel lilac</colorname>
+                            <productCode>H96</productCode>
+                            <brand>Hama</brand>
+                            <red>180</red>
+                            <green>145</green>
+                            <blue>173</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="97">
+                            <colorname>Pastel ice blue</colorname>
+                            <productCode>H97</productCode>
+                            <brand>Hama</brand>
+                            <red>138</red>
+                            <green>175</green>
+                            <blue>194</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                        <color colorIndex="98">
+                            <colorname>Pastel mint</colorname>
+                            <productCode>H98</productCode>
+                            <brand>Hama</brand>
+                            <red>148</red>
+                            <green>204</green>
+                            <blue>164</blue>
+                            <isPearl>false</isPearl>
+                            <isTranslucent>false</isTranslucent>
+                            <isNeutral>false</isNeutral>
+                            <isGrayscale>false</isGrayscale>
+                            <disabled>false</disabled>
+                        </color>
+                    </beads>
+                </serie>
+            </series>
+        </brand>
+        <brand>
+            <brandname>Perler</brandname>
+            <series></series>
+        </brand>
+    </brands>
+</pallette>

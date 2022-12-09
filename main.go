@@ -14,11 +14,13 @@ type MyMainWindow struct {
 	colors     *walk.ScrollView
 	canvas     *walk.ScrollView
 	properties *walk.ScrollView
+	pallette   Pallette
+	beads      []*BeadColor
 }
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.4"
+	Version   string = "0.0.5"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -55,6 +57,7 @@ func InitLogFile() {
 
 func main() {
 	InitLogFile()
+
 	walk.AppendToWalkInit(func() {
 		walk.FocusEffect, _ = walk.NewBorderGlowEffect(walk.RGB(0, 63, 255))
 		walk.InteractionEffect, _ = walk.NewDropShadowEffect(walk.RGB(63, 63, 63))
@@ -62,8 +65,10 @@ func main() {
 	})
 	mw := &MyMainWindow{}
 	log.Println("MainWindow created")
-	//ss := mw.MainWindow.MaxSize()
-	//log.Println(ss)
+	CreatePallette(mw)
+	log.Println("Pallette created: ", mw.pallette)
+	LoadBeads(mw)
+	log.Println("Beads loaded: ", mw.beads)
 
 	if _, err := (MainWindow{
 		AssignTo: &mw.MainWindow,
