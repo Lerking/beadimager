@@ -24,7 +24,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.8"
+	Version   string = "0.0.9"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -44,9 +44,10 @@ func main() {
 	log.Println("MainWindow created")
 	CreatePallette(mw)
 	log.Println("Pallette created: ", mw.pallette)
-	//LoadBeads(mw)
-	//log.Println("Beads loaded: ", mw.beads)
 	mw.brand_model = CreateBrandsList(mw)
+	pallette_trigged := false
+	serie_trigged := false
+	pegboard_trigged := false
 
 	DD_Pallette := Composite{
 		Layout: HBox{MarginsZero: true},
@@ -58,12 +59,16 @@ func main() {
 				AssignTo: &mw.pallette_combo,
 				Model:    mw.brand_model,
 				OnCurrentIndexChanged: func() {
-					log.Println("Pallette changed to: ", mw.pallette_combo.Text())
-					mw.serie_model = CreateSeriesList(mw)
-					mw.serie_combo.SetModel(mw.serie_model)
-					mw.serie_combo.SetEnabled(true)
+					if !pallette_trigged {
+						log.Println("Pallette changed to: ", mw.pallette_combo.Text())
+						mw.serie_model = CreateSeriesList(mw)
+						mw.serie_combo.SetModel(mw.serie_model)
+						mw.serie_combo.SetEnabled(true)
+					}
+					pallette_trigged = true
 				},
 			},
+			HSpacer{},
 		},
 	}
 
@@ -77,16 +82,20 @@ func main() {
 				AssignTo: &mw.serie_combo,
 				Enabled:  false,
 				OnCurrentIndexChanged: func() {
-					log.Println("Serie changed to: ", mw.serie_combo.Text())
-					mw.pegboard_model = CreatePegboardsList(mw)
-					mw.pegboard_combo.SetModel(mw.pegboard_model)
-					mw.pegboard_combo.SetEnabled(true)
+					if !serie_trigged {
+						log.Println("Serie changed to: ", mw.serie_combo.Text())
+						LoadBeads(mw)
+						log.Println("Beads loaded: ", mw.beads)
+						mw.pegboard_model = CreatePegboardsList(mw)
+						mw.pegboard_combo.SetModel(mw.pegboard_model)
+						mw.pegboard_combo.SetEnabled(true)
+					}
+					serie_trigged = true
 				},
 			},
+			HSpacer{},
 		},
 	}
-
-	//pegboard_model := CreatePegboardsList(mw)
 
 	DD_Pegboard := Composite{
 		Layout: HBox{MarginsZero: true},
@@ -98,9 +107,13 @@ func main() {
 				AssignTo: &mw.pegboard_combo,
 				Enabled:  false,
 				OnCurrentIndexChanged: func() {
-					log.Println("Pegboard changed to: ", mw.pegboard_combo.Text())
+					if !pegboard_trigged {
+						log.Println("Pegboard changed to: ", mw.pegboard_combo.Text())
+					}
+					pegboard_trigged = true
 				},
 			},
+			HSpacer{},
 		},
 	}
 
@@ -121,8 +134,12 @@ func main() {
 							DD_Serie,
 							DD_Pegboard,
 							PushButton{
-								Text:      "Edit Animal",
-								OnClicked: func() {},
+								Text: "Select all colors",
+								OnClicked: func() {
+									for _, c := range mw.beads {
+										c.Checkbox.SetChecked(true)
+									}
+								},
 							},
 							ScrollView{
 								AssignTo: &mw.colors,
