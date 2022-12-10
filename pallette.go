@@ -70,6 +70,16 @@ type (
 	}
 )
 
+func CreateSeriesList(mw *MyMainWindow) []string {
+	series := make([]string, 0)
+	for _, brand := range mw.pallette.Brands.Brand {
+		for _, serie := range brand.Series.Serie {
+			series = append(series, serie.SerieName)
+		}
+	}
+	return series
+}
+
 func CreateBrandsList(mw *MyMainWindow) []string {
 	brands := make([]string, 0)
 	for _, brand := range mw.pallette.Brands.Brand {

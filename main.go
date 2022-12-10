@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"log"
-	"os"
 
 	"github.com/lxn/walk"
 	. "github.com/lxn/walk/declarative"
@@ -20,40 +18,13 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.6"
+	Version   string = "0.0.7"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
 	LogFile   string = "BeadImager.log"
 	Sep       string = "\\"
 )
-
-var LoggingFile *os.File
-
-func InitLogFile() {
-	_, err := os.Stat(fmt.Sprintf(UserPath + Sep + LogFile))
-	if err == nil {
-		LoggingFile, err := os.OpenFile(fmt.Sprintf(UserPath+Sep+LogFile), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-		if err != nil {
-			log.Fatal(err)
-		}
-		log.SetOutput(LoggingFile)
-	} else {
-		if _, err := os.Stat(UserPath); err != nil {
-			os.Mkdir(UserPath, 0755)
-		}
-		_, err = os.Create(fmt.Sprintf(UserPath + Sep + LogFile))
-		if err != nil {
-			log.Fatal(err)
-		}
-		LoggingFile, err := os.OpenFile(fmt.Sprintf(UserPath+Sep+LogFile), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-		if err != nil {
-			log.Fatal(err)
-		}
-		log.SetOutput(LoggingFile)
-	}
-	log.Print("Logging initialized")
-}
 
 func main() {
 	InitLogFile()
@@ -72,6 +43,41 @@ func main() {
 	brand_model := CreateBrandsList(mw)
 	pallette_combo := new(walk.ComboBox)
 
+	DD_Pallette := Composite{
+		Layout: HBox{MarginsZero: true},
+		Children: []Widget{
+			Label{
+				Text: "Pallette:",
+			},
+			ComboBox{
+				AssignTo: &pallette_combo,
+				Model:    brand_model,
+				OnCurrentIndexChanged: func() {
+					log.Println("Pallette changed to: ", pallette_combo.Text())
+				},
+			},
+		},
+	}
+
+	serie_model := CreateSeriesList(mw)
+	serie_combo := new(walk.ComboBox)
+
+	DD_Serie := Composite{
+		Layout: HBox{MarginsZero: true},
+		Children: []Widget{
+			Label{
+				Text: "Serie:",
+			},
+			ComboBox{
+				AssignTo: &serie_combo,
+				Model:    serie_model,
+				OnCurrentIndexChanged: func() {
+					log.Println("Serie changed to: ", serie_combo.Text())
+				},
+			},
+		},
+	}
+
 	if _, err := (MainWindow{
 		AssignTo: &mw.MainWindow,
 		Title:    AppName + " " + Version,
@@ -85,21 +91,8 @@ func main() {
 					Composite{
 						Layout: VBox{MarginsZero: true},
 						Children: []Widget{
-							Composite{
-								Layout: HBox{MarginsZero: true},
-								Children: []Widget{
-									Label{
-										Text: "Pallette:",
-									},
-									ComboBox{
-										AssignTo: &pallette_combo,
-										Model:    brand_model,
-										OnCurrentIndexChanged: func() {
-											log.Println("Pallette changed to: ", pallette_combo.Text())
-										},
-									},
-								},
-							},
+							DD_Pallette,
+							DD_Serie,
 							PushButton{
 								Text:      "Edit Animal",
 								OnClicked: func() {},
