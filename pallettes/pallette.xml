@@ -7,12 +7,20 @@
             <brandname>Hama</brandname>
             <series>
                 <serie>
+                    <seriename>Mini</seriename>
+                </serie>
+                <serie>
                     <seriename>Midi</seriename>
                     <pegboards>
                         <pegboard>
-                            <type>Big</type>
+                            <type>Big 29x29</type>
                             <width>29</width>
                             <height>29</height>
+                        </pegboard>
+                        <pegboard>
+                            <type>Small 14x14</type>
+                            <width>14</width>
+                            <height>14</height>
                         </pegboard>
                     </pegboards>
                     <beads>
@@ -966,6 +974,9 @@
                             <disabled>false</disabled>
                         </color>
                     </beads>
+                </serie>
+                <serie>
+                    <seriename>Maxi</seriename>
                 </serie>
             </series>
         </brand>

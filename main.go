@@ -9,16 +9,22 @@ import (
 
 type MyMainWindow struct {
 	*walk.MainWindow
-	colors     *walk.ScrollView
-	canvas     *walk.ScrollView
-	properties *walk.ScrollView
-	pallette   Pallette
-	beads      []*BeadColor
+	colors         *walk.ScrollView
+	canvas         *walk.ScrollView
+	properties     *walk.ScrollView
+	pallette       Pallette
+	beads          []*BeadColor
+	pallette_combo *walk.ComboBox
+	brand_model    []string
+	serie_combo    *walk.ComboBox
+	serie_model    []string
+	pegboard_combo *walk.ComboBox
+	pegboard_model []string
 }
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.7"
+	Version   string = "0.0.8"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -40,8 +46,7 @@ func main() {
 	log.Println("Pallette created: ", mw.pallette)
 	//LoadBeads(mw)
 	//log.Println("Beads loaded: ", mw.beads)
-	brand_model := CreateBrandsList(mw)
-	pallette_combo := new(walk.ComboBox)
+	mw.brand_model = CreateBrandsList(mw)
 
 	DD_Pallette := Composite{
 		Layout: HBox{MarginsZero: true},
@@ -50,17 +55,17 @@ func main() {
 				Text: "Pallette:",
 			},
 			ComboBox{
-				AssignTo: &pallette_combo,
-				Model:    brand_model,
+				AssignTo: &mw.pallette_combo,
+				Model:    mw.brand_model,
 				OnCurrentIndexChanged: func() {
-					log.Println("Pallette changed to: ", pallette_combo.Text())
+					log.Println("Pallette changed to: ", mw.pallette_combo.Text())
+					mw.serie_model = CreateSeriesList(mw)
+					mw.serie_combo.SetModel(mw.serie_model)
+					mw.serie_combo.SetEnabled(true)
 				},
 			},
 		},
 	}
-
-	serie_model := CreateSeriesList(mw)
-	serie_combo := new(walk.ComboBox)
 
 	DD_Serie := Composite{
 		Layout: HBox{MarginsZero: true},
@@ -69,10 +74,31 @@ func main() {
 				Text: "Serie:",
 			},
 			ComboBox{
-				AssignTo: &serie_combo,
-				Model:    serie_model,
+				AssignTo: &mw.serie_combo,
+				Enabled:  false,
 				OnCurrentIndexChanged: func() {
-					log.Println("Serie changed to: ", serie_combo.Text())
+					log.Println("Serie changed to: ", mw.serie_combo.Text())
+					mw.pegboard_model = CreatePegboardsList(mw)
+					mw.pegboard_combo.SetModel(mw.pegboard_model)
+					mw.pegboard_combo.SetEnabled(true)
+				},
+			},
+		},
+	}
+
+	//pegboard_model := CreatePegboardsList(mw)
+
+	DD_Pegboard := Composite{
+		Layout: HBox{MarginsZero: true},
+		Children: []Widget{
+			Label{
+				Text: "Pegboard:",
+			},
+			ComboBox{
+				AssignTo: &mw.pegboard_combo,
+				Enabled:  false,
+				OnCurrentIndexChanged: func() {
+					log.Println("Pegboard changed to: ", mw.pegboard_combo.Text())
 				},
 			},
 		},
@@ -93,6 +119,7 @@ func main() {
 						Children: []Widget{
 							DD_Pallette,
 							DD_Serie,
+							DD_Pegboard,
 							PushButton{
 								Text:      "Edit Animal",
 								OnClicked: func() {},

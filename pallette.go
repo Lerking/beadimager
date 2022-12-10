@@ -70,11 +70,29 @@ type (
 	}
 )
 
+func CreatePegboardsList(mw *MyMainWindow) []string {
+	pegboards := make([]string, 0)
+	for _, brand := range mw.pallette.Brands.Brand {
+		if brand.BrandName == mw.pallette_combo.Text() {
+			for _, serie := range brand.Series.Serie {
+				if serie.SerieName == mw.serie_combo.Text() {
+					for _, pegboard := range serie.Pegboards.Pegboard {
+						pegboards = append(pegboards, pegboard.Type)
+					}
+				}
+			}
+		}
+	}
+	return pegboards
+}
+
 func CreateSeriesList(mw *MyMainWindow) []string {
 	series := make([]string, 0)
 	for _, brand := range mw.pallette.Brands.Brand {
-		for _, serie := range brand.Series.Serie {
-			series = append(series, serie.SerieName)
+		if brand.BrandName == mw.pallette_combo.Text() {
+			for _, serie := range brand.Series.Serie {
+				series = append(series, serie.SerieName)
+			}
 		}
 	}
 	return series
