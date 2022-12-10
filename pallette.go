@@ -70,6 +70,14 @@ type (
 	}
 )
 
+func CreateBrandsList(mw *MyMainWindow) []string {
+	brands := make([]string, 0)
+	for _, brand := range mw.pallette.Brands.Brand {
+		brands = append(brands, brand.BrandName)
+	}
+	return brands
+}
+
 func CreatePallette(mw *MyMainWindow) {
 	// Open our xmlFile
 	XMLFile, err := os.Open("pallettes\\pallette.xml")

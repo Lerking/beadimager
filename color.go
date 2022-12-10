@@ -37,10 +37,20 @@ func LoadBeads(mw *MyMainWindow) {
 }
 
 func NewBeadColor(mw *MyMainWindow, name string, red byte, green byte, blue byte) *BeadColor {
+	var err error
+	log.Println("Creating bead color: " + name + " ...")
 	color := new(BeadColor)
+	log.Println("Bead color struct: ", color)
 	//color.SetBackgroundColor(walk.RGB(red, green, blue))
-	color.Checkbox, _ = walk.NewCheckBox(mw.colors)
+	log.Println("Creating checkbox")
+	color.Checkbox, err = walk.NewCheckBox(mw.colors)
+	if err != nil {
+		log.Panic(err)
+	}
+	log.Println("Checkbox created")
+	log.Println("Setting checkbox name")
 	color.Checkbox.SetName(name)
+	log.Println("Checkbox name set")
 	//color.Checkbox.SetBackground(color.backgroundColor)
 
 	return color

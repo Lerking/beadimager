@@ -20,7 +20,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.5"
+	Version   string = "0.0.6"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -67,8 +67,10 @@ func main() {
 	log.Println("MainWindow created")
 	CreatePallette(mw)
 	log.Println("Pallette created: ", mw.pallette)
-	LoadBeads(mw)
-	log.Println("Beads loaded: ", mw.beads)
+	//LoadBeads(mw)
+	//log.Println("Beads loaded: ", mw.beads)
+	brand_model := CreateBrandsList(mw)
+	pallette_combo := new(walk.ComboBox)
 
 	if _, err := (MainWindow{
 		AssignTo: &mw.MainWindow,
@@ -83,6 +85,21 @@ func main() {
 					Composite{
 						Layout: VBox{MarginsZero: true},
 						Children: []Widget{
+							Composite{
+								Layout: HBox{MarginsZero: true},
+								Children: []Widget{
+									Label{
+										Text: "Pallette:",
+									},
+									ComboBox{
+										AssignTo: &pallette_combo,
+										Model:    brand_model,
+										OnCurrentIndexChanged: func() {
+											log.Println("Pallette changed to: ", pallette_combo.Text())
+										},
+									},
+								},
+							},
 							PushButton{
 								Text:      "Edit Animal",
 								OnClicked: func() {},
