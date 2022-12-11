@@ -52,13 +52,11 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	cm, _ := walk.NewComposite(mw.colors)
 	cm.SetAlignment(walk.AlignHNearVCenter)
 	hb := walk.NewHBoxLayout()
-	hb.SetMargins(walk.Margins{0, 0, 0, 0})
+	hb.SetMargins(walk.Margins{5, 0, 20, 0})
 	cm.SetLayout(hb)
 	color := new(BeadColor)
 	log.Println("Bead color struct: ", color)
 	color.SetBackgroundColor(walk.RGB(red, green, blue))
-	lbl, _ := walk.NewLabel(cm)
-	lbl.SetText(fmt.Sprint("Color ID: ", id))
 	log.Println("Creating checkbox")
 	color.Checkbox, err = walk.NewCheckBox(cm)
 	if err != nil {
@@ -69,6 +67,8 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	color.Checkbox.SetText(name)
 	log.Println("Checkbox name set")
 	walk.NewHSpacer(cm)
+	lbl, _ := walk.NewLabel(cm)
+	lbl.SetText(fmt.Sprint("Color ID: ", id))
 	cm.SetBackground(color.backgroundColor)
 
 	return color

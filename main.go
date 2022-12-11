@@ -24,7 +24,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.9"
+	Version   string = "0.0.10"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -50,70 +50,70 @@ func main() {
 	pegboard_trigged := false
 
 	DD_Pallette := Composite{
-		Layout: HBox{MarginsZero: true},
+		Layout: VBox{MarginsZero: true},
 		Children: []Widget{
-			Label{
-				Text: "Pallette:",
-			},
-			ComboBox{
-				AssignTo: &mw.pallette_combo,
-				Model:    mw.brand_model,
-				OnCurrentIndexChanged: func() {
-					if !pallette_trigged {
-						log.Println("Pallette changed to: ", mw.pallette_combo.Text())
-						mw.serie_model = CreateSeriesList(mw)
-						mw.serie_combo.SetModel(mw.serie_model)
-						mw.serie_combo.SetEnabled(true)
-					}
-					pallette_trigged = true
+			Composite{
+				Layout: HBox{MarginsZero: true},
+				Children: []Widget{
+					Label{
+						Text: "Pallette:",
+					},
+					ComboBox{
+						AssignTo: &mw.pallette_combo,
+						Model:    mw.brand_model,
+						OnCurrentIndexChanged: func() {
+							if !pallette_trigged {
+								log.Println("Pallette changed to: ", mw.pallette_combo.Text())
+								mw.serie_model = CreateSeriesList(mw)
+								mw.serie_combo.SetModel(mw.serie_model)
+								mw.serie_combo.SetEnabled(true)
+							}
+							pallette_trigged = true
+						},
+					},
 				},
 			},
-			HSpacer{},
-		},
-	}
-
-	DD_Serie := Composite{
-		Layout: HBox{MarginsZero: true},
-		Children: []Widget{
-			Label{
-				Text: "Serie:",
-			},
-			ComboBox{
-				AssignTo: &mw.serie_combo,
-				Enabled:  false,
-				OnCurrentIndexChanged: func() {
-					if !serie_trigged {
-						log.Println("Serie changed to: ", mw.serie_combo.Text())
-						LoadBeads(mw)
-						log.Println("Beads loaded: ", mw.beads)
-						mw.pegboard_model = CreatePegboardsList(mw)
-						mw.pegboard_combo.SetModel(mw.pegboard_model)
-						mw.pegboard_combo.SetEnabled(true)
-					}
-					serie_trigged = true
+			Composite{
+				Layout: HBox{MarginsZero: true},
+				Children: []Widget{
+					Label{
+						Text: "Serie:",
+					},
+					ComboBox{
+						AssignTo: &mw.serie_combo,
+						Enabled:  false,
+						OnCurrentIndexChanged: func() {
+							if !serie_trigged {
+								log.Println("Serie changed to: ", mw.serie_combo.Text())
+								LoadBeads(mw)
+								log.Println("Beads loaded: ", mw.beads)
+								mw.pegboard_model = CreatePegboardsList(mw)
+								mw.pegboard_combo.SetModel(mw.pegboard_model)
+								mw.pegboard_combo.SetEnabled(true)
+							}
+							serie_trigged = true
+						},
+					},
 				},
 			},
-			HSpacer{},
-		},
-	}
-
-	DD_Pegboard := Composite{
-		Layout: HBox{MarginsZero: true},
-		Children: []Widget{
-			Label{
-				Text: "Pegboard:",
-			},
-			ComboBox{
-				AssignTo: &mw.pegboard_combo,
-				Enabled:  false,
-				OnCurrentIndexChanged: func() {
-					if !pegboard_trigged {
-						log.Println("Pegboard changed to: ", mw.pegboard_combo.Text())
-					}
-					pegboard_trigged = true
+			Composite{
+				Layout: HBox{MarginsZero: true},
+				Children: []Widget{
+					Label{
+						Text: "Pegboard:",
+					},
+					ComboBox{
+						AssignTo: &mw.pegboard_combo,
+						Enabled:  false,
+						OnCurrentIndexChanged: func() {
+							if !pegboard_trigged {
+								log.Println("Pegboard changed to: ", mw.pegboard_combo.Text())
+							}
+							pegboard_trigged = true
+						},
+					},
 				},
 			},
-			HSpacer{},
 		},
 	}
 
@@ -125,14 +125,12 @@ func main() {
 		Layout: VBox{MarginsZero: true},
 		Children: []Widget{
 			Composite{
-				Layout: HBox{MarginsZero: true},
+				Layout: HBox{},
 				Children: []Widget{
 					Composite{
 						Layout: VBox{MarginsZero: true},
 						Children: []Widget{
 							DD_Pallette,
-							DD_Serie,
-							DD_Pegboard,
 							PushButton{
 								Text: "Select all colors",
 								OnClicked: func() {
