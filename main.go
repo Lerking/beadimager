@@ -14,7 +14,7 @@ type MyMainWindow struct {
 	properties     *walk.ScrollView
 	pallette       Pallette
 	beads          []*BeadColor
-	pallette_combo *walk.ComboBox
+	brand_combo    *walk.ComboBox
 	brand_model    []string
 	serie_combo    *walk.ComboBox
 	serie_model    []string
@@ -24,7 +24,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.11"
+	Version   string = "0.0.12"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -45,31 +45,32 @@ func main() {
 	CreatePallette(mw)
 	log.Println("Pallette created: ", mw.pallette)
 	mw.brand_model = CreateBrandsList(mw)
-	pallette_trigged := false
+	brand_trigged := false
 	serie_trigged := false
 	pegboard_trigged := false
 
-	DD_Pallette := Composite{
-		Layout: VBox{MarginsZero: true},
+	DD_Pallette := GroupBox{
+		Title:  "Pallette",
+		Layout: VBox{},
 		Children: []Widget{
 			Composite{
 				Layout: HBox{MarginsZero: true},
 				Children: []Widget{
 					Label{
-						Text: "Pallette:",
+						Text: "Brand:",
 					},
 					ComboBox{
 						Alignment: AlignHFarVCenter,
-						AssignTo:  &mw.pallette_combo,
+						AssignTo:  &mw.brand_combo,
 						Model:     mw.brand_model,
 						OnCurrentIndexChanged: func() {
-							if !pallette_trigged {
-								log.Println("Pallette changed to: ", mw.pallette_combo.Text())
+							if !brand_trigged {
+								log.Println("Brand changed to: ", mw.brand_combo.Text())
 								mw.serie_model = CreateSeriesList(mw)
 								mw.serie_combo.SetModel(mw.serie_model)
 								mw.serie_combo.SetEnabled(true)
 							}
-							pallette_trigged = true
+							brand_trigged = true
 						},
 					},
 				},
@@ -120,6 +121,25 @@ func main() {
 		},
 	}
 
+	DD_Beads := GroupBox{
+		Title:  "Beads",
+		Layout: VBox{},
+		Children: []Widget{
+			PushButton{
+				Text: "Select all colors",
+				OnClicked: func() {
+					for _, c := range mw.beads {
+						c.Checkbox.SetChecked(true)
+					}
+				},
+			},
+			ScrollView{
+				AssignTo: &mw.colors,
+				Layout:   VBox{MarginsZero: true},
+			},
+		},
+	}
+
 	if _, err := (MainWindow{
 		AssignTo: &mw.MainWindow,
 		Title:    AppName + " " + Version,
@@ -132,30 +152,32 @@ func main() {
 				Children: []Widget{
 					Composite{
 						Layout:  VBox{MarginsZero: true},
-						MaxSize: Size{200, 0},
+						MaxSize: Size{220, 0},
 						Children: []Widget{
 							DD_Pallette,
-							PushButton{
-								Text: "Select all colors",
-								OnClicked: func() {
-									for _, c := range mw.beads {
-										c.Checkbox.SetChecked(true)
-									}
-								},
-							},
+							DD_Beads,
+						},
+					},
+					GroupBox{
+						Title:  "Canvas",
+						Layout: VBox{},
+						Children: []Widget{
 							ScrollView{
-								AssignTo: &mw.colors,
+								AssignTo: &mw.canvas,
 								Layout:   VBox{MarginsZero: true},
 							},
 						},
 					},
-					ScrollView{
-						AssignTo: &mw.canvas,
-						Layout:   VBox{MarginsZero: true},
-					},
-					ScrollView{
-						AssignTo: &mw.properties,
-						Layout:   VBox{MarginsZero: true},
+					GroupBox{
+						Title:   "Settings",
+						Layout:  VBox{},
+						MaxSize: Size{220, 0},
+						Children: []Widget{
+							ScrollView{
+								AssignTo: &mw.properties,
+								Layout:   VBox{MarginsZero: true},
+							},
+						},
 					},
 				},
 			},

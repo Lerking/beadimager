@@ -22,7 +22,7 @@ type (
 
 func LoadBeads(mw *MyMainWindow) {
 	for _, brand := range mw.pallette.Brands.Brand {
-		if brand.BrandName == mw.pallette_combo.Text() {
+		if brand.BrandName == mw.brand_combo.Text() {
 			log.Println("Loading beads for brand: " + brand.BrandName + " ...")
 			for _, series := range brand.Series.Serie {
 				if series.SerieName == mw.serie_combo.Text() {
