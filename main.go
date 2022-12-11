@@ -24,7 +24,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.10"
+	Version   string = "0.0.11"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -59,8 +59,9 @@ func main() {
 						Text: "Pallette:",
 					},
 					ComboBox{
-						AssignTo: &mw.pallette_combo,
-						Model:    mw.brand_model,
+						Alignment: AlignHFarVCenter,
+						AssignTo:  &mw.pallette_combo,
+						Model:     mw.brand_model,
 						OnCurrentIndexChanged: func() {
 							if !pallette_trigged {
 								log.Println("Pallette changed to: ", mw.pallette_combo.Text())
@@ -80,8 +81,9 @@ func main() {
 						Text: "Serie:",
 					},
 					ComboBox{
-						AssignTo: &mw.serie_combo,
-						Enabled:  false,
+						Alignment: AlignHFarVCenter,
+						AssignTo:  &mw.serie_combo,
+						Enabled:   false,
 						OnCurrentIndexChanged: func() {
 							if !serie_trigged {
 								log.Println("Serie changed to: ", mw.serie_combo.Text())
@@ -103,8 +105,9 @@ func main() {
 						Text: "Pegboard:",
 					},
 					ComboBox{
-						AssignTo: &mw.pegboard_combo,
-						Enabled:  false,
+						Alignment: AlignHFarVCenter,
+						AssignTo:  &mw.pegboard_combo,
+						Enabled:   false,
 						OnCurrentIndexChanged: func() {
 							if !pegboard_trigged {
 								log.Println("Pegboard changed to: ", mw.pegboard_combo.Text())
@@ -128,7 +131,8 @@ func main() {
 				Layout: HBox{},
 				Children: []Widget{
 					Composite{
-						Layout: VBox{MarginsZero: true},
+						Layout:  VBox{MarginsZero: true},
+						MaxSize: Size{200, 0},
 						Children: []Widget{
 							DD_Pallette,
 							PushButton{
