@@ -26,7 +26,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.14"
+	Version   string = "0.0.15"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -195,6 +195,16 @@ func main() {
 	}.Run()); err != nil {
 		log.Fatal(err)
 	}
+}
+
+func (mv *MyMainWindow) clearBackground(canvas *walk.Canvas, updateBounds walk.Rectangle) error {
+	brush, err := walk.NewSolidColorBrush(walk.RGB(0, 0, 0))
+	if err != nil {
+		return err
+	}
+	defer brush.Dispose()
+
+	return canvas.FillRectangle(brush, updateBounds)
 }
 
 func (mw *MyMainWindow) drawStuff(canvas *walk.Canvas, updateBounds walk.Rectangle) error {
