@@ -11,9 +11,9 @@ import (
 type MyMainWindow struct {
 	*walk.MainWindow
 	colors         *walk.ScrollView
-	canvasscroll   *walk.ScrollView
+	canvasScroll   *walk.ScrollView
 	drawWidget     *walk.CustomWidget
-	properties     *walk.ScrollView
+	propScroll     *walk.ScrollView
 	pallette       Pallette
 	beads          []*BeadColor
 	brand_combo    *walk.ComboBox
@@ -22,11 +22,12 @@ type MyMainWindow struct {
 	serie_model    []string
 	pegboard_combo *walk.ComboBox
 	pegboard_model []string
+	properties     *properties
 }
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.15"
+	Version   string = "0.0.16"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -43,6 +44,7 @@ func main() {
 		walk.ValidationErrorEffect, _ = walk.NewBorderGlowEffect(walk.RGB(255, 0, 0))
 	})
 	mw := &MyMainWindow{}
+	mw.properties = new(properties)
 	log.Println("MainWindow created")
 	CreatePallette(mw)
 	log.Println("Pallette created: ", mw.pallette)
@@ -165,7 +167,7 @@ func main() {
 						Layout: VBox{},
 						Children: []Widget{
 							ScrollView{
-								AssignTo: &mw.canvasscroll,
+								AssignTo: &mw.canvasScroll,
 								Layout:   VBox{MarginsZero: true},
 								Children: []Widget{
 									CustomWidget{
@@ -184,7 +186,7 @@ func main() {
 						MaxSize: Size{220, 0},
 						Children: []Widget{
 							ScrollView{
-								AssignTo: &mw.properties,
+								AssignTo: &mw.propScroll,
 								Layout:   VBox{MarginsZero: true},
 							},
 						},
