@@ -27,7 +27,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.18"
+	Version   string = "0.0.19"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
