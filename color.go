@@ -11,6 +11,7 @@ type (
 	BeadColor struct {
 		Brand           string
 		Series          string
+		Name            string
 		ColorID         int
 		Checkbox        *walk.CheckBox
 		backgroundColor walk.Brush
@@ -33,6 +34,7 @@ func LoadBeads(mw *MyMainWindow) {
 							bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.Red, bead.Green, bead.Blue)
 							bc.Brand = brand.BrandName
 							bc.Series = series.SerieName
+							bc.Name = bead.ColorName
 							bc.ColorID = bead.ColorIndex
 							bc.Red = bead.Red
 							bc.Green = bead.Green

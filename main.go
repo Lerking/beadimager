@@ -27,7 +27,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.17"
+	Version   string = "0.0.18"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -44,8 +44,6 @@ func main() {
 		walk.ValidationErrorEffect, _ = walk.NewBorderGlowEffect(walk.RGB(255, 0, 0))
 	})
 	mw := &MyMainWindow{}
-	mw.properties = new(properties)
-	mw.properties.propCanvas = new(PropCanvas)
 	log.Println("MainWindow created")
 	CreatePallette(mw)
 	log.Println("Pallette created: ", mw.pallette)
@@ -152,7 +150,7 @@ func main() {
 		MinSize:  Size{800, 600},
 		OnSizeChanged: func() {
 			if !settings_trigged {
-				mw.properties.propCanvas.newCanvasProperties(mw)
+				ShowProperties(mw)
 				settings_trigged = true
 			}
 		},
