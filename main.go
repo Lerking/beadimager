@@ -27,7 +27,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.16"
+	Version   string = "0.0.17"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	UserPath  string = "C:\\Users\\janle\\BeadImager"
@@ -45,6 +45,7 @@ func main() {
 	})
 	mw := &MyMainWindow{}
 	mw.properties = new(properties)
+	mw.properties.propCanvas = new(PropCanvas)
 	log.Println("MainWindow created")
 	CreatePallette(mw)
 	log.Println("Pallette created: ", mw.pallette)
@@ -52,6 +53,7 @@ func main() {
 	brand_trigged := false
 	serie_trigged := false
 	pegboard_trigged := false
+	settings_trigged := false
 
 	DD_Pallette := GroupBox{
 		Title:  "Pallette",
@@ -148,7 +150,12 @@ func main() {
 		AssignTo: &mw.MainWindow,
 		Title:    AppName + " " + Version,
 		MinSize:  Size{800, 600},
-
+		OnSizeChanged: func() {
+			if !settings_trigged {
+				mw.properties.propCanvas.newCanvasProperties(mw)
+				settings_trigged = true
+			}
+		},
 		Layout: VBox{MarginsZero: true},
 		Children: []Widget{
 			Composite{
