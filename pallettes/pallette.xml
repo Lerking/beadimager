@@ -11,6 +11,7 @@
                 </serie>
                 <serie>
                     <seriename>Midi</seriename>
+                    <weightPerThousand>60</weightPerThousand>
                     <pegboards>
                         <pegboard>
                             <type>Big 29x29</type>
@@ -36,6 +37,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="02">
                             <colorname>Creme</colorname>
@@ -49,6 +52,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="03">
                             <colorname>Yellow</colorname>
@@ -62,6 +67,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="04">
                             <colorname>Orange</colorname>
@@ -75,6 +82,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="05">
                             <colorname>Red</colorname>
@@ -88,6 +97,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="06">
                             <colorname>Pink</colorname>
@@ -101,6 +112,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="07">
                             <colorname>Purple</colorname>
@@ -114,6 +127,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="08">
                             <colorname>Blue</colorname>
@@ -127,6 +142,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="09">
                             <colorname>Light blue</colorname>
@@ -140,6 +157,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="10">
                             <colorname>Green</colorname>
@@ -153,6 +172,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="11">
                             <colorname>Light green</colorname>
@@ -166,6 +187,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="12">
                             <colorname>Brown</colorname>
@@ -179,6 +202,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="13">
                             <colorname>Translucent red</colorname>
@@ -192,6 +217,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="14">
                             <colorname>Translucent yellow</colorname>
@@ -205,6 +232,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="15">
                             <colorname>Translucent blue</colorname>
@@ -218,6 +247,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="16">
                             <colorname>Translucent green</colorname>
@@ -231,6 +262,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="17">
                             <colorname>Grey</colorname>
@@ -244,6 +277,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>true</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="18">
                             <colorname>Black</colorname>
@@ -257,6 +292,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>true</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="19">
                             <colorname>Clear</colorname>
@@ -270,6 +307,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="20">
                             <colorname>Red brown</colorname>
@@ -283,6 +322,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="21">
                             <colorname>Light brown</colorname>
@@ -296,6 +337,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="22">
                             <colorname>Dark red</colorname>
@@ -309,6 +352,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="24">
                             <colorname>Translucent purple</colorname>
@@ -322,6 +367,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="25">
                             <colorname>Translucent brown</colorname>
@@ -335,6 +382,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="26">
                             <colorname>Flesh</colorname>
@@ -348,6 +397,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="27">
                             <colorname>Beige</colorname>
@@ -361,6 +412,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="28">
                             <colorname>Dark green</colorname>
@@ -374,6 +427,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="29">
                             <colorname>Rapsberry</colorname>
@@ -387,6 +442,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="30">
                             <colorname>Burgrundy</colorname>
@@ -400,6 +457,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="31">
                             <colorname>Turquoise</colorname>
@@ -413,6 +472,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="32">
                             <colorname>Neon Fuchsia</colorname>
@@ -426,6 +487,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="33">
                             <colorname>Fluorescent cerise</colorname>
@@ -439,6 +502,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="34">
                             <colorname>Neon yellow</colorname>
@@ -452,6 +517,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="35">
                             <colorname>Neon red</colorname>
@@ -465,6 +532,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="36">
                             <colorname>Neon blue</colorname>
@@ -478,6 +547,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="37">
                             <colorname>Neon green</colorname>
@@ -491,6 +562,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="38">
                             <colorname>Neon orange</colorname>
@@ -504,6 +577,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="39">
                             <colorname>Fluorescent yellow</colorname>
@@ -517,6 +592,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="40">
                             <colorname>Fluorescent orange</colorname>
@@ -530,6 +607,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="41">
                             <colorname>Fluroescent blue</colorname>
@@ -543,6 +622,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="42">
                             <colorname>Flourecent green</colorname>
@@ -556,6 +637,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="43">
                             <colorname>Pastel yellow</colorname>
@@ -569,6 +652,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="44">
                             <colorname>Pastel coral</colorname>
@@ -582,6 +667,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="45">
                             <colorname>Pastel purple</colorname>
@@ -595,6 +682,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="46">
                             <colorname>Pastel blue</colorname>
@@ -608,6 +697,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="47">
                             <colorname>pastel green</colorname>
@@ -621,6 +712,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="48">
                             <colorname>pastel pink</colorname>
@@ -634,6 +727,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="49">
                             <colorname>Azure</colorname>
@@ -647,6 +742,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="55">
                             <colorname>Flourecent green</colorname>
@@ -660,6 +757,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="56">
                             <colorname>Flourecent red</colorname>
@@ -673,6 +772,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="57">
                             <colorname>Flourecent blue</colorname>
@@ -686,6 +787,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="60">
                             <colorname>Teddybear brown</colorname>
@@ -699,6 +802,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="61">
                             <colorname>Gold</colorname>
@@ -712,6 +817,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="62">
                             <colorname>Silver</colorname>
@@ -725,6 +832,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="63">
                             <colorname>Bronze</colorname>
@@ -738,6 +847,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="64">
                             <colorname>Pearl</colorname>
@@ -751,6 +862,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="70">
                             <colorname>Light grey</colorname>
@@ -764,6 +877,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>true</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="71">
                             <colorname>Dark grey</colorname>
@@ -777,6 +892,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>true</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="72">
                             <colorname>Translucent pink</colorname>
@@ -790,6 +907,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="73">
                             <colorname>Translucent aqua</colorname>
@@ -803,6 +922,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="74">
                             <colorname>Translucent lilac</colorname>
@@ -816,6 +937,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="75">
                             <colorname>Tan</colorname>
@@ -829,6 +952,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="76">
                             <colorname>Nougat</colorname>
@@ -842,6 +967,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="77">
                             <colorname>Cloudy white</colorname>
@@ -855,6 +982,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="78">
                             <colorname>Light peach</colorname>
@@ -868,6 +997,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="79">
                             <colorname>Apricot</colorname>
@@ -881,6 +1012,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="82">
                             <colorname>Plum</colorname>
@@ -894,6 +1027,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="83">
                             <colorname>Petrol Blue</colorname>
@@ -907,6 +1042,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="84">
                             <colorname>Olive</colorname>
@@ -920,6 +1057,8 @@
                             <isNeutral>true</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="95">
                             <colorname>Pastel rosa</colorname>
@@ -933,6 +1072,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="96">
                             <colorname>Pastel lilac</colorname>
@@ -946,6 +1087,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="97">
                             <colorname>Pastel ice blue</colorname>
@@ -959,6 +1102,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                         <color colorIndex="98">
                             <colorname>Pastel mint</colorname>
@@ -972,6 +1117,8 @@
                             <isNeutral>false</isNeutral>
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
+                            <inStock>true</inStock>
+                            <onHand>100</onHand>
                         </color>
                     </beads>
                 </serie>

@@ -42,6 +42,8 @@ func LoadBeads(mw *MyMainWindow) {
 							bc.Red = bead.Red
 							bc.Green = bead.Green
 							bc.Blue = bead.Blue
+							bc.inStock = bead.InStock
+							bc.onHand = bead.OnHand
 							mw.beads = append(mw.beads, bc)
 						}
 					}

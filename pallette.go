@@ -67,6 +67,8 @@ type (
 		IsNeutral     bool     `xml:"isNeutral"`
 		IsGrayscale   bool     `xml:"isGrayscale"`
 		Disabled      bool     `xml:"disabled"`
+		InStock       bool     `xml:"inStock"`
+		OnHand        int      `xml:"onHand"`
 	}
 )
 

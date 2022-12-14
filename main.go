@@ -1,8 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"math"
+	"os/user"
 
 	"github.com/lxn/walk"
 	. "github.com/lxn/walk/declarative"
@@ -27,21 +29,35 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.20"
+	Version   string = "0.0.21"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
-	//UserPath  string = "C:\\Users\\janle\\BeadImager"
-	UserPath string = "C:\\Users\\dksojlg\\BeadImager"
-	LogFile  string = "BeadImager.log"
-	Sep      string = "\\"
+	LogFile   string = "BeadImager.log"
+	Sep       string = "\\"
+)
+
+var (
+	UserPath string
 )
 
 func main() {
+	// Get current user
+	currentUser, err := user.Current()
+	if err != nil {
+		log.Fatalf(err.Error())
+	}
+	username := currentUser.Username
+	if username != "MSI\\janle" {
+		UserPath = fmt.Sprintf("C:\\Users\\" + username + Sep + "BeadImager")
+	} else {
+		UserPath = "C:\\Users\\janle\\BeadImager"
+	}
 	InitLogFile()
+	log.Println("User: ", username)
 
 	walk.AppendToWalkInit(func() {
 		walk.FocusEffect, _ = walk.NewBorderGlowEffect(walk.RGB(0, 63, 255))
-		walk.InteractionEffect, _ = walk.NewDropShadowEffect(walk.RGB(63, 63, 63))
+		//walk.InteractionEffect, _ = walk.NewDropShadowEffect(walk.RGB(63, 63, 63))
 		walk.ValidationErrorEffect, _ = walk.NewBorderGlowEffect(walk.RGB(255, 0, 0))
 	})
 	mw := &MyMainWindow{}

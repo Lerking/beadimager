@@ -19,10 +19,12 @@ type (
 
 	PropScale struct {
 		property *walk.Composite
+		visible  bool
 	}
 
 	PropCanvas struct {
 		property *walk.Composite
+		visible  bool
 	}
 )
 
@@ -117,6 +119,10 @@ func (cp *PropCanvas) newCanvasProperties(mw *MyMainWindow) {
 	vb := walk.NewVBoxLayout()
 	//vb.SetMargins(walk.Margins{5, 0, 5, 0})
 	cp.property.SetLayout(vb)
+	log.Println("Creating canvas label...")
+	lbl, _ := walk.NewTextLabel(cp.property)
+	log.Println("Setting canvas label text...")
+	lbl.SetText("Canvas:")
 	grcom, _ := walk.NewComposite(cp.property)
 	grcom.SetAlignment(walk.AlignHNearVNear)
 	hb := walk.NewHBoxLayout()
