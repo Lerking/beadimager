@@ -27,12 +27,13 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.19"
+	Version   string = "0.0.20"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
-	UserPath  string = "C:\\Users\\janle\\BeadImager"
-	LogFile   string = "BeadImager.log"
-	Sep       string = "\\"
+	//UserPath  string = "C:\\Users\\janle\\BeadImager"
+	UserPath string = "C:\\Users\\dksojlg\\BeadImager"
+	LogFile  string = "BeadImager.log"
+	Sep      string = "\\"
 )
 
 func main() {

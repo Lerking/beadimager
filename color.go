@@ -15,9 +15,12 @@ type (
 		ColorID         int
 		Checkbox        *walk.CheckBox
 		backgroundColor walk.Brush
+		tooltip         walk.ToolTip
 		Red             byte
 		Green           byte
 		Blue            byte
+		inStock         bool
+		onHand          int
 	}
 )
 
@@ -78,4 +81,12 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 
 func (bc *BeadColor) SetBackgroundColor(col walk.Color) {
 	bc.backgroundColor, _ = walk.NewSolidColorBrush(col)
+}
+
+func (bc *BeadColor) GetOnHand() int {
+	return bc.onHand
+}
+
+func (bc *BeadColor) SetOnHand(onHand int) {
+	bc.onHand = onHand
 }
