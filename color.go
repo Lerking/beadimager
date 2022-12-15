@@ -92,7 +92,7 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, onhand int, red byte, g
 	}
 	//Setup info tooltip
 	color.InfoTooltip, _ = walk.NewToolTip()
-	color.InfoTooltip.SetInfoTitle("On hand")
+	color.InfoTooltip.SetInfoTitle(name + " - " + fmt.Sprint(id))
 	color.info.SetImage(walk.IconInformation())
 	color.InfoTooltip.AddTool(color.info)
 	color.InfoTooltip.SetText(color.info, "Approx. "+fmt.Sprint(color.onHand)+" left on hand")
@@ -103,7 +103,7 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, onhand int, red byte, g
 	}
 	//Setup warning tooltip
 	color.WarningTooltip, _ = walk.NewToolTip()
-	color.WarningTooltip.SetWarningTitle("Low on hand")
+	color.WarningTooltip.SetWarningTitle(name + " - " + fmt.Sprint(id))
 	color.warning.SetImage(walk.IconWarning())
 	color.WarningTooltip.AddTool(color.warning)
 	color.WarningTooltip.SetText(color.warning, "Only "+fmt.Sprint(color.onHand)+" left on hand")
