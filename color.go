@@ -9,13 +9,15 @@ import (
 
 type (
 	BeadColor struct {
-		Brand           string
-		Series          string
-		Name            string
-		ColorID         int
 		Checkbox        *walk.CheckBox
 		backgroundColor walk.Brush
 		tooltip         walk.ToolTip
+		warning         *walk.ImageView
+		Brand           string
+		Series          string
+		Weight          int
+		Name            string
+		ColorID         int
 		Red             byte
 		Green           byte
 		Blue            byte
@@ -37,6 +39,7 @@ func LoadBeads(mw *MyMainWindow) {
 							bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.Red, bead.Green, bead.Blue)
 							bc.Brand = brand.BrandName
 							bc.Series = series.SerieName
+							bc.Weight = series.Weight
 							bc.Name = bead.ColorName
 							bc.ColorID = bead.ColorIndex
 							bc.Red = bead.Red
@@ -73,6 +76,12 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	log.Println("Setting checkbox name")
 	color.Checkbox.SetText(name)
 	log.Println("Checkbox name set")
+	color.warning, err = walk.NewImageView(cm)
+	if err != nil {
+		log.Println("Error creating image view: ", err)
+	}
+	color.warning.SetImage(walk.IconInformation())
+	color.warning.SetVisible(false)
 	walk.NewHSpacer(cm)
 	lbl, _ := walk.NewLabel(cm)
 	lbl.SetText(fmt.Sprint("Color ID: ", id))
@@ -89,6 +98,19 @@ func (bc *BeadColor) GetOnHand() int {
 	return bc.onHand
 }
 
-func (bc *BeadColor) SetOnHand(onHand int) {
-	bc.onHand = onHand
+func (bc *BeadColor) GetInStock() bool {
+	return bc.inStock
+}
+
+func (bc *BeadColor) SetInStock(inStock bool) {
+	bc.inStock = inStock
+}
+
+func (bc *BeadColor) GetColorID() int {
+	return bc.ColorID
+}
+
+func (bc *BeadColor) AddOnHand(grams int) {
+	addbeads := bc.Weight * grams / 1000
+	bc.onHand += int(addbeads)
 }

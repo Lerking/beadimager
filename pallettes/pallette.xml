@@ -11,6 +11,7 @@
                 </serie>
                 <serie>
                     <seriename>Midi</seriename>
+                    // Weight is per 1000 beads in grams
                     <weightPerThousand>60</weightPerThousand>
                     <pegboards>
                         <pegboard>

@@ -28,7 +28,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.22"
+	Version   string = "0.0.23"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
@@ -172,7 +172,7 @@ func main() {
 				Children: []Widget{
 					Composite{
 						Layout:  VBox{MarginsZero: true},
-						MaxSize: Size{220, 0},
+						MaxSize: Size{260, 0},
 						Children: []Widget{
 							DD_Pallette,
 							DD_Beads,
@@ -199,7 +199,7 @@ func main() {
 					GroupBox{
 						Title:   "Settings",
 						Layout:  VBox{},
-						MaxSize: Size{220, 0},
+						MaxSize: Size{260, 0},
 						Children: []Widget{
 							ScrollView{
 								AssignTo: &mw.propScroll,

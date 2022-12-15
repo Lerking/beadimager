@@ -32,6 +32,7 @@ type (
 	Seriestruct struct {
 		XMLName   xml.Name        `xml:"serie"`
 		SerieName string          `xml:"seriename"`
+		Weight    int             `xml:"weightPerThousand"`
 		Pegboards Pegboardsstruct `xml:"pegboards"`
 		Beads     Beadsstruct     `xml:"beads"`
 	}
