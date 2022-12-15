@@ -11,7 +11,8 @@ type (
 	BeadColor struct {
 		Checkbox        *walk.CheckBox
 		backgroundColor walk.Brush
-		tooltip         walk.ToolTip
+		InfoTooltip     *walk.ToolTip
+		WarningTooltip  *walk.ToolTip
 		info            *walk.ImageView
 		warning         *walk.ImageView
 		Brand           string
@@ -37,7 +38,7 @@ func LoadBeads(mw *MyMainWindow) {
 					for _, bead := range series.Beads.Color {
 						log.Println("Loading bead: " + bead.ColorName + " ...")
 						if !bead.Disabled {
-							bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.Red, bead.Green, bead.Blue)
+							bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.OnHand, bead.Red, bead.Green, bead.Blue)
 							bc.Brand = brand.BrandName
 							bc.Series = series.SerieName
 							bc.Weight = series.Weight
@@ -47,10 +48,13 @@ func LoadBeads(mw *MyMainWindow) {
 							bc.Green = bead.Green
 							bc.Blue = bead.Blue
 							bc.inStock = bead.InStock
-							bc.onHand = bead.OnHand
 							mw.beads = append(mw.beads, bc)
 							if bead.OnHand <= 200 {
 								bc.warning.SetVisible(true)
+								bc.info.SetVisible(false)
+							} else {
+								bc.warning.SetVisible(false)
+								bc.info.SetVisible(true)
 							}
 						}
 					}
@@ -60,7 +64,7 @@ func LoadBeads(mw *MyMainWindow) {
 	}
 }
 
-func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, blue byte) *BeadColor {
+func NewBeadColor(mw *MyMainWindow, name string, id int, onhand int, red byte, green byte, blue byte) *BeadColor {
 	var err error
 	log.Println("Creating bead color: " + name + " ...")
 	cm, _ := walk.NewComposite(mw.colors)
@@ -71,6 +75,7 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	color := new(BeadColor)
 	log.Println("Bead color struct: ", color)
 	color.SetBackgroundColor(walk.RGB(red, green, blue))
+	color.onHand = onhand
 	log.Println("Creating checkbox")
 	color.Checkbox, err = walk.NewCheckBox(cm)
 	if err != nil {
@@ -83,15 +88,27 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	walk.NewHSpacer(cm)
 	color.info, err = walk.NewImageView(cm)
 	if err != nil {
-		log.Println("Error creating image view: ", err)
+		log.Println("Error creating info image view: ", err)
 	}
+	//Setup info tooltip
+	color.InfoTooltip, _ = walk.NewToolTip()
+	color.InfoTooltip.SetInfoTitle("On hand")
 	color.info.SetImage(walk.IconInformation())
+	color.InfoTooltip.AddTool(color.info)
+	color.InfoTooltip.SetText(color.info, "Approx. "+fmt.Sprint(color.onHand)+" left on hand")
+	color.info.SetVisible(false)
 	color.warning, err = walk.NewImageView(cm)
 	if err != nil {
-		log.Println("Error creating image view: ", err)
+		log.Println("Error creating warning image view: ", err)
 	}
+	//Setup warning tooltip
+	color.WarningTooltip, _ = walk.NewToolTip()
+	color.WarningTooltip.SetWarningTitle("Low on hand")
 	color.warning.SetImage(walk.IconWarning())
+	color.WarningTooltip.AddTool(color.warning)
+	color.WarningTooltip.SetText(color.warning, "Only "+fmt.Sprint(color.onHand)+" left on hand")
 	color.warning.SetVisible(false)
+
 	lbl, _ := walk.NewLabel(cm)
 	lbl.SetText(fmt.Sprint("Color ID: ", id))
 	cm.SetBackground(color.backgroundColor)
@@ -120,6 +137,6 @@ func (bc *BeadColor) GetColorID() int {
 }
 
 func (bc *BeadColor) AddOnHand(grams int) {
-	addbeads := bc.Weight * grams / 1000
+	addbeads := grams / bc.Weight * 1000
 	bc.onHand += int(addbeads)
 }

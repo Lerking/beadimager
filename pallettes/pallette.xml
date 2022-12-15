@@ -759,7 +759,7 @@
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
                             <inStock>true</inStock>
-                            <onHand>100</onHand>
+                            <onHand>500</onHand>
                         </color>
                         <color colorIndex="56">
                             <colorname>Flourecent red</colorname>
@@ -774,7 +774,7 @@
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
                             <inStock>true</inStock>
-                            <onHand>100</onHand>
+                            <onHand>500</onHand>
                         </color>
                         <color colorIndex="57">
                             <colorname>Flourecent blue</colorname>
@@ -789,7 +789,7 @@
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
                             <inStock>true</inStock>
-                            <onHand>100</onHand>
+                            <onHand>500</onHand>
                         </color>
                         <color colorIndex="60">
                             <colorname>Teddybear brown</colorname>
@@ -834,7 +834,7 @@
                             <isGrayscale>false</isGrayscale>
                             <disabled>false</disabled>
                             <inStock>true</inStock>
-                            <onHand>100</onHand>
+                            <onHand>500</onHand>
                         </color>
                         <color colorIndex="63">
                             <colorname>Bronze</colorname>
