@@ -12,6 +12,7 @@ type (
 		Checkbox        *walk.CheckBox
 		backgroundColor walk.Brush
 		tooltip         walk.ToolTip
+		info            *walk.ImageView
 		warning         *walk.ImageView
 		Brand           string
 		Series          string
@@ -48,6 +49,9 @@ func LoadBeads(mw *MyMainWindow) {
 							bc.inStock = bead.InStock
 							bc.onHand = bead.OnHand
 							mw.beads = append(mw.beads, bc)
+							if bead.OnHand <= 200 {
+								bc.warning.SetVisible(true)
+							}
 						}
 					}
 				}
@@ -76,13 +80,18 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	log.Println("Setting checkbox name")
 	color.Checkbox.SetText(name)
 	log.Println("Checkbox name set")
+	walk.NewHSpacer(cm)
+	color.info, err = walk.NewImageView(cm)
+	if err != nil {
+		log.Println("Error creating image view: ", err)
+	}
+	color.info.SetImage(walk.IconInformation())
 	color.warning, err = walk.NewImageView(cm)
 	if err != nil {
 		log.Println("Error creating image view: ", err)
 	}
-	color.warning.SetImage(walk.IconInformation())
+	color.warning.SetImage(walk.IconWarning())
 	color.warning.SetVisible(false)
-	walk.NewHSpacer(cm)
 	lbl, _ := walk.NewLabel(cm)
 	lbl.SetText(fmt.Sprint("Color ID: ", id))
 	cm.SetBackground(color.backgroundColor)
