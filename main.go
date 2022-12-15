@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"math"
 	"os/user"
@@ -29,7 +28,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.21"
+	Version   string = "0.0.22"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
@@ -46,14 +45,9 @@ func main() {
 	if err != nil {
 		log.Fatalf(err.Error())
 	}
-	username := currentUser.Username
-	if username != "MSI\\janle" {
-		UserPath = fmt.Sprintf("C:\\Users\\" + username + Sep + "BeadImager")
-	} else {
-		UserPath = "C:\\Users\\janle\\BeadImager"
-	}
+	homeDir := currentUser.HomeDir
+	UserPath = homeDir + Sep + "BeadImager"
 	InitLogFile()
-	log.Println("User: ", username)
 
 	walk.AppendToWalkInit(func() {
 		walk.FocusEffect, _ = walk.NewBorderGlowEffect(walk.RGB(0, 63, 255))
