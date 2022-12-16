@@ -28,7 +28,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.26"
+	Version   string = "0.0.27"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
@@ -36,7 +36,15 @@ const (
 )
 
 var (
-	UserPath string
+	UserPath              string
+	ConfigBrand           string
+	ConfigSerie           string
+	ConfigPegboard        string
+	ConfigScale           string
+	ConfigShowGrid        string
+	ConfogGridColor       string
+	ConfigShowBeads       string
+	ConfigBackgroundColor string
 )
 
 func main() {
@@ -48,6 +56,16 @@ func main() {
 	homeDir := currentUser.HomeDir
 	UserPath = homeDir + Sep + "BeadImager"
 	InitLogFile()
+	if !CheckConfigFile() {
+		CreateDefaultConfig()
+		ReadConfig()
+		log.Println("Config file created")
+	} else {
+		ReadConfig()
+		log.Println("Brand: ", ConfigBrand)
+		log.Println("Serie: ", ConfigSerie)
+		log.Println("Pegboard: ", ConfigPegboard)
+	}
 
 	walk.AppendToWalkInit(func() {
 		walk.FocusEffect, _ = walk.NewBorderGlowEffect(walk.RGB(0, 63, 255))
@@ -84,6 +102,7 @@ func main() {
 								mw.serie_model = CreateSeriesList(mw)
 								mw.serie_combo.SetModel(mw.serie_model)
 								mw.serie_combo.SetEnabled(true)
+								mw.brand_combo.SetText(ConfigBrand)
 							}
 							brand_trigged = true
 						},
