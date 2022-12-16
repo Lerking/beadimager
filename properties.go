@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"strconv"
 
 	"github.com/lxn/walk"
 )
@@ -85,7 +86,8 @@ func (cp *PropScale) newScaleProperties(mw *MyMainWindow) {
 	log.Println("Setting scale slider properties...")
 	slider.SetTracking(true)
 	slider.SetRange(10, 200)
-	slider.SetValue(100)
+	val, _ := strconv.Atoi(ConfigScale)
+	slider.SetValue(val)
 	sc, _ := walk.NewNumberEdit(grcom)
 	slider.ValueChanged().Attach(func() {
 		log.Println("Scale slider value changed")
@@ -132,6 +134,12 @@ func (cp *PropCanvas) newCanvasProperties(mw *MyMainWindow) {
 	cb, _ := walk.NewCheckBox(grcom)
 	cb.SetAlignment(walk.AlignHNearVNear)
 	cb.SetText("Show grid")
+	switch ConfigShowGrid {
+	case "true":
+		cb.SetChecked(true)
+	case "false":
+		cb.SetChecked(false)
+	}
 	log.Println("Grid checkbox created")
 	walk.NewHSpacer(grcom)
 	log.Println("Creating grid color button")
@@ -143,6 +151,12 @@ func (cp *PropCanvas) newCanvasProperties(mw *MyMainWindow) {
 	cb, _ = walk.NewCheckBox(cp.property)
 	cb.SetAlignment(walk.AlignHNearVNear)
 	cb.SetText("Show pixels as beads")
+	switch ConfigShowBeads {
+	case "true":
+		cb.SetChecked(true)
+	case "false":
+		cb.SetChecked(false)
+	}
 	log.Println("Pixels checkbox created")
 	log.Println("Creating canvas background color button")
 	grcolb, _ = walk.NewPushButton(cp.property)

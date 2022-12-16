@@ -28,7 +28,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.27"
+	Version   string = "0.0.28"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
@@ -96,13 +96,14 @@ func main() {
 						Alignment: AlignHFarVCenter,
 						AssignTo:  &mw.brand_combo,
 						Model:     mw.brand_model,
+						Value:     ConfigBrand,
 						OnCurrentIndexChanged: func() {
 							if !brand_trigged {
 								log.Println("Brand changed to: ", mw.brand_combo.Text())
 								mw.serie_model = CreateSeriesList(mw)
 								mw.serie_combo.SetModel(mw.serie_model)
 								mw.serie_combo.SetEnabled(true)
-								mw.brand_combo.SetText(ConfigBrand)
+								mw.serie_combo.SetText(ConfigSerie)
 							}
 							brand_trigged = true
 						},
