@@ -11,68 +11,52 @@ import (
 
 type (
 	Pallette struct {
-		XMLName xml.Name     `xml:"pallette"`
-		Brands  Brandsstruct `xml:"brands"`
-	}
-
-	Brandsstruct struct {
-		XMLName xml.Name      `xml:"brands"`
+		XMLName xml.Name      `xml:"pallette"`
 		Brand   []Brandstruct `xml:"brand"`
 	}
 
 	Brandstruct struct {
-		XMLName   xml.Name     `xml:"brand"`
-		BrandName string       `xml:"brandname"`
-		Series    Seriesstruct `xml:"series"`
-	}
-
-	Seriesstruct struct {
-		XMLName xml.Name      `xml:"series"`
-		Serie   []Seriestruct `xml:"serie"`
+		BrandName string           `xml:"name,attr"`
+		Series    []Seriestruct    `xml:"serie"`
+		Pegboards []Pegboardstruct `xml:"pegboard"`
+		Colors    []Colorstruct    `xml:"color"`
 	}
 
 	Seriestruct struct {
-		XMLName   xml.Name        `xml:"serie"`
-		SerieName string          `xml:"seriename"`
-		Weight    int             `xml:"weightPerThousand"`
-		Pegboards Pegboardsstruct `xml:"pegboards"`
-		Beads     Beadsstruct     `xml:"beads"`
-	}
-
-	Pegboardsstruct struct {
-		XMLName  xml.Name         `xml:"pegboards"`
-		Pegboard []Pegboardstruct `xml:"pegboard"`
+		Serie  string `xml:"name,attr"`
+		Weight int    `xml:"weightPerThousand"`
 	}
 
 	Pegboardstruct struct {
-		XMLName xml.Name `xml:"pegboard"`
-		Type    string   `xml:"type"`
-		Width   string   `xml:"width"`
-		Height  string   `xml:"height"`
-	}
-
-	Beadsstruct struct {
-		XMLName xml.Name      `xml:"beads"`
-		Color   []Colorstruct `xml:"color"`
+		Serie string `xml:"serie,attr"`
+		Type  string `xml:"type"`
+		Size  string `xml:"size"`
 	}
 
 	Colorstruct struct {
-		XMLName       xml.Name `xml:"color"`
-		ColorIndex    int      `xml:"colorIndex,attr"`
-		ColorName     string   `xml:"colorname"`
-		ProductCode   string   `xml:"productCode"`
-		Brand         string   `xml:"brand"`
-		Red           byte     `xml:"red"`
-		Green         byte     `xml:"green"`
-		Blue          byte     `xml:"blue"`
-		IsPearl       bool     `xml:"isPearl"`
-		IsTranslucent bool     `xml:"isTranslucent"`
-		IsNeutral     bool     `xml:"isNeutral"`
-		IsGrayscale   bool     `xml:"isGrayscale"`
-		Disabled      bool     `xml:"disabled"`
-		InStock       bool     `xml:"inStock"`
-		OnHand        int      `xml:"onHand"`
+		Series struct {
+			XMLName xml.Name `xml:"series"`
+			Serie   []string `xml:"serie"`
+		}
+		ColorIndex    int    `xml:"colorIndex,attr"`
+		ColorName     string `xml:"colorname"`
+		ProductCode   string `xml:"productCode"`
+		Brand         string `xml:"brand"`
+		Red           byte   `xml:"red"`
+		Green         byte   `xml:"green"`
+		Blue          byte   `xml:"blue"`
+		IsPearl       bool   `xml:"isPearl"`
+		IsTranslucent bool   `xml:"isTranslucent"`
+		IsNeutral     bool   `xml:"isNeutral"`
+		IsGrayscale   bool   `xml:"isGrayscale"`
+		Disabled      bool   `xml:"disabled"`
+		InStock       bool   `xml:"inStock"`
+		OnHand        int    `xml:"onHand"`
 	}
+)
+
+var (
+	serie_triggered bool = false
 )
 
 func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
@@ -102,6 +86,13 @@ func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
 	mw.serie_combo, _ = walk.NewComboBox(comp)
 	mw.serie_combo.SetModel(CreateSeriesList(mw))
 	mw.serie_combo.SetText(ConfigSerie)
+	mw.serie_combo.CurrentIndexChanged().Attach(func() {
+		if !serie_triggered {
+			mw.colors.Children().Clear()
+			LoadBeads(mw)
+			serie_triggered = true
+		}
+	})
 	comp, _ = walk.NewComposite(pallette_group)
 	comp.SetLayout(walk.NewHBoxLayout())
 	comp.Layout().SetMargins(walk.Margins{0, 0, 0, 0})
@@ -115,13 +106,11 @@ func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
 
 func CreatePegboardsList(mw *MyMainWindow) []string {
 	pegboards := make([]string, 0)
-	for _, brand := range mw.pallette.Brands.Brand {
+	for _, brand := range mw.pallette.Brand {
 		if brand.BrandName == mw.brand_combo.Text() {
-			for _, serie := range brand.Series.Serie {
-				if serie.SerieName == mw.serie_combo.Text() {
-					for _, pegboard := range serie.Pegboards.Pegboard {
-						pegboards = append(pegboards, pegboard.Type)
-					}
+			for _, pegboard := range brand.Pegboards {
+				if pegboard.Serie == mw.serie_combo.Text() {
+					pegboards = append(pegboards, pegboard.Type)
 				}
 			}
 		}
@@ -131,10 +120,10 @@ func CreatePegboardsList(mw *MyMainWindow) []string {
 
 func CreateSeriesList(mw *MyMainWindow) []string {
 	series := make([]string, 0)
-	for _, brand := range mw.pallette.Brands.Brand {
+	for _, brand := range mw.pallette.Brand {
 		if brand.BrandName == mw.brand_combo.Text() {
-			for _, serie := range brand.Series.Serie {
-				series = append(series, serie.SerieName)
+			for _, serie := range brand.Series {
+				series = append(series, serie.Serie)
 			}
 		}
 	}
@@ -143,7 +132,7 @@ func CreateSeriesList(mw *MyMainWindow) []string {
 
 func CreateBrandsList(mw *MyMainWindow) []string {
 	brands := make([]string, 0)
-	for _, brand := range mw.pallette.Brands.Brand {
+	for _, brand := range mw.pallette.Brand {
 		brands = append(brands, brand.BrandName)
 	}
 	return brands

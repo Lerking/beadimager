@@ -40,7 +40,7 @@ func CreateDefaultConfig() {
 	Config.AddSection("pallette")
 	Config.Set("pallette", "brand", "Hama")
 	Config.Set("pallette", "serie", "Midi")
-	Config.Set("pallette", "pegboard", "Large 29x29")
+	Config.Set("pallette", "pegboard", "Square 29x29")
 	Config.AddSection("canvas")
 	Config.Set("canvas", "scale", "100")
 	Config.Set("canvas", "showgrid", "true")

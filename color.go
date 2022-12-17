@@ -33,7 +33,7 @@ func CreateBeadsGroup(mw *MyMainWindow) {
 	gb.SetTitle("Beads")
 	gb.SetLayout(walk.NewVBoxLayout())
 	btn, _ := walk.NewPushButton(gb)
-	btn.SetText("Select all	colors")
+	btn.SetText("Select all colors")
 	btn.Clicked().Attach(func() {
 		for _, bead := range mw.beads {
 			bead.Checkbox.SetChecked(true)
@@ -45,33 +45,42 @@ func CreateBeadsGroup(mw *MyMainWindow) {
 }
 
 func LoadBeads(mw *MyMainWindow) {
-	for _, brand := range mw.pallette.Brands.Brand {
+	var located bool
+
+	for _, brand := range mw.pallette.Brand {
 		if brand.BrandName == mw.brand_combo.Text() {
 			log.Println("Loading beads for brand: " + brand.BrandName + " ...")
-			for _, series := range brand.Series.Serie {
-				if series.SerieName == mw.serie_combo.Text() {
-					log.Println("Loading beads for serie: " + series.SerieName + " ...")
-					for _, bead := range series.Beads.Color {
-						log.Println("Loading bead: " + bead.ColorName + " ...")
-						if !bead.Disabled {
-							bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.OnHand, bead.Red, bead.Green, bead.Blue)
-							bc.Brand = brand.BrandName
-							bc.Series = series.SerieName
-							bc.Weight = series.Weight
-							bc.Name = bead.ColorName
-							bc.ColorID = bead.ColorIndex
-							bc.Red = bead.Red
-							bc.Green = bead.Green
-							bc.Blue = bead.Blue
-							bc.inStock = bead.InStock
-							mw.beads = append(mw.beads, bc)
-							if bead.OnHand <= 200 {
-								bc.warning.SetVisible(true)
-								bc.info.SetVisible(false)
-							} else {
-								bc.warning.SetVisible(false)
-								bc.info.SetVisible(true)
+			log.Println("Loading beads for serie: " + mw.serie_combo.Text() + " ...")
+			for _, bead := range brand.Colors {
+				for _, serie := range bead.Series.Serie {
+					if serie == mw.serie_combo.Text() {
+						located = true
+					}
+				}
+				if located {
+					log.Println("Loading bead: " + bead.ColorName + " ...")
+					if !bead.Disabled {
+						bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.OnHand, bead.Red, bead.Green, bead.Blue)
+						for _, series := range brand.Series {
+							if series.Serie == mw.serie_combo.Text() {
+								bc.Series = series.Serie
+								bc.Weight = series.Weight
 							}
+						}
+						bc.Brand = brand.BrandName
+						bc.Name = bead.ColorName
+						bc.ColorID = bead.ColorIndex
+						bc.Red = bead.Red
+						bc.Green = bead.Green
+						bc.Blue = bead.Blue
+						bc.inStock = bead.InStock
+						mw.beads = append(mw.beads, bc)
+						if bead.OnHand <= 200 {
+							bc.warning.SetVisible(true)
+							bc.info.SetVisible(false)
+						} else {
+							bc.warning.SetVisible(false)
+							bc.info.SetVisible(true)
 						}
 					}
 				}
