@@ -11,6 +11,7 @@ import (
 
 type MyMainWindow struct {
 	*walk.MainWindow
+	leftPanel      *walk.Composite
 	colors         *walk.ScrollView
 	canvasScroll   *walk.ScrollView
 	drawWidget     *walk.CustomWidget
@@ -28,7 +29,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.0.28"
+	Version   string = "0.1.0"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
@@ -188,7 +189,8 @@ func main() {
 		Layout: VBox{MarginsZero: true},
 		Children: []Widget{
 			Composite{
-				Layout: HBox{},
+				AssignTo: &mw.leftPanel,
+				Layout:   HBox{},
 				Children: []Widget{
 					Composite{
 						Layout:  VBox{MarginsZero: true},
