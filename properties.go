@@ -41,55 +41,40 @@ func CreateSettingsGroup(mw *MyMainWindow) {
 	sg.SetAlignment(walk.AlignHNearVNear)
 	vb = walk.NewVBoxLayout()
 	sg.SetLayout(vb)
-	vb.SetMargins(walk.Margins{0, 0, 0, 0})
 	mw.propScroll, _ = walk.NewScrollView(sg)
-	ShowProperties(mw)
+	vb = walk.NewVBoxLayout()
+	mw.propScroll.SetLayout(vb)
+	vb.SetMargins(walk.Margins{0, 0, 0, 0})
+	CreateColorProperties(mw)
+	CreateScaleProperties(mw)
+	CreateCanvasProperties(mw)
 }
 
-func ShowProperties(mw *MyMainWindow) {
-	log.Println("Showing properties")
-	mw.properties = new(properties)
-	mw.properties.propColor = new(PropColor)
-	mw.properties.propColor.newColorProperties(mw)
-	mw.properties.propScale = new(PropScale)
-	mw.properties.propScale.newScaleProperties(mw)
-	mw.properties.propCanvas = new(PropCanvas)
-	mw.properties.propCanvas.newCanvasProperties(mw)
-}
-
-func (cp *PropColor) newColorProperties(mw *MyMainWindow) {
-	var err error
+func CreateColorProperties(mw *MyMainWindow) {
 	log.Println("Creating color properties...")
-	cp.property, err = walk.NewComposite(mw.propScroll)
-	if err != nil {
-		log.Println("Error creating color properties: ", err)
-	}
-	cp.property.SetAlignment(walk.AlignHNearVNear)
+	cp, _ := walk.NewComposite(mw.propScroll)
+	cp.SetAlignment(walk.AlignHNearVNear)
 	vb := walk.NewVBoxLayout()
 	//vb.SetMargins(walk.Margins{5, 0, 5, 0})
-	cp.property.SetLayout(vb)
+	cp.SetLayout(vb)
 	log.Println("Creating color label...")
-	lbl, _ := walk.NewTextLabel(cp.property)
+	lbl, _ := walk.NewTextLabel(cp)
 	log.Println("Setting color label text...")
 	lbl.SetText("Color: ")
 	log.Println("Creating color background brush...")
 	bg, _ := walk.NewSolidColorBrush(walk.RGB(167, 45, 234))
 	log.Println("Setting color background...")
-	cp.property.SetBackground(bg)
+	cp.SetBackground(bg)
 }
 
-func (cp *PropScale) newScaleProperties(mw *MyMainWindow) {
-	var err error
+func CreateScaleProperties(mw *MyMainWindow) {
 	log.Println("Creating scale properties...")
-	cp.property, err = walk.NewComposite(mw.propScroll)
-	if err != nil {
-		log.Println("Error creating scale properties: ", err)
-	}
-	cp.property.SetAlignment(walk.AlignHNearVNear)
+	sp, _ := walk.NewComposite(mw.propScroll)
+	sp.SetAlignment(walk.AlignHNearVNear)
 	vb := walk.NewVBoxLayout()
 	//vb.SetMargins(walk.Margins{5, 0, 5, 0})
-	cp.property.SetLayout(vb)
-	grcom, _ := walk.NewComposite(cp.property)
+	sp.SetLayout(vb)
+	grcom, _ := walk.NewComposite(sp)
 	grcom.SetAlignment(walk.AlignHNearVNear)
 	hb := walk.NewVBoxLayout()
 	hb.SetMargins(walk.Margins{0, 0, 0, 0})
@@ -124,25 +109,21 @@ func (cp *PropScale) newScaleProperties(mw *MyMainWindow) {
 	})
 	log.Println("Setting background color...")
 	bg, _ := walk.NewSolidColorBrush(walk.RGB(255, 255, 255))
-	cp.property.SetBackground(bg)
+	sp.SetBackground(bg)
 }
 
-func (cp *PropCanvas) newCanvasProperties(mw *MyMainWindow) {
-	var err error
+func CreateCanvasProperties(mw *MyMainWindow) {
 	log.Println("Creating canvas properties...")
-	cp.property, err = walk.NewComposite(mw.propScroll)
-	if err != nil {
-		log.Println("Error creating canvas properties: ", err)
-	}
-	cp.property.SetAlignment(walk.AlignHNearVNear)
+	cp, _ := walk.NewComposite(mw.propScroll)
+	cp.SetAlignment(walk.AlignHNearVNear)
 	vb := walk.NewVBoxLayout()
 	//vb.SetMargins(walk.Margins{5, 0, 5, 0})
-	cp.property.SetLayout(vb)
+	cp.SetLayout(vb)
 	log.Println("Creating canvas label...")
-	lbl, _ := walk.NewTextLabel(cp.property)
+	lbl, _ := walk.NewTextLabel(cp)
 	log.Println("Setting canvas label text...")
 	lbl.SetText("Canvas:")
-	grcom, _ := walk.NewComposite(cp.property)
+	grcom, _ := walk.NewComposite(cp)
 	grcom.SetAlignment(walk.AlignHNearVNear)
 	hb := walk.NewHBoxLayout()
 	hb.SetMargins(walk.Margins{0, 0, 0, 0})
@@ -165,7 +146,7 @@ func (cp *PropCanvas) newCanvasProperties(mw *MyMainWindow) {
 	grcolb.SetText("Grid color")
 	log.Println("Grid color button created")
 	log.Println("Creating pixels checkbox")
-	cb, _ = walk.NewCheckBox(cp.property)
+	cb, _ = walk.NewCheckBox(cp)
 	cb.SetAlignment(walk.AlignHNearVNear)
 	cb.SetText("Show pixels as beads")
 	switch ConfigShowBeads {
@@ -176,10 +157,10 @@ func (cp *PropCanvas) newCanvasProperties(mw *MyMainWindow) {
 	}
 	log.Println("Pixels checkbox created")
 	log.Println("Creating canvas background color button")
-	grcolb, _ = walk.NewPushButton(cp.property)
+	grcolb, _ = walk.NewPushButton(cp)
 	grcolb.SetAlignment(walk.AlignHFarVNear)
 	grcolb.SetText("Background color")
 	log.Println("Background color button created")
 	bg, _ := walk.NewSolidColorBrush(walk.RGB(255, 255, 255))
-	cp.property.SetBackground(bg)
+	cp.SetBackground(bg)
 }
