@@ -29,6 +29,14 @@ type (
 	}
 )
 
+func CreateProperties(mw *MyMainWindow) {
+	mw.properties = new(properties)
+	mw.properties.propColor = new(PropColor)
+	mw.properties.propScale = new(PropScale)
+	mw.properties.propCanvas = new(PropCanvas)
+	CreateSettingsGroup(mw)
+}
+
 func CreateSettingsGroup(mw *MyMainWindow) {
 	log.Println("Setting up settings...")
 	mw.rightPanel, _ = walk.NewComposite(mw.content)
@@ -52,29 +60,29 @@ func CreateSettingsGroup(mw *MyMainWindow) {
 
 func CreateColorProperties(mw *MyMainWindow) {
 	log.Println("Creating color properties...")
-	cp, _ := walk.NewComposite(mw.propScroll)
-	cp.SetAlignment(walk.AlignHNearVNear)
+	mw.properties.propColor.property, _ = walk.NewComposite(mw.propScroll)
+	mw.properties.propColor.property.SetAlignment(walk.AlignHNearVNear)
 	vb := walk.NewVBoxLayout()
 	//vb.SetMargins(walk.Margins{5, 0, 5, 0})
-	cp.SetLayout(vb)
+	mw.properties.propColor.property.SetLayout(vb)
 	log.Println("Creating color label...")
-	lbl, _ := walk.NewTextLabel(cp)
+	lbl, _ := walk.NewTextLabel(mw.properties.propColor.property)
 	log.Println("Setting color label text...")
 	lbl.SetText("Color: ")
 	log.Println("Creating color background brush...")
 	bg, _ := walk.NewSolidColorBrush(walk.RGB(167, 45, 234))
 	log.Println("Setting color background...")
-	cp.SetBackground(bg)
+	mw.properties.propColor.property.SetBackground(bg)
 }
 
 func CreateScaleProperties(mw *MyMainWindow) {
 	log.Println("Creating scale properties...")
-	sp, _ := walk.NewComposite(mw.propScroll)
-	sp.SetAlignment(walk.AlignHNearVNear)
+	mw.properties.propScale.property, _ = walk.NewComposite(mw.propScroll)
+	mw.properties.propScale.property.SetAlignment(walk.AlignHNearVNear)
 	vb := walk.NewVBoxLayout()
 	//vb.SetMargins(walk.Margins{5, 0, 5, 0})
-	sp.SetLayout(vb)
-	grcom, _ := walk.NewComposite(sp)
+	mw.properties.propScale.property.SetLayout(vb)
+	grcom, _ := walk.NewComposite(mw.properties.propScale.property)
 	grcom.SetAlignment(walk.AlignHNearVNear)
 	hb := walk.NewVBoxLayout()
 	hb.SetMargins(walk.Margins{0, 0, 0, 0})
@@ -109,21 +117,21 @@ func CreateScaleProperties(mw *MyMainWindow) {
 	})
 	log.Println("Setting background color...")
 	bg, _ := walk.NewSolidColorBrush(walk.RGB(255, 255, 255))
-	sp.SetBackground(bg)
+	mw.properties.propScale.property.SetBackground(bg)
 }
 
 func CreateCanvasProperties(mw *MyMainWindow) {
 	log.Println("Creating canvas properties...")
-	cp, _ := walk.NewComposite(mw.propScroll)
-	cp.SetAlignment(walk.AlignHNearVNear)
+	mw.properties.propCanvas.property, _ = walk.NewComposite(mw.propScroll)
+	mw.properties.propCanvas.property.SetAlignment(walk.AlignHNearVNear)
 	vb := walk.NewVBoxLayout()
 	//vb.SetMargins(walk.Margins{5, 0, 5, 0})
-	cp.SetLayout(vb)
+	mw.properties.propCanvas.property.SetLayout(vb)
 	log.Println("Creating canvas label...")
-	lbl, _ := walk.NewTextLabel(cp)
+	lbl, _ := walk.NewTextLabel(mw.properties.propCanvas.property)
 	log.Println("Setting canvas label text...")
 	lbl.SetText("Canvas:")
-	grcom, _ := walk.NewComposite(cp)
+	grcom, _ := walk.NewComposite(mw.properties.propCanvas.property)
 	grcom.SetAlignment(walk.AlignHNearVNear)
 	hb := walk.NewHBoxLayout()
 	hb.SetMargins(walk.Margins{0, 0, 0, 0})
@@ -146,7 +154,7 @@ func CreateCanvasProperties(mw *MyMainWindow) {
 	grcolb.SetText("Grid color")
 	log.Println("Grid color button created")
 	log.Println("Creating pixels checkbox")
-	cb, _ = walk.NewCheckBox(cp)
+	cb, _ = walk.NewCheckBox(mw.properties.propCanvas.property)
 	cb.SetAlignment(walk.AlignHNearVNear)
 	cb.SetText("Show pixels as beads")
 	switch ConfigShowBeads {
@@ -157,10 +165,10 @@ func CreateCanvasProperties(mw *MyMainWindow) {
 	}
 	log.Println("Pixels checkbox created")
 	log.Println("Creating canvas background color button")
-	grcolb, _ = walk.NewPushButton(cp)
+	grcolb, _ = walk.NewPushButton(mw.properties.propCanvas.property)
 	grcolb.SetAlignment(walk.AlignHFarVNear)
 	grcolb.SetText("Background color")
 	log.Println("Background color button created")
 	bg, _ := walk.NewSolidColorBrush(walk.RGB(255, 255, 255))
-	cp.SetBackground(bg)
+	mw.properties.propCanvas.property.SetBackground(bg)
 }

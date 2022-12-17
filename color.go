@@ -41,6 +41,7 @@ func CreateBeadsGroup(mw *MyMainWindow) {
 	})
 	mw.colors, _ = walk.NewScrollView(gb)
 	mw.colors.SetLayout(walk.NewVBoxLayout())
+	LoadBeads(mw)
 }
 
 func LoadBeads(mw *MyMainWindow) {

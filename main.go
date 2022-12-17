@@ -30,7 +30,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.1.2"
+	Version   string = "0.1.3"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
@@ -97,8 +97,7 @@ func main() {
 	CreatePalletteGroup(mw)
 	CreateBeadsGroup(mw)
 	CreateCanvasGroup(mw)
-	CreateSettingsGroup(mw)
-	LoadBeads(mw)
+	CreateProperties(mw)
 
 	/*
 		DD_Pallette := GroupBox{
