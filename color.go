@@ -28,6 +28,21 @@ type (
 	}
 )
 
+func CreateBeadsGroup(mw *MyMainWindow) {
+	gb, _ := walk.NewGroupBox(mw.leftPanel)
+	gb.SetTitle("Beads")
+	gb.SetLayout(walk.NewVBoxLayout())
+	btn, _ := walk.NewPushButton(gb)
+	btn.SetText("Select all	colors")
+	btn.Clicked().Attach(func() {
+		for _, bead := range mw.beads {
+			bead.Checkbox.SetChecked(true)
+		}
+	})
+	mw.colors, _ = walk.NewScrollView(gb)
+	mw.colors.SetLayout(walk.NewVBoxLayout())
+}
+
 func LoadBeads(mw *MyMainWindow) {
 	for _, brand := range mw.pallette.Brands.Brand {
 		if brand.BrandName == mw.brand_combo.Text() {

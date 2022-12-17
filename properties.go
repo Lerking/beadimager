@@ -29,6 +29,23 @@ type (
 	}
 )
 
+func CreateSettingsGroup(mw *MyMainWindow) {
+	log.Println("Setting up settings...")
+	mw.rightPanel, _ = walk.NewComposite(mw.content)
+	vb := walk.NewVBoxLayout()
+	mw.rightPanel.SetLayout(vb)
+	vb.SetMargins(walk.Margins{0, 0, 0, 0})
+	mw.rightPanel.SetMinMaxSize(walk.Size{Width: 220, Height: 0}, walk.Size{Width: 220, Height: 0})
+	sg, _ := walk.NewGroupBox(mw.rightPanel)
+	sg.SetTitle("Settings")
+	sg.SetAlignment(walk.AlignHNearVNear)
+	vb = walk.NewVBoxLayout()
+	sg.SetLayout(vb)
+	vb.SetMargins(walk.Margins{0, 0, 0, 0})
+	mw.propScroll, _ = walk.NewScrollView(sg)
+	ShowProperties(mw)
+}
+
 func ShowProperties(mw *MyMainWindow) {
 	log.Println("Showing properties")
 	mw.properties = new(properties)
