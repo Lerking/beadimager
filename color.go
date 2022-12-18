@@ -9,6 +9,7 @@ import (
 
 type (
 	BeadColor struct {
+		Color           *walk.Composite
 		Checkbox        *walk.CheckBox
 		backgroundColor walk.Brush
 		InfoTooltip     *walk.ToolTip
@@ -98,6 +99,7 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, onhand int, red byte, g
 	hb.SetMargins(walk.Margins{5, 0, 20, 0})
 	cm.SetLayout(hb)
 	color := new(BeadColor)
+	color.Color = cm
 	log.Println("Bead color struct: ", color)
 	color.SetBackgroundColor(walk.RGB(red, green, blue))
 	color.onHand = onhand

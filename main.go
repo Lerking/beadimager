@@ -24,13 +24,13 @@ type MyMainWindow struct {
 	serie_combo    *walk.ComboBox
 	serie_model    []string
 	pegboard_combo *walk.ComboBox
-	pegboard_model []string
+	Pegboards      *Pegboards
 	properties     *properties
 }
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.2.0"
+	Version   string = "0.2.1"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"

@@ -53,13 +53,24 @@ type (
 		InStock       bool   `xml:"inStock"`
 		OnHand        int    `xml:"onHand"`
 	}
+
+	Pegboards struct {
+		Boards []Pegboard
+	}
+
+	Pegboard struct {
+		brand string
+		serie string
+		model []string
+	}
 )
 
 var (
-	serie_triggered bool = false
+	Serie_triggered bool = false
 )
 
 func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
+	mw.Pegboards = new(Pegboards)
 	mw.leftPanel, _ = walk.NewComposite(mw.content)
 	vb := walk.NewVBoxLayout()
 	mw.leftPanel.SetLayout(vb)
@@ -87,10 +98,20 @@ func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
 	mw.serie_combo.SetModel(CreateSeriesList(mw))
 	mw.serie_combo.SetText(ConfigSerie)
 	mw.serie_combo.CurrentIndexChanged().Attach(func() {
-		if !serie_triggered {
-			mw.colors.Children().Clear()
-			LoadBeads(mw)
-			serie_triggered = true
+		if !Serie_triggered {
+			for _, color := range mw.beads {
+				if color.Series != mw.serie_combo.Text() {
+					color.Color.SetVisible(false)
+				} else {
+					color.Color.SetVisible(true)
+				}
+			}
+			for _, model := range mw.Pegboards.Boards {
+				if model.brand == mw.brand_combo.Text() && model.serie == mw.serie_combo.Text() {
+					mw.pegboard_combo.SetModel(model.model)
+				}
+			}
+			Serie_triggered = true
 		}
 	})
 	comp, _ = walk.NewComposite(pallette_group)
@@ -99,23 +120,32 @@ func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
 	lbl, _ = walk.NewLabel(comp)
 	lbl.SetText("Pegboard:")
 	mw.pegboard_combo, _ = walk.NewComboBox(comp)
-	mw.pegboard_combo.SetModel(CreatePegboardsList(mw))
+	CreatePegboardsList(mw)
+	for _, model := range mw.Pegboards.Boards {
+		if model.brand == mw.brand_combo.Text() && model.serie == mw.serie_combo.Text() {
+			mw.pegboard_combo.SetModel(model.model)
+		}
+	}
 	mw.pegboard_combo.SetText(ConfigPegboard)
 	return pallette_group
 }
 
-func CreatePegboardsList(mw *MyMainWindow) []string {
-	pegboards := make([]string, 0)
+func CreatePegboardsList(mw *MyMainWindow) {
+	var pb *Pegboard
 	for _, brand := range mw.pallette.Brand {
-		if brand.BrandName == mw.brand_combo.Text() {
+		for _, serie := range brand.Series {
+			pb = new(Pegboard)
+			pb.brand = brand.BrandName
+			pb.serie = serie.Serie
 			for _, pegboard := range brand.Pegboards {
-				if pegboard.Serie == mw.serie_combo.Text() {
-					pegboards = append(pegboards, pegboard.Type)
+				if pegboard.Serie == pb.serie {
+					pb.model = append(pb.model, pegboard.Type)
 				}
 			}
+			mw.Pegboards.Boards = append(mw.Pegboards.Boards, *pb)
 		}
 	}
-	return pegboards
+	log.Println("Pegboard: ", mw.Pegboards)
 }
 
 func CreateSeriesList(mw *MyMainWindow) []string {
