@@ -67,6 +67,7 @@ type (
 
 var (
 	Serie_triggered bool = false
+	Disable         bool
 )
 
 func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
@@ -98,20 +99,27 @@ func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
 	mw.serie_combo.SetModel(CreateSeriesList(mw))
 	mw.serie_combo.SetText(ConfigSerie)
 	mw.serie_combo.CurrentIndexChanged().Attach(func() {
-		if !Serie_triggered {
-			for _, color := range mw.beads {
-				if color.Series != mw.serie_combo.Text() {
-					color.Color.SetVisible(false)
+		log.Println("Serie triggered: ", mw.serie_combo.Text())
+		for _, color := range mw.beads {
+			for _, serie := range color.Series {
+				if serie != mw.serie_combo.Text() {
+					Disable = true
 				} else {
-					color.Color.SetVisible(true)
+					Disable = false
 				}
 			}
-			for _, model := range mw.Pegboards.Boards {
-				if model.brand == mw.brand_combo.Text() && model.serie == mw.serie_combo.Text() {
-					mw.pegboard_combo.SetModel(model.model)
-				}
+			if Disable {
+				color.Color.SetVisible(false)
+			} else {
+				color.Color.SetVisible(true)
 			}
-			Serie_triggered = true
+		}
+		for _, model := range mw.Pegboards.Boards {
+			if model.brand == mw.brand_combo.Text() && model.serie == mw.serie_combo.Text() {
+				mw.pegboard_combo.SetText("")
+				mw.pegboard_combo.SetModel(model.model)
+				log.Println("Pegboard model set to: ", model.model)
+			}
 		}
 	})
 	comp, _ = walk.NewComposite(pallette_group)

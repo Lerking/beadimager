@@ -17,8 +17,8 @@ type (
 		info            *walk.ImageView
 		warning         *walk.ImageView
 		Brand           string
-		Series          string
-		Weight          int
+		Series          []string
+		Weight          []int
 		Name            string
 		ColorID         int
 		Red             byte
@@ -62,12 +62,7 @@ func LoadBeads(mw *MyMainWindow) {
 					log.Println("Loading bead: " + bead.ColorName + " ...")
 					if !bead.Disabled {
 						bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.OnHand, bead.Red, bead.Green, bead.Blue)
-						for _, series := range brand.Series {
-							if series.Serie == mw.serie_combo.Text() {
-								bc.Series = series.Serie
-								bc.Weight = series.Weight
-							}
-						}
+						bc.Series = bead.Series.Serie
 						bc.Brand = brand.BrandName
 						bc.Name = bead.ColorName
 						bc.ColorID = bead.ColorIndex
@@ -161,9 +156,4 @@ func (bc *BeadColor) SetInStock(inStock bool) {
 
 func (bc *BeadColor) GetColorID() int {
 	return bc.ColorID
-}
-
-func (bc *BeadColor) AddOnHand(grams int) {
-	addbeads := grams / bc.Weight * 1000
-	bc.onHand += int(addbeads)
 }
