@@ -33,6 +33,10 @@
             <type>Square 14x14</type>
             <size>14</size>
         </pegboard>
+        <pegboard serie="Midi">
+            <type>Round 29</type>
+            <size>29</size>
+        </pegboard>
         <pegboard serie="Maxi">
             <type>Square 16x16</type>
             <size>16</size>
@@ -1094,7 +1098,7 @@
                 </serie>
                 <serie name="Midi">
                     <inStock>true</inStock>
-                    <onHand>100</onHand>
+                    <onHand>500</onHand>
                 </serie>
                 <serie name="Maxi">
                     <inStock>true</inStock>
@@ -1121,7 +1125,7 @@
                 </serie>
                 <serie name="Midi">
                     <inStock>true</inStock>
-                    <onHand>100</onHand>
+                    <onHand>500</onHand>
                 </serie>
                 <serie name="Maxi">
                     <inStock>true</inStock>
@@ -1148,7 +1152,7 @@
                 </serie>
                 <serie name="Midi">
                     <inStock>true</inStock>
-                    <onHand>100</onHand>
+                    <onHand>500</onHand>
                 </serie>
                 <serie name="Maxi">
                     <inStock>true</inStock>

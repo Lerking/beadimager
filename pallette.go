@@ -35,13 +35,8 @@ type (
 
 	Colorstruct struct {
 		Series struct {
-			XMLName xml.Name `xml:"series"`
-			Serie   []struct {
-				XMLName xml.Name `xml:"serie"`
-				Name    string   `xml:"name,attr"`
-				InStock bool     `xml:"inStock"`
-				OnHand  int      `xml:"onHand"`
-			}
+			XMLName xml.Name    `xml:"series"`
+			Serie   []SerieData `xml:"serie"`
 		}
 		ColorIndex    int    `xml:"colorIndex,attr"`
 		ColorName     string `xml:"colorname"`
@@ -55,6 +50,13 @@ type (
 		IsNeutral     bool   `xml:"isNeutral"`
 		IsGrayscale   bool   `xml:"isGrayscale"`
 		Disabled      bool   `xml:"disabled"`
+	}
+
+	SerieData struct {
+		XMLName xml.Name `xml:"serie"`
+		Name    string   `xml:"name,attr"`
+		InStock bool     `xml:"inStock"`
+		OnHand  int      `xml:"onHand"`
 	}
 
 	Pegboards struct {

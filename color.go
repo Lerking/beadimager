@@ -40,6 +40,15 @@ func ShowBeads(mw *MyMainWindow, serie string) {
 		for _, s := range bead.Series {
 			if s.Name == serie {
 				bead.Color.SetVisible(true)
+				bead.InfoTooltip.SetText(bead.info, "Approx. "+fmt.Sprint(s.onHand)+" left on hand")
+				bead.WarningTooltip.SetText(bead.warning, "Only "+fmt.Sprint(s.onHand)+" left on hand")
+				if s.onHand <= 200 {
+					bead.warning.SetVisible(true)
+					bead.info.SetVisible(false)
+				} else {
+					bead.warning.SetVisible(false)
+					bead.info.SetVisible(true)
+				}
 			}
 		}
 	}
@@ -59,6 +68,7 @@ func CreateBeadsGroup(mw *MyMainWindow) {
 	mw.colors, _ = walk.NewScrollView(gb)
 	mw.colors.SetLayout(walk.NewVBoxLayout())
 	LoadBeads(mw)
+	ShowBeads(mw, mw.serie_combo.Text())
 }
 
 func LoadBeads(mw *MyMainWindow) {
@@ -76,15 +86,6 @@ func LoadBeads(mw *MyMainWindow) {
 						se.inStock = s.InStock
 						se.onHand = s.OnHand
 						bc.Series = append(bc.Series, se)
-						bc.InfoTooltip.SetText(bc.info, "Approx. "+fmt.Sprint(se.onHand)+" left on hand")
-						bc.WarningTooltip.SetText(bc.warning, "Only "+fmt.Sprint(se.onHand)+" left on hand")
-						if se.onHand <= 200 {
-							bc.warning.SetVisible(true)
-							bc.info.SetVisible(false)
-						} else {
-							bc.warning.SetVisible(false)
-							bc.info.SetVisible(true)
-						}
 					}
 					bc.Brand = brand.BrandName
 					bc.Name = bead.ColorName
