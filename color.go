@@ -29,6 +29,18 @@ type (
 	}
 )
 
+func ShowBeads(mw *MyMainWindow, serie string) {
+	log.Println("Showing beads...")
+	for _, bead := range mw.beads {
+		bead.Color.SetVisible(false)
+		for _, s := range bead.Series {
+			if s == serie {
+				bead.Color.SetVisible(true)
+			}
+		}
+	}
+}
+
 func CreateBeadsGroup(mw *MyMainWindow) {
 	gb, _ := walk.NewGroupBox(mw.leftPanel)
 	gb.SetTitle("Beads")
@@ -46,38 +58,29 @@ func CreateBeadsGroup(mw *MyMainWindow) {
 }
 
 func LoadBeads(mw *MyMainWindow) {
-	var located bool
-
 	for _, brand := range mw.pallette.Brand {
 		if brand.BrandName == mw.brand_combo.Text() {
 			log.Println("Loading beads for brand: " + brand.BrandName + " ...")
 			log.Println("Loading beads for serie: " + mw.serie_combo.Text() + " ...")
 			for _, bead := range brand.Colors {
-				for _, serie := range bead.Series.Serie {
-					if serie == mw.serie_combo.Text() {
-						located = true
-					}
-				}
-				if located {
-					log.Println("Loading bead: " + bead.ColorName + " ...")
-					if !bead.Disabled {
-						bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.OnHand, bead.Red, bead.Green, bead.Blue)
-						bc.Series = bead.Series.Serie
-						bc.Brand = brand.BrandName
-						bc.Name = bead.ColorName
-						bc.ColorID = bead.ColorIndex
-						bc.Red = bead.Red
-						bc.Green = bead.Green
-						bc.Blue = bead.Blue
-						bc.inStock = bead.InStock
-						mw.beads = append(mw.beads, bc)
-						if bead.OnHand <= 200 {
-							bc.warning.SetVisible(true)
-							bc.info.SetVisible(false)
-						} else {
-							bc.warning.SetVisible(false)
-							bc.info.SetVisible(true)
-						}
+				log.Println("Loading bead: " + bead.ColorName + " ...")
+				if !bead.Disabled {
+					bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.OnHand, bead.Red, bead.Green, bead.Blue)
+					bc.Series = bead.Series.Serie
+					bc.Brand = brand.BrandName
+					bc.Name = bead.ColorName
+					bc.ColorID = bead.ColorIndex
+					bc.Red = bead.Red
+					bc.Green = bead.Green
+					bc.Blue = bead.Blue
+					bc.inStock = bead.InStock
+					mw.beads = append(mw.beads, bc)
+					if bead.OnHand <= 200 {
+						bc.warning.SetVisible(true)
+						bc.info.SetVisible(false)
+					} else {
+						bc.warning.SetVisible(false)
+						bc.info.SetVisible(true)
 					}
 				}
 			}

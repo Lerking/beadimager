@@ -100,20 +100,7 @@ func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
 	mw.serie_combo.SetText(ConfigSerie)
 	mw.serie_combo.CurrentIndexChanged().Attach(func() {
 		log.Println("Serie triggered: ", mw.serie_combo.Text())
-		for _, color := range mw.beads {
-			for _, serie := range color.Series {
-				if serie != mw.serie_combo.Text() {
-					Disable = true
-				} else {
-					Disable = false
-				}
-			}
-			if Disable {
-				color.Color.SetVisible(false)
-			} else {
-				color.Color.SetVisible(true)
-			}
-		}
+		ShowBeads(mw, mw.serie_combo.Text())
 		for _, model := range mw.Pegboards.Boards {
 			if model.brand == mw.brand_combo.Text() && model.serie == mw.serie_combo.Text() {
 				mw.pegboard_combo.SetText("")
@@ -135,6 +122,7 @@ func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
 		}
 	}
 	mw.pegboard_combo.SetText(ConfigPegboard)
+	ShowBeads(mw, mw.serie_combo.Text())
 	return pallette_group
 }
 
