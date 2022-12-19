@@ -43,9 +43,18 @@
         </pegboard>
         <color colorIndex="01">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>White</colorname>
             <productCode>H01</productCode>
@@ -58,13 +67,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="02">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Creme</colorname>
             <productCode>H02</productCode>
@@ -77,14 +90,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="03">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Yellow</colorname>
             <productCode>H03</productCode>
@@ -97,13 +117,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="04">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Orange</colorname>
             <productCode>H04</productCode>
@@ -116,14 +140,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="05">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Red</colorname>
             <productCode>H05</productCode>
@@ -136,13 +167,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="06">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Pink</colorname>
             <productCode>H06</productCode>
@@ -155,14 +190,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="07">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Purple</colorname>
             <productCode>H07</productCode>
@@ -175,13 +217,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="08">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Blue</colorname>
             <productCode>H08</productCode>
@@ -194,14 +240,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="09">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Light blue</colorname>
             <productCode>H09</productCode>
@@ -214,14 +267,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="10">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Green</colorname>
             <productCode>H10</productCode>
@@ -234,13 +294,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="11">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Light green</colorname>
             <productCode>H11</productCode>
@@ -253,13 +317,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="12">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Brown</colorname>
             <productCode>H12</productCode>
@@ -272,13 +340,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="13">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Translucent red</colorname>
             <productCode>H13</productCode>
@@ -291,13 +363,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="14">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Translucent yellow</colorname>
             <productCode>H14</productCode>
@@ -310,13 +386,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="15">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Translucent blue</colorname>
             <productCode>H15</productCode>
@@ -329,13 +409,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="16">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Translucent green</colorname>
             <productCode>H16</productCode>
@@ -348,14 +432,21 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="17">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Grey</colorname>
             <productCode>H17</productCode>
@@ -368,14 +459,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>true</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="18">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Black</colorname>
             <productCode>H18</productCode>
@@ -388,13 +486,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>true</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="19">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Clear</colorname>
             <productCode>H19</productCode>
@@ -407,14 +509,21 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="20">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Red brown</colorname>
             <productCode>H20</productCode>
@@ -427,13 +536,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="21">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Light brown</colorname>
             <productCode>H21</productCode>
@@ -446,13 +559,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="22">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Dark red</colorname>
             <productCode>H22</productCode>
@@ -465,13 +582,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="24">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Translucent purple</colorname>
             <productCode>H24</productCode>
@@ -484,12 +605,13 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="25">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Translucent brown</colorname>
             <productCode>H25</productCode>
@@ -502,14 +624,21 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="26">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Flesh</colorname>
             <productCode>H26</productCode>
@@ -522,13 +651,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="27">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Beige</colorname>
             <productCode>H27</productCode>
@@ -541,13 +674,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="28">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Dark green</colorname>
             <productCode>H28</productCode>
@@ -560,13 +697,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="29">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Rapsberry</colorname>
             <productCode>H29</productCode>
@@ -579,13 +720,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="30">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Burgrundy</colorname>
             <productCode>H30</productCode>
@@ -598,13 +743,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="31">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Turquoise</colorname>
             <productCode>H31</productCode>
@@ -617,14 +766,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="32">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Neon Fuchsia</colorname>
             <productCode>H32</productCode>
@@ -637,13 +793,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="33">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Fluorescent cerise</colorname>
             <productCode>H33</productCode>
@@ -656,14 +816,21 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="34">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Neon yellow</colorname>
             <productCode>H34</productCode>
@@ -676,14 +843,21 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="35">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Neon red</colorname>
             <productCode>H35</productCode>
@@ -696,14 +870,21 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="36">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Neon blue</colorname>
             <productCode>H36</productCode>
@@ -716,14 +897,21 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="37">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Neon green</colorname>
             <productCode>H37</productCode>
@@ -736,14 +924,21 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="38">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Neon orange</colorname>
             <productCode>H38</productCode>
@@ -756,12 +951,13 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="39">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Fluorescent yellow</colorname>
             <productCode>H39</productCode>
@@ -774,12 +970,13 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="40">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Fluorescent orange</colorname>
             <productCode>H40</productCode>
@@ -792,12 +989,13 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="41">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Fluroescent blue</colorname>
             <productCode>H41</productCode>
@@ -810,13 +1008,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="42">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Flourecent green</colorname>
             <productCode>H42</productCode>
@@ -829,14 +1031,21 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="43">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Pastel yellow</colorname>
             <productCode>H43</productCode>
@@ -849,14 +1058,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="44">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Pastel coral</colorname>
             <productCode>H44</productCode>
@@ -869,14 +1085,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="45">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Pastel purple</colorname>
             <productCode>H45</productCode>
@@ -889,14 +1112,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="46">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Pastel blue</colorname>
             <productCode>H46</productCode>
@@ -909,14 +1139,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="47">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>pastel green</colorname>
             <productCode>H47</productCode>
@@ -929,14 +1166,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="48">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>pastel pink</colorname>
             <productCode>H48</productCode>
@@ -949,13 +1193,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="49">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Azure</colorname>
             <productCode>H49</productCode>
@@ -968,12 +1216,13 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="55">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Flourecent green</colorname>
             <productCode>H55</productCode>
@@ -986,12 +1235,13 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>500</onHand>
         </color>
         <color colorIndex="56">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Flourecent red</colorname>
             <productCode>H56</productCode>
@@ -1004,12 +1254,13 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>500</onHand>
         </color>
         <color colorIndex="57">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Flourecent blue</colorname>
             <productCode>H57</productCode>
@@ -1022,13 +1273,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>500</onHand>
         </color>
         <color colorIndex="60">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Teddybear brown</colorname>
             <productCode>H60</productCode>
@@ -1041,12 +1296,13 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="61">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Gold</colorname>
             <productCode>H61</productCode>
@@ -1059,12 +1315,13 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="62">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Silver</colorname>
             <productCode>H62</productCode>
@@ -1077,12 +1334,13 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>500</onHand>
         </color>
         <color colorIndex="63">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Bronze</colorname>
             <productCode>H63</productCode>
@@ -1095,12 +1353,13 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="64">
             <series>
-                <serie>Midi</serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Pearl</colorname>
             <productCode>H64</productCode>
@@ -1113,14 +1372,21 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="70">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Light grey</colorname>
             <productCode>H70</productCode>
@@ -1133,13 +1399,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>true</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="71">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Dark grey</colorname>
             <productCode>H71</productCode>
@@ -1152,13 +1422,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>true</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="72">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Translucent pink</colorname>
             <productCode>H72</productCode>
@@ -1171,13 +1445,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="73">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Translucent aqua</colorname>
             <productCode>H73</productCode>
@@ -1190,13 +1468,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="74">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Translucent lilac</colorname>
             <productCode>H74</productCode>
@@ -1209,13 +1491,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="75">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Tan</colorname>
             <productCode>H75</productCode>
@@ -1228,13 +1514,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="76">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Nougat</colorname>
             <productCode>H76</productCode>
@@ -1247,13 +1537,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="77">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Cloudy white</colorname>
             <productCode>H77</productCode>
@@ -1266,13 +1560,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="78">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Light peach</colorname>
             <productCode>H78</productCode>
@@ -1285,14 +1583,21 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="79">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
-                <serie>Maxi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Maxi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Apricot</colorname>
             <productCode>H79</productCode>
@@ -1305,13 +1610,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="82">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Plum</colorname>
             <productCode>H82</productCode>
@@ -1324,13 +1633,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="83">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Petrol Blue</colorname>
             <productCode>H83</productCode>
@@ -1343,13 +1656,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="84">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Olive</colorname>
             <productCode>H84</productCode>
@@ -1362,13 +1679,17 @@
             <isNeutral>true</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="95">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Pastel rosa</colorname>
             <productCode>H95</productCode>
@@ -1381,13 +1702,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="96">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Pastel lilac</colorname>
             <productCode>H96</productCode>
@@ -1400,13 +1725,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="97">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Pastel ice blue</colorname>
             <productCode>H97</productCode>
@@ -1419,13 +1748,17 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
         <color colorIndex="98">
             <series>
-                <serie>Mini</serie>
-                <serie>Midi</serie>
+                <serie name="Mini">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
+                <serie name="Midi">
+                    <inStock>true</inStock>
+                    <onHand>100</onHand>
+                </serie>
             </series>
             <colorname>Pastel mint</colorname>
             <productCode>H98</productCode>
@@ -1438,8 +1771,6 @@
             <isNeutral>false</isNeutral>
             <isGrayscale>false</isGrayscale>
             <disabled>false</disabled>
-            <inStock>true</inStock>
-            <onHand>100</onHand>
         </color>
     </brand>
     <brand name="Perler">
