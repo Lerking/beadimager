@@ -12,6 +12,27 @@ var (
 	ConfigFile string = "BeadImager.conf"
 )
 
+func SetConfigShowBeads(s string) {
+	log.Printf("Setting showbeads to: %s\n", s)
+	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)
+	Config.Set("canvas", "showbeads", s)
+	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
+}
+
+func SetConfigShowGrid(s string) {
+	log.Printf("Setting showgrid to: %s\n", s)
+	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)
+	Config.Set("canvas", "showgrid", s)
+	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
+}
+
+func SetConfigScale(s string) {
+	log.Printf("Setting scale to: %s\n", s)
+	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)
+	Config.Set("canvas", "scale", s)
+	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
+}
+
 func ReadConfig() {
 	log.Printf("Reading config file: %s\n", ConfigFile)
 	Config, _ = configparser.Parse(UserPath + Sep + ConfigFile)
@@ -47,12 +68,5 @@ func CreateDefaultConfig() {
 	Config.Set("canvas", "gridcolor", "#00ff00")
 	Config.Set("canvas", "showbeads", "false")
 	Config.Set("canvas", "backgroundcolor", "#ffffff")
-	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
-}
-
-func SetConfigScale(s string) {
-	log.Printf("Setting scale to: %s\n", s)
-	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)
-	Config.Set("canvas", "scale", s)
 	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
 }

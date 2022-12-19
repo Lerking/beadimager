@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"strconv"
 
@@ -104,6 +105,7 @@ func CreateScaleProperties(mw *MyMainWindow) {
 		nn := float64(slider.Value())
 		log.Println("Setting scale number edit value to: ", nn)
 		sc.SetValue(nn)
+		SetConfigScale(fmt.Sprintf("%0.0f", nn))
 	})
 	sc.SetDecimals(0)
 	sc.SetRange(10, 200)
@@ -114,6 +116,7 @@ func CreateScaleProperties(mw *MyMainWindow) {
 		nn := float64(sc.Value())
 		log.Println("Setting scale slider value to: ", nn)
 		slider.SetValue(int(nn))
+		SetConfigScale(fmt.Sprintf("%0.0f", nn))
 	})
 	log.Println("Setting background color...")
 	bg, _ := walk.NewSolidColorBrush(walk.RGB(255, 255, 255))
@@ -146,6 +149,14 @@ func CreateCanvasProperties(mw *MyMainWindow) {
 	case "false":
 		cb.SetChecked(false)
 	}
+	cb.CheckedChanged().Attach(func() {
+		log.Println("Grid checkbox changed")
+		if cb.Checked() {
+			SetConfigShowGrid("false")
+		} else {
+			SetConfigShowGrid("true")
+		}
+	})
 	log.Println("Grid checkbox created")
 	walk.NewHSpacer(grcom)
 	log.Println("Creating grid color button")
@@ -163,6 +174,14 @@ func CreateCanvasProperties(mw *MyMainWindow) {
 	case "false":
 		cb.SetChecked(false)
 	}
+	cb.CheckedChanged().Attach(func() {
+		log.Println("Grid checkbox changed")
+		if !cb.Checked() {
+			SetConfigShowBeads("false")
+		} else {
+			SetConfigShowBeads("true")
+		}
+	})
 	log.Println("Pixels checkbox created")
 	log.Println("Creating canvas background color button")
 	grcolb, _ = walk.NewPushButton(mw.properties.propCanvas.property)
