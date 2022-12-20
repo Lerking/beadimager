@@ -12,6 +12,27 @@ var (
 	ConfigFile string = "BeadImager.conf"
 )
 
+func SetConfigBrand(s string) {
+	log.Printf("Setting brand to: %s\n", s)
+	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)
+	Config.Set("pallette", "brand", s)
+	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
+}
+
+func SetConfigSerie(s string) {
+	log.Printf("Setting serie to: %s\n", s)
+	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)
+	Config.Set("pallette", "serie", s)
+	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
+}
+
+func SetConfigPegboard(s string) {
+	log.Printf("Setting pegboard to: %s\n", s)
+	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)
+	Config.Set("pallette", "pegboard", s)
+	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
+}
+
 func SetConfigShowBeads(s string) {
 	log.Printf("Setting showbeads to: %s\n", s)
 	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)

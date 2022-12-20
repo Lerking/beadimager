@@ -95,6 +95,28 @@ func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
 	mw.brand_combo, _ = walk.NewComboBox(comp)
 	mw.brand_combo.SetModel(CreateBrandsList(mw))
 	mw.brand_combo.SetText(ConfigBrand)
+	mw.brand_combo.CurrentIndexChanged().Attach(func() {
+		log.Println("Brand triggered: ", mw.brand_combo.Text())
+		for _, model := range mw.pallette.Brand {
+			if model.BrandName == mw.brand_combo.Text() {
+				new_serie := []string{}
+				for _, s := range model.Series {
+					new_serie = append(new_serie, s.Serie)
+				}
+				mw.serie_combo.SetText("")
+				mw.serie_combo.SetModel(new_serie)
+				log.Println("Serie model set to: ", new_serie)
+				new_pegboard := []string{}
+				for _, p := range model.Pegboards {
+					new_pegboard = append(new_pegboard, p.Type)
+				}
+				mw.pegboard_combo.SetText("")
+				mw.pegboard_combo.SetModel(new_pegboard)
+				log.Println("Pegboard model set to: ", new_pegboard)
+			}
+		}
+		SetConfigBrand(mw.brand_combo.Text())
+	})
 	comp, _ = walk.NewComposite(pallette_group)
 	comp.SetLayout(walk.NewHBoxLayout())
 	comp.Layout().SetMargins(walk.Margins{0, 0, 0, 0})
@@ -113,6 +135,7 @@ func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
 				log.Println("Pegboard model set to: ", model.model)
 			}
 		}
+		SetConfigSerie(mw.serie_combo.Text())
 	})
 	comp, _ = walk.NewComposite(pallette_group)
 	comp.SetLayout(walk.NewHBoxLayout())
@@ -127,6 +150,11 @@ func CreatePalletteGroup(mw *MyMainWindow) *walk.GroupBox {
 		}
 	}
 	mw.pegboard_combo.SetText(ConfigPegboard)
+	mw.pegboard_combo.CurrentIndexChanged().Attach(func() {
+		log.Println("Pegboard triggered: ", mw.pegboard_combo.Text())
+		SetConfigPegboard(mw.pegboard_combo.Text())
+	})
+
 	ShowBeads(mw, mw.serie_combo.Text())
 	return pallette_group
 }
