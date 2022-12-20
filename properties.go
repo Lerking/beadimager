@@ -163,6 +163,10 @@ func CreateCanvasProperties(mw *MyMainWindow) {
 	grcolb, _ := walk.NewPushButton(grcom)
 	cb.SetAlignment(walk.AlignHFarVNear)
 	grcolb.SetText("Grid color")
+	grcolb.Clicked().Attach(func() {
+		log.Println("Grid color button clicked")
+		mw.openImage()
+	})
 	log.Println("Grid color button created")
 	log.Println("Creating pixels checkbox")
 	cb, _ = walk.NewCheckBox(mw.properties.propCanvas.property)
@@ -187,6 +191,10 @@ func CreateCanvasProperties(mw *MyMainWindow) {
 	grcolb, _ = walk.NewPushButton(mw.properties.propCanvas.property)
 	grcolb.SetAlignment(walk.AlignHFarVNear)
 	grcolb.SetText("Background color")
+	grcolb.Clicked().Attach(func() {
+		log.Println("Background color button clicked")
+		mw.openImage()
+	})
 	log.Println("Background color button created")
 	bg, _ := walk.NewSolidColorBrush(walk.RGB(255, 255, 255))
 	mw.properties.propCanvas.property.SetBackground(bg)
