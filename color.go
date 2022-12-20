@@ -14,6 +14,7 @@ type (
 		backgroundColor walk.Brush
 		InfoTooltip     *walk.ToolTip
 		WarningTooltip  *walk.ToolTip
+		add             *walk.ImageView
 		info            *walk.ImageView
 		warning         *walk.ImageView
 		Brand           string
@@ -122,6 +123,12 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	color.Checkbox.SetText(name)
 	log.Println("Checkbox name set")
 	walk.NewHSpacer(cm)
+	color.add, err = walk.NewImageView(cm)
+	if err != nil {
+		log.Println("Error creating add image view: ", err)
+	}
+	img, _ := walk.NewImageFromFileForDPI("images/plus_alpha.png", 96)
+	color.add.SetImage(img)
 	color.info, err = walk.NewImageView(cm)
 	if err != nil {
 		log.Println("Error creating info image view: ", err)
