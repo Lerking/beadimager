@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/xml"
 	"io"
+	"io/ioutil"
 	"log"
 	"os"
 
@@ -56,7 +57,7 @@ type (
 		XMLName xml.Name `xml:"serie"`
 		Name    string   `xml:"name,attr"`
 		InStock bool     `xml:"inStock"`
-		OnHand  int      `xml:"onHand"`
+		OnHand  string   `xml:"onHand"`
 	}
 
 	Pegboards struct {
@@ -224,4 +225,12 @@ func CheckPalletteFile() bool {
 		return false
 	}
 	return true
+}
+
+func WritePaletteFile(mw *MyMainWindow) {
+	file, err := xml.MarshalIndent(mw.pallette, "", "  ")
+	if err != nil {
+		log.Printf("Failed to marshal: %v", err)
+	}
+	_ = ioutil.WriteFile(UserPath+Sep+"pallette.xml", file, 0644)
 }
