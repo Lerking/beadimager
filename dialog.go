@@ -7,11 +7,11 @@ import (
 	"github.com/lxn/walk"
 )
 
-func (mv *MyMainWindow) addBeads(name string, data Serie, id int, bg walk.Brush) error {
+func (mv *MyMainWindow) addBeads(name string, data Serie, id int, bg walk.Brush, ret *Retval) int {
 	log.Println("Adding beads...")
 	dlg, err := walk.NewDialog(mv.MainWindow)
 	if err != nil {
-		return err
+		log.Println(err)
 	}
 	dlg.SetTitle("Add Beads")
 	dlg.SetLayout(walk.NewVBoxLayout())
@@ -58,13 +58,22 @@ func (mv *MyMainWindow) addBeads(name string, data Serie, id int, bg walk.Brush)
 	ab, _ := walk.NewPushButton(bc)
 	ab.SetText("Add")
 	dlg.SetDefaultButton(ab)
+	ab.Clicked().Attach(func() {
+		ret.Grams = int(le.Value())
+		ret.Number = int(ne.Value())
+		log.Println("grams:", ret.Grams)
+		log.Println("number:", ret.Number)
+		dlg.Accept()
+	})
 	walk.NewHSpacer(bc)
 	cb, _ := walk.NewPushButton(bc)
 	cb.SetText("Cancel")
 	dlg.SetCancelButton(cb)
+	cb.Clicked().Attach(func() {
+		dlg.Cancel()
+	})
 
-	dlg.Show()
-	return nil
+	return dlg.Run()
 }
 
 func (mw *MyMainWindow) openImage() error {

@@ -32,6 +32,11 @@ type (
 		inStock bool
 		onHand  int
 	}
+
+	Retval struct {
+		Grams  int
+		Number int
+	}
 )
 
 func ShowBeads(mw *MyMainWindow, serie string) {
@@ -130,14 +135,18 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	img, _ := walk.NewImageFromFileForDPI("images/plus_alpha.png", 96)
 	color.add.SetImage(img)
 	color.add.MouseDown().Attach(func(x, y int, button walk.MouseButton) {
-		var data Serie
+		var (
+			data Serie
+			ret  = new(Retval)
+		)
 		if button == walk.LeftButton {
 			for _, s := range color.Series {
 				if s.Name == mw.serie_combo.Text() {
 					data = *s
 				}
 			}
-			mw.addBeads(name, data, color.ColorID, color.backgroundColor)
+			val := mw.addBeads(name, data, color.ColorID, color.backgroundColor, ret)
+			log.Println("Returned value: ", val)
 		}
 	})
 	color.info, err = walk.NewImageView(cm)
