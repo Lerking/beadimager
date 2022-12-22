@@ -199,7 +199,7 @@ func CreateBrandsList(mw *MyMainWindow) []string {
 
 func CreatePallette(mw *MyMainWindow) {
 	// Open our xmlFile
-	XMLFile, err := os.Open("pallettes\\pallette.xml")
+	XMLFile, err := os.Open(UserPath + Sep + "pallette.xml")
 	// if we os.Open returns an error then handle it
 	if err != nil {
 		log.Print("Failed to open pallette.xml")
@@ -217,4 +217,11 @@ func CreatePallette(mw *MyMainWindow) {
 	if er != nil {
 		log.Printf("Failed to unmarshal: %v", er)
 	}
+}
+
+func CheckPalletteFile() bool {
+	if _, err := os.Stat(UserPath + Sep + "pallette.xml"); os.IsNotExist(err) {
+		return false
+	}
+	return true
 }

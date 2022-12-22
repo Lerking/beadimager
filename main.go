@@ -6,6 +6,7 @@ import (
 	"os/user"
 
 	"github.com/lxn/walk"
+	"github.com/otiai10/copy"
 )
 
 type MyMainWindow struct {
@@ -30,7 +31,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.3.9"
+	Version   string = "0.3.10"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
@@ -82,7 +83,14 @@ func main() {
 		log.Println("Serie: ", ConfigSerie)
 		log.Println("Pegboard: ", ConfigPegboard)
 	}
-
+	if !CheckPalletteFile() {
+		// Copy files from network directory to local directory
+		err := copy.Copy("pallettes\\pallette.xml", UserPath+Sep+"pallette.xml")
+		if err != nil {
+			log.Fatal(err)
+		}
+		log.Println("Pallette file created")
+	}
 	walk.AppendToWalkInit(func() {
 		walk.FocusEffect, _ = walk.NewBorderGlowEffect(walk.RGB(0, 63, 255))
 		//walk.InteractionEffect, _ = walk.NewDropShadowEffect(walk.RGB(63, 63, 63))
