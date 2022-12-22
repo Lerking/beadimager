@@ -139,8 +139,20 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 				}
 			}
 			val := mw.addBeads(name, data, color.ColorID, color.backgroundColor, ret)
+			log.Println("Color ID: ", color.ColorID)
 			if val == 1 {
-				log.Println("Accepted")
+				for _, b := range mw.beads {
+					log.Println("Bead Color ID: ", b.ColorID)
+					if b.ColorID == color.ColorID {
+						for _, s := range b.Series {
+							if s.Name == mw.serie_combo.Text() {
+								s.onHand += ret.Number
+								log.Println("Added ", ret.Number, " beads of ", name, " to ", mw.serie_combo.Text(), " (", s.onHand, " on hand)")
+							}
+						}
+					}
+				}
+				ShowBeads(mw, mw.serie_combo.Text())
 			} else if val == 2 {
 				log.Println("Canceled")
 			} else {

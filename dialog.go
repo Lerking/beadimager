@@ -3,12 +3,28 @@ package main
 import (
 	"log"
 	"strconv"
+	"time"
 
 	"github.com/lxn/walk"
 )
 
+func delay(edit *walk.NumberEdit, val string, ret *Retval) {
+	delay := time.NewTimer(time.Second * 1)
+
+	<-delay.C
+	switch val {
+	case "grams":
+		edit.SetValue(float64(ret.Grams))
+	case "number":
+		edit.SetValue(float64(ret.Number))
+	}
+}
+
 func (mv *MyMainWindow) addBeads(name string, data Serie, id int, bg walk.Brush, ret *Retval) int {
-	log.Println("Adding beads...")
+	var (
+		grams_edit  *walk.NumberEdit
+		number_edit *walk.NumberEdit
+	)
 	dlg, err := walk.NewDialog(mv.MainWindow)
 	if err != nil {
 		log.Println(err)
@@ -40,18 +56,44 @@ func (mv *MyMainWindow) addBeads(name string, data Serie, id int, bg walk.Brush,
 	lbl.SetText("Grams:")
 	lbl.SetAlignment(walk.AlignHCenterVNear)
 	walk.NewHSpacer(bgr)
-	le, _ := walk.NewNumberEdit(bgr)
-	le.SetDecimals(0)
-	le.SetRange(0, 1000)
+	grams_edit, _ = walk.NewNumberEdit(bgr)
+	grams_edit.SetMinMaxSize(walk.Size{Width: 50, Height: 0}, walk.Size{Width: 100, Height: 0})
+	grams_edit.SetDecimals(0)
+	grams_edit.SetRange(0, 1000)
+	grams_edit.ValueChanged().Attach(func() {
+		ret.Grams = int(grams_edit.Value())
+		switch data.Name {
+		case "Mini":
+			ret.Number = ret.Grams * 1000 / 30
+		case "Midi":
+			ret.Number = ret.Grams * 1000 / 60
+		case "Maxi":
+			ret.Number = ret.Grams * 1000 / 120
+		}
+		go delay(number_edit, "number", ret)
+	})
 	bnr, _ := walk.NewComposite(fm)
 	bnr.SetLayout(walk.NewHBoxLayout())
 	lbl, _ = walk.NewTextLabel(bnr)
 	lbl.SetText("Number:")
 	lbl.SetAlignment(walk.AlignHCenterVNear)
 	walk.NewHSpacer(bnr)
-	ne, _ := walk.NewNumberEdit(bnr)
-	ne.SetDecimals(0)
-	ne.SetRange(0, 100000)
+	number_edit, _ = walk.NewNumberEdit(bnr)
+	number_edit.SetMinMaxSize(walk.Size{Width: 50, Height: 0}, walk.Size{Width: 100, Height: 0})
+	number_edit.SetDecimals(0)
+	number_edit.SetRange(0, 100000)
+	number_edit.ValueChanged().Attach(func() {
+		ret.Number = int(number_edit.Value())
+		switch data.Name {
+		case "Mini":
+			ret.Grams = ret.Number * 30 / 1000
+		case "Midi":
+			ret.Grams = ret.Number * 60 / 1000
+		case "Maxi":
+			ret.Grams = ret.Number * 120 / 1000
+		}
+		go delay(grams_edit, "grams", ret)
+	})
 	bc, _ := walk.NewComposite(dlg)
 	bc.SetLayout(walk.NewHBoxLayout())
 	bc.Layout().SetMargins(walk.Margins{0, 0, 0, 0})
@@ -59,8 +101,8 @@ func (mv *MyMainWindow) addBeads(name string, data Serie, id int, bg walk.Brush,
 	ab.SetText("Add")
 	dlg.SetDefaultButton(ab)
 	ab.Clicked().Attach(func() {
-		ret.Grams = int(le.Value())
-		ret.Number = int(ne.Value())
+		//ret.Grams = int(grams_edit.Value())
+		//ret.Number = int(number_edit.Value())
 		log.Println("grams:", ret.Grams)
 		log.Println("number:", ret.Number)
 		dlg.Accept()
