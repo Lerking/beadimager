@@ -174,7 +174,7 @@ func CreatePegboardsList(mw *MyMainWindow) {
 			mw.Pegboards.Boards = append(mw.Pegboards.Boards, *pb)
 		}
 	}
-	log.Println("Pegboard: ", mw.Pegboards)
+	//log.Println("Pegboard: ", mw.Pegboards)
 }
 
 func CreateSeriesList(mw *MyMainWindow) []string {

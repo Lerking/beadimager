@@ -13,18 +13,33 @@ type (
 )
 
 func CreateCanvasGroup(mw *MyMainWindow) {
-	log.Println("Creating canvas group...")
-	cg, _ := walk.NewGroupBox(mw.content)
-	cg.SetTitle("Canvas")
-	cg.SetAlignment(walk.AlignHNearVNear)
-	cg.SetLayout(walk.NewVBoxLayout())
-	log.Println("Creating canvas...")
-	mw.canvasScroll, _ = walk.NewScrollView(cg)
+	cg, err := walk.NewGroupBox(mw.content)
+	if err != nil {
+		log.Println("Error creating canvas group: ", err)
+	}
+	err = cg.SetTitle("Canvas")
+	if err != nil {
+		log.Println("Error setting canvas group title: ", err)
+	}
+	err = cg.SetAlignment(walk.AlignHNearVNear)
+	if err != nil {
+		log.Println("Error setting canvas group alignment: ", err)
+	}
+	err = cg.SetLayout(walk.NewVBoxLayout())
+	if err != nil {
+		log.Println("Error setting canvas group layout: ", err)
+	}
+	mw.canvasScroll, err = walk.NewScrollView(cg)
+	if err != nil {
+		log.Println("Error creating canvas scroll: ", err)
+	}
 	vb := walk.NewVBoxLayout()
-	mw.canvasScroll.SetLayout(vb)
-	mw.canvasScroll.SetAlignment(walk.AlignHNearVNear)
-	//vb.SetMargins(walk.Margins{0, 0, 0, 0})
-	//dw, _ := walk.NewCustomWidgetPixels(mw.canvasScroll, 0, mw.drawStuff)
-	//dw.SetClearsBackground(true)
-	//dw.SetInvalidatesOnResize(true)
+	err = mw.canvasScroll.SetLayout(vb)
+	if err != nil {
+		log.Println("Error setting canvas scroll layout: ", err)
+	}
+	err = mw.canvasScroll.SetAlignment(walk.AlignHNearVNear)
+	if err != nil {
+		log.Println("Error setting canvas scroll alignment: ", err)
+	}
 }

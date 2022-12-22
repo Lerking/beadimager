@@ -40,7 +40,6 @@ type (
 )
 
 func ShowBeads(mw *MyMainWindow, serie string) {
-	log.Println("Showing beads...")
 	for _, bead := range mw.beads {
 		bead.Color.SetVisible(false)
 		for _, s := range bead.Series {
@@ -80,10 +79,7 @@ func CreateBeadsGroup(mw *MyMainWindow) {
 func LoadBeads(mw *MyMainWindow) {
 	for _, brand := range mw.pallette.Brand {
 		if brand.BrandName == mw.brand_combo.Text() {
-			log.Println("Loading beads for brand: " + brand.BrandName + " ...")
-			log.Println("Loading beads for serie: " + mw.serie_combo.Text() + " ...")
 			for _, bead := range brand.Colors {
-				log.Println("Loading bead: " + bead.ColorName + " ...")
 				if !bead.Disabled {
 					bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.Red, bead.Green, bead.Blue)
 					for _, s := range bead.Series.Serie {
@@ -108,7 +104,6 @@ func LoadBeads(mw *MyMainWindow) {
 
 func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, blue byte) *BeadColor {
 	var err error
-	log.Println("Creating bead color: " + name + " ...")
 	cm, _ := walk.NewComposite(mw.colors)
 	cm.SetAlignment(walk.AlignHNearVCenter)
 	hb := walk.NewHBoxLayout()
@@ -116,17 +111,15 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	cm.SetLayout(hb)
 	color := new(BeadColor)
 	color.Color = cm
-	log.Println("Bead color struct: ", color)
 	color.SetBackgroundColor(walk.RGB(red, green, blue))
-	log.Println("Creating checkbox")
 	color.Checkbox, err = walk.NewCheckBox(cm)
 	if err != nil {
 		log.Panic(err)
 	}
-	log.Println("Checkbox created")
-	log.Println("Setting checkbox name")
-	color.Checkbox.SetText(name)
-	log.Println("Checkbox name set")
+	err = color.Checkbox.SetText(name)
+	if err != nil {
+		log.Panic(err)
+	}
 	walk.NewHSpacer(cm)
 	color.add, err = walk.NewImageView(cm)
 	if err != nil {
@@ -146,7 +139,13 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 				}
 			}
 			val := mw.addBeads(name, data, color.ColorID, color.backgroundColor, ret)
-			log.Println("Returned value: ", val)
+			if val == 1 {
+				log.Println("Accepted")
+			} else if val == 2 {
+				log.Println("Canceled")
+			} else {
+				log.Println("Returned value: ", val)
+			}
 		}
 	})
 	color.info, err = walk.NewImageView(cm)
