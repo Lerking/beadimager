@@ -271,7 +271,7 @@ func CreateCanvasProperties(mw *MyMainWindow) {
 	}
 	cb.CheckedChanged().Attach(func() {
 		log.Println("Grid checkbox changed")
-		if cb.Checked() {
+		if !cb.Checked() {
 			SetConfigShowGrid("false")
 		} else {
 			SetConfigShowGrid("true")

@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/xml"
-	"io"
 	"io/ioutil"
 	"log"
 	"os"
@@ -57,7 +56,7 @@ type (
 		XMLName xml.Name `xml:"serie"`
 		Name    string   `xml:"name,attr"`
 		InStock bool     `xml:"inStock"`
-		OnHand  string   `xml:"onHand"`
+		OnHand  int      `xml:"onHand"`
 	}
 
 	Pegboards struct {
@@ -175,7 +174,6 @@ func CreatePegboardsList(mw *MyMainWindow) {
 			mw.Pegboards.Boards = append(mw.Pegboards.Boards, *pb)
 		}
 	}
-	//log.Println("Pegboard: ", mw.Pegboards)
 }
 
 func CreateSeriesList(mw *MyMainWindow) []string {
@@ -199,22 +197,12 @@ func CreateBrandsList(mw *MyMainWindow) []string {
 }
 
 func CreatePallette(mw *MyMainWindow) {
-	// Open our xmlFile
-	XMLFile, err := os.Open(UserPath + Sep + "pallette.xml")
-	// if we os.Open returns an error then handle it
+	XMLFile, err := ioutil.ReadFile(UserPath + Sep + "pallette.xml")
 	if err != nil {
 		log.Print("Failed to open pallette.xml")
 		log.Panic(err)
 	}
-
-	log.Println("Successfully Opened pallette.xml")
-	// defer the closing of our xmlFile so that we can parse it later on
-	defer XMLFile.Close()
-
-	// read our opened xmlFile as a byte array.
-	byteValue, _ := io.ReadAll(XMLFile)
-
-	er := xml.Unmarshal(byteValue, &mw.pallette)
+	er := xml.Unmarshal(XMLFile, &mw.pallette)
 	if er != nil {
 		log.Printf("Failed to unmarshal: %v", er)
 	}
@@ -232,5 +220,5 @@ func WritePaletteFile(mw *MyMainWindow) {
 	if err != nil {
 		log.Printf("Failed to marshal: %v", err)
 	}
-	_ = ioutil.WriteFile(UserPath+Sep+"pallette.xml", file, 0644)
+	_ = ioutil.WriteFile(UserPath+Sep+"pallette.xml", file, 0666)
 }

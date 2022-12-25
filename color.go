@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"log"
-	"strconv"
 
 	"github.com/lxn/walk"
 )
@@ -87,7 +86,7 @@ func LoadBeads(mw *MyMainWindow) {
 						se := new(Serie)
 						se.Name = s.Name
 						se.inStock = s.InStock
-						se.onHand, _ = strconv.Atoi(s.OnHand)
+						se.onHand = s.OnHand
 						bc.Series = append(bc.Series, se)
 					}
 					bc.Brand = brand.BrandName
@@ -151,22 +150,25 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 						}
 					}
 				}
-				for _, p := range mw.pallette.Brand {
+				for ib, p := range mw.pallette.Brand {
 					if p.BrandName == mw.brand_combo.Text() {
-						for _, c := range p.Colors {
+						for ic, c := range p.Colors {
 							if c.ColorIndex == color.ColorID {
-								for _, s := range c.Series.Serie {
+								for is, s := range c.Series.Serie {
 									if s.Name == mw.serie_combo.Text() {
-										tmp, _ := strconv.Atoi(s.OnHand)
-										tmp += ret.Number
-										s.OnHand = strconv.Itoa(tmp)
+										mw.pallette.Brand[ib].Colors[ic].Series.Serie[is].OnHand += ret.Number
 										log.Println("Added ", ret.Number, " beads of ", name, " to ", mw.serie_combo.Text(), " (", s.OnHand, " on hand)")
+										break
 									}
 								}
+								break
 							}
 						}
+						break
 					}
 				}
+				//mw.pallette.Brand[0].Colors[0].Series.Serie[1].OnHand += ret.Number
+				//log.Println("Onhand updated: ", mw.pallette.Brand[0].Colors[0].Series.Serie[1].OnHand)
 				log.Println("Pallette updated: ", mw.pallette)
 				log.Println("Saving palette file...")
 				WritePaletteFile(mw)
