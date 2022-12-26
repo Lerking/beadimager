@@ -9,6 +9,9 @@ import (
 type (
 	Canvas struct {
 		*walk.Canvas
+		gridVisible      bool
+		gridColor        walk.Color
+		canvasBackground walk.Brush
 	}
 )
 
@@ -42,4 +45,25 @@ func CreateCanvasGroup(mw *MyMainWindow) {
 	if err != nil {
 		log.Println("Error setting canvas scroll alignment: ", err)
 	}
+	iw, err := walk.NewImageView(mw.canvasScroll)
+	if err != nil {
+		log.Println("Error creating image view: ", err)
+	}
+	im, err := walk.NewBitmapFromFile(UserPath + Sep + "images\\chip'n'dale_christmas.jpg")
+	if err != nil {
+		log.Println("Error creating bitmap from file: ", err)
+	}
+	err = iw.SetImage(im)
+	if err != nil {
+		log.Println("Error setting image view image: ", err)
+	}
+	err = iw.SetAlignment(walk.AlignHNearVNear)
+	if err != nil {
+		log.Println("Error setting image view alignment: ", err)
+	}
+	err = iw.SetSize(walk.Size{Width: 800, Height: 600})
+	if err != nil {
+		log.Println("Error setting image view size: ", err)
+	}
+	iw.SetMode(walk.ImageViewModeZoom)
 }

@@ -16,6 +16,7 @@ type MyMainWindow struct {
 	rightPanel     *walk.Composite
 	colors         *walk.ScrollView
 	canvasScroll   *walk.ScrollView
+	canvas         *Canvas
 	drawWidget     *walk.CustomWidget
 	propScroll     *walk.ScrollView
 	pallette       Pallette
@@ -31,7 +32,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.3.12"
+	Version   string = "0.4.0"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
