@@ -50,16 +50,16 @@ func ShowBeads(mw *MyMainWindow, serie string) {
 				bead.InfoTooltip.SetText(bead.info, "Approx. "+fmt.Sprint(s.onHand)+" left on hand")
 				bead.WarningTooltip.SetText(bead.warning, "Only "+fmt.Sprint(s.onHand)+" left on hand")
 				bead.ErrorTooltip.SetText(bead.error, "Out of stock")
-				if s.onHand <= 200 {
+				if s.onHand <= 200 && s.inStock {
 					bead.warning.SetVisible(true)
 					bead.info.SetVisible(false)
 					bead.error.SetVisible(false)
-				} else {
+				} else if s.onHand > 200 && s.inStock {
 					bead.warning.SetVisible(false)
 					bead.info.SetVisible(true)
 					bead.error.SetVisible(false)
 				}
-				if s.onHand <= 0 {
+				if s.onHand <= 0 || !s.inStock {
 					bead.warning.SetVisible(false)
 					bead.info.SetVisible(false)
 					bead.error.SetVisible(true)
