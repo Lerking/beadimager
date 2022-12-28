@@ -14,9 +14,11 @@ type (
 		backgroundColor walk.Brush
 		InfoTooltip     *walk.ToolTip
 		WarningTooltip  *walk.ToolTip
+		ErrorTooltip    *walk.ToolTip
 		add             *walk.ImageView
 		info            *walk.ImageView
 		warning         *walk.ImageView
+		error           *walk.ImageView
 		Brand           string
 		Series          []*Serie
 		Weight          []int
@@ -47,12 +49,20 @@ func ShowBeads(mw *MyMainWindow, serie string) {
 				bead.Color.SetVisible(true)
 				bead.InfoTooltip.SetText(bead.info, "Approx. "+fmt.Sprint(s.onHand)+" left on hand")
 				bead.WarningTooltip.SetText(bead.warning, "Only "+fmt.Sprint(s.onHand)+" left on hand")
+				bead.ErrorTooltip.SetText(bead.error, "Out of stock")
 				if s.onHand <= 200 {
 					bead.warning.SetVisible(true)
 					bead.info.SetVisible(false)
+					bead.error.SetVisible(false)
 				} else {
 					bead.warning.SetVisible(false)
 					bead.info.SetVisible(true)
+					bead.error.SetVisible(false)
+				}
+				if s.onHand <= 0 {
+					bead.warning.SetVisible(false)
+					bead.info.SetVisible(false)
+					bead.error.SetVisible(true)
 				}
 			}
 		}
@@ -200,6 +210,16 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	color.warning.SetImage(walk.IconWarning())
 	color.WarningTooltip.AddTool(color.warning)
 	color.warning.SetVisible(false)
+	color.error, err = walk.NewImageView(cm)
+	if err != nil {
+		log.Println("Error creating error image view: ", err)
+	}
+	//Setup error tooltip
+	color.ErrorTooltip, _ = walk.NewToolTip()
+	color.ErrorTooltip.SetErrorTitle(name + " - " + fmt.Sprint(id))
+	color.error.SetImage(walk.IconError())
+	color.ErrorTooltip.AddTool(color.error)
+	color.error.SetVisible(false)
 
 	lbl, _ := walk.NewLabel(cm)
 	lbl.SetText(fmt.Sprint("Color ID: ", id))
