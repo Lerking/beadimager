@@ -32,7 +32,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.4.0"
+	Version   string = "0.4.1"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
@@ -55,6 +55,7 @@ func SetupMainWindow(mw *MyMainWindow) {
 	mw.MainWindow, _ = walk.NewMainWindow()
 	mw.MainWindow.SetTitle(AppName + " " + Version)
 	mw.MainWindow.SetMinMaxSize(walk.Size{Width: 800, Height: 600}, walk.Size{Width: math.MaxInt32, Height: math.MaxInt32})
+	SetupMenu(mw)
 	//mw.MainWindow.SetSize(walk.Size{Width: 800, Height: 600})
 	vb := walk.NewVBoxLayout()
 	mw.MainWindow.SetLayout(vb)
