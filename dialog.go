@@ -20,12 +20,12 @@ func delay(edit *walk.NumberEdit, val string, ret *Retval) {
 	}
 }
 
-func (mv *MyMainWindow) addBeads(name string, data Serie, id int, bg walk.Brush, ret *Retval) int {
+func (mw *MyMainWindow) addBeads(name string, data Serie, id int, bg walk.Brush, ret *Retval) int {
 	var (
 		grams_edit  *walk.NumberEdit
 		number_edit *walk.NumberEdit
 	)
-	dlg, err := walk.NewDialog(mv.MainWindow)
+	dlg, err := walk.NewDialog(mw.MainWindow)
 	if err != nil {
 		log.Println(err)
 	}
@@ -33,15 +33,15 @@ func (mv *MyMainWindow) addBeads(name string, data Serie, id int, bg walk.Brush,
 	dlg.SetLayout(walk.NewVBoxLayout())
 	dlg.SetSize(walk.Size{Width: 300, Height: 200})
 	dlg.SetMinMaxSize(walk.Size{Width: 300, Height: 200}, walk.Size{Width: 300, Height: 200})
-	dlg.SetX(mv.MainWindow.X() + 100)
-	dlg.SetY(mv.MainWindow.Y() + 100)
+	dlg.SetX(mw.MainWindow.X() + 100)
+	dlg.SetY(mw.MainWindow.Y() + 100)
 	cmp, _ := walk.NewComposite(dlg)
 	cmp.SetLayout(walk.NewHBoxLayout())
 	cmp.Layout().SetMargins(walk.Margins{0, 0, 0, 0})
 	cmp.SetAlignment(walk.AlignHCenterVCenter)
 	walk.NewHSpacer(cmp)
 	lbl, _ := walk.NewTextLabel(cmp)
-	lbl.SetText(name + " - " + strconv.Itoa(id))
+	lbl.SetText("#" + strconv.Itoa(id) + " " + name + " - " + " Onhand: " + strconv.Itoa(data.onHand))
 	lbl.SetAlignment(walk.AlignHCenterVCenter)
 	walk.NewHSpacer(cmp)
 	cmp.SetBackground(bg)
@@ -105,9 +105,18 @@ func (mv *MyMainWindow) addBeads(name string, data Serie, id int, bg walk.Brush,
 		//ret.Number = int(number_edit.Value())
 		log.Println("grams:", ret.Grams)
 		log.Println("number:", ret.Number)
+		ret.Clear = false
 		dlg.Accept()
 	})
 	walk.NewHSpacer(bc)
+	cl, _ := walk.NewPushButton(bc)
+	cl.SetText("Clear")
+	cl.Clicked().Attach(func() {
+		grams_edit.SetValue(0)
+		number_edit.SetValue(0)
+		ret.Clear = true
+		dlg.Accept()
+	})
 	cb, _ := walk.NewPushButton(bc)
 	cb.SetText("Cancel")
 	dlg.SetCancelButton(cb)

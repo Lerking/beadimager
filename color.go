@@ -36,6 +36,7 @@ type (
 	}
 
 	Retval struct {
+		Clear  bool
 		Grams  int
 		Number int
 	}
@@ -154,8 +155,12 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 					if b.ColorID == color.ColorID {
 						for _, s := range b.Series {
 							if s.Name == mw.serie_combo.Text() {
-								s.onHand += ret.Number
-								log.Println("Added ", ret.Number, " beads of ", name, " to ", mw.serie_combo.Text(), " (", s.onHand, " on hand)")
+								if ret.Clear {
+									s.onHand = 0
+								} else {
+									s.onHand += ret.Number
+									log.Println("Added ", ret.Number, " beads of ", name, " to ", mw.serie_combo.Text(), " (", s.onHand, " on hand)")
+								}
 							}
 						}
 					}
@@ -166,9 +171,16 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 							if c.ColorIndex == color.ColorID {
 								for is, s := range c.Series.Serie {
 									if s.Name == mw.serie_combo.Text() {
-										mw.pallette.Brand[ib].Colors[ic].Series.Serie[is].OnHand += ret.Number
-										log.Println("Added ", ret.Number, " beads of ", name, " to ", mw.serie_combo.Text(), " (", s.OnHand, " on hand)")
-										break
+										if ret.Clear {
+											mw.pallette.Brand[ib].Colors[ic].Series.Serie[is].OnHand = 0
+											mw.pallette.Brand[ib].Colors[ic].Series.Serie[is].InStock = false
+											break
+										} else {
+											mw.pallette.Brand[ib].Colors[ic].Series.Serie[is].OnHand += ret.Number
+											mw.pallette.Brand[ib].Colors[ic].Series.Serie[is].InStock = true
+											log.Println("Added ", ret.Number, " beads of ", name, " to ", mw.serie_combo.Text(), " (", s.OnHand, " on hand)")
+											break
+										}
 									}
 								}
 								break
@@ -239,6 +251,14 @@ func (bc *BeadColor) GetOnHand(serie string) int {
 		}
 	}
 	return 0
+}
+
+func (bc *BeadColor) SetOnHand(serie string, onHand int) {
+	for _, s := range bc.Series {
+		if s.Name == serie {
+			s.onHand = onHand
+		}
+	}
 }
 
 func (bc *BeadColor) GetInStock(serie string) bool {
