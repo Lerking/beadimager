@@ -13,6 +13,7 @@ type (
 		propColor  *PropColor
 		propScale  *PropScale
 		propCanvas *PropCanvas
+		propBeads  *PropBeads
 	}
 
 	PropColor struct {
@@ -28,6 +29,14 @@ type (
 		property *walk.Composite
 		visible  bool
 	}
+
+	PropBeads struct {
+		property  *walk.Composite
+		showAll   *walk.RadioButton
+		greyScale *walk.RadioButton
+		inStock   *walk.CheckBox
+		visible   bool
+	}
 )
 
 func CreateProperties(mw *MyMainWindow) {
@@ -35,6 +44,7 @@ func CreateProperties(mw *MyMainWindow) {
 	mw.properties.propColor = new(PropColor)
 	mw.properties.propScale = new(PropScale)
 	mw.properties.propCanvas = new(PropCanvas)
+	mw.properties.propBeads = new(PropBeads)
 	CreateSettingsGroup(mw)
 }
 
@@ -88,6 +98,7 @@ func CreateSettingsGroup(mw *MyMainWindow) {
 	CreateColorProperties(mw)
 	CreateScaleProperties(mw)
 	CreateCanvasProperties(mw)
+	CreateBeadsProperties(mw)
 }
 
 func CreateColorProperties(mw *MyMainWindow) {
@@ -341,4 +352,143 @@ func CreateCanvasProperties(mw *MyMainWindow) {
 		log.Println("Error creating canvas brush: ", err)
 	}
 	mw.properties.propCanvas.property.SetBackground(bg)
+}
+
+func CreateBeadsProperties(mw *MyMainWindow) {
+	var err error
+	mw.properties.propBeads.property, err = walk.NewComposite(mw.propScroll)
+	if err != nil {
+		log.Println("Error creating beads property: ", err)
+	}
+	err = mw.properties.propBeads.property.SetAlignment(walk.AlignHNearVNear)
+	if err != nil {
+		log.Println("Error setting beads property alignment: ", err)
+	}
+	vb := walk.NewVBoxLayout()
+	err = mw.properties.propBeads.property.SetLayout(vb)
+	if err != nil {
+		log.Println("Error setting beads property layout: ", err)
+	}
+	lbl, err := walk.NewTextLabel(mw.properties.propBeads.property)
+	if err != nil {
+		log.Println("Error creating beads label: ", err)
+	}
+	err = lbl.SetText("Beads: ")
+	if err != nil {
+		log.Println("Error setting beads label text: ", err)
+	}
+	grcom, err := walk.NewComposite(mw.properties.propBeads.property)
+	if err != nil {
+		log.Println("Error creating beads group: ", err)
+	}
+	err = grcom.SetAlignment(walk.AlignHNearVNear)
+	if err != nil {
+		log.Println("Error setting beads group alignment: ", err)
+	}
+	hb := walk.NewHBoxLayout()
+	err = hb.SetMargins(walk.Margins{0, 0, 0, 0})
+	if err != nil {
+		log.Println("Error setting beads group margins: ", err)
+	}
+	err = grcom.SetLayout(hb)
+	if err != nil {
+		log.Println("Error setting beads group layout: ", err)
+	}
+	mw.properties.propBeads.showAll, err = walk.NewRadioButton(grcom)
+	if err != nil {
+		log.Println("Error creating beads checkbox: ", err)
+	}
+	err = mw.properties.propBeads.showAll.SetAlignment(walk.AlignHNearVNear)
+	if err != nil {
+		log.Println("Error setting beads checkbox alignment: ", err)
+	}
+	err = mw.properties.propBeads.showAll.SetText("Show all")
+	if err != nil {
+		log.Println("Error setting beads checkbox text: ", err)
+	}
+	switch ConfigShowAll {
+	case "true":
+		mw.properties.propBeads.showAll.SetChecked(true)
+	case "false":
+		mw.properties.propBeads.showAll.SetChecked(false)
+	}
+	mw.properties.propBeads.showAll.CheckedChanged().Attach(func() {
+		log.Println("Show all changed")
+		if mw.properties.propBeads.showAll.Checked() && mw.properties.propBeads.greyScale.Checked() {
+			mw.properties.propBeads.greyScale.SetChecked(false)
+		}
+		if !mw.properties.propBeads.showAll.Checked() {
+			SetConfigShowAll("false")
+			mw.properties.propBeads.greyScale.SetChecked(true)
+		} else {
+			SetConfigShowAll("true")
+			mw.properties.propBeads.greyScale.SetChecked(false)
+		}
+	})
+	walk.NewHSpacer(grcom)
+	mw.properties.propBeads.greyScale, err = walk.NewRadioButton(grcom)
+	if err != nil {
+		log.Println("Error creating pixels checkbox: ", err)
+	}
+	err = mw.properties.propBeads.greyScale.SetAlignment(walk.AlignHNearVNear)
+	if err != nil {
+		log.Println("Error setting pixels checkbox alignment: ", err)
+	}
+	err = mw.properties.propBeads.greyScale.SetText("Greyscale")
+	if err != nil {
+		log.Println("Error setting pixels checkbox text: ", err)
+	}
+	switch ConfigGreyscale {
+	case "true":
+		mw.properties.propBeads.greyScale.SetChecked(true)
+	case "false":
+		mw.properties.propBeads.greyScale.SetChecked(false)
+	}
+	mw.properties.propBeads.greyScale.CheckedChanged().Attach(func() {
+		log.Println("Greyscale changed")
+		if mw.properties.propBeads.showAll.Checked() && mw.properties.propBeads.greyScale.Checked() {
+			mw.properties.propBeads.showAll.SetChecked(false)
+		}
+		if !mw.properties.propBeads.greyScale.Checked() {
+			SetConfigGreyscale("false")
+			mw.properties.propBeads.showAll.SetChecked(true)
+		} else {
+			SetConfigGreyscale("true")
+			mw.properties.propBeads.showAll.SetChecked(false)
+		}
+	})
+	mw.properties.propBeads.inStock, err = walk.NewCheckBox(mw.properties.propBeads.property)
+	if err != nil {
+		log.Println("Error creating pixels checkbox: ", err)
+	}
+	err = mw.properties.propBeads.inStock.SetAlignment(walk.AlignHNearVNear)
+	if err != nil {
+		log.Println("Error setting pixels checkbox alignment: ", err)
+	}
+	err = mw.properties.propBeads.inStock.SetText("Show only beads in stock")
+	if err != nil {
+		log.Println("Error setting pixels checkbox text: ", err)
+	}
+	switch ConfigInStock {
+	case "true":
+		mw.properties.propBeads.inStock.SetChecked(true)
+	case "false":
+		mw.properties.propBeads.inStock.SetChecked(false)
+	}
+	mw.properties.propBeads.inStock.CheckedChanged().Attach(func() {
+		log.Println("In stock changed")
+		if mw.properties.propBeads.showAll.Checked() && mw.properties.propBeads.greyScale.Checked() {
+			mw.properties.propBeads.greyScale.SetChecked(false)
+		}
+		if mw.properties.propBeads.inStock.Checked() {
+			SetConfigInStock("true")
+		} else {
+			SetConfigInStock("false")
+		}
+	})
+	bg, err := walk.NewSolidColorBrush(walk.RGB(255, 255, 255))
+	if err != nil {
+		log.Println("Error creating beads brush: ", err)
+	}
+	mw.properties.propBeads.property.SetBackground(bg)
 }

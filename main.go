@@ -32,7 +32,7 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.4.5"
+	Version   string = "0.5.0"
 	CopyRight string = "©2022 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
@@ -49,6 +49,9 @@ var (
 	ConfogGridColor       string
 	ConfigShowBeads       string
 	ConfigBackgroundColor string
+	ConfigShowAll         string
+	ConfigGreyscale       string
+	ConfigInStock         string
 )
 
 func SetupMainWindow(mw *MyMainWindow) {

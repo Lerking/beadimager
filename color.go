@@ -122,7 +122,7 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	cm, _ := walk.NewComposite(mw.colors)
 	cm.SetAlignment(walk.AlignHNearVCenter)
 	hb := walk.NewHBoxLayout()
-	hb.SetMargins(walk.Margins{5, 0, 20, 0})
+	hb.SetMargins(walk.Margins{5, 5, 20, 5})
 	cm.SetLayout(hb)
 	color := new(BeadColor)
 	color.Color = cm

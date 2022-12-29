@@ -54,6 +54,27 @@ func SetConfigScale(s string) {
 	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
 }
 
+func SetConfigShowAll(s string) {
+	log.Printf("Setting showall to: %s\n", s)
+	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)
+	Config.Set("beads", "showall", s)
+	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
+}
+
+func SetConfigGreyscale(s string) {
+	log.Printf("Setting greyscale to: %s\n", s)
+	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)
+	Config.Set("beads", "greyscale", s)
+	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
+}
+
+func SetConfigInStock(s string) {
+	log.Printf("Setting instock to: %s\n", s)
+	Config, _ := configparser.Parse(UserPath + Sep + ConfigFile)
+	Config.Set("beads", "instock", s)
+	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
+}
+
 func ReadConfig() {
 	log.Printf("Reading config file: %s\n", ConfigFile)
 	Config, _ = configparser.Parse(UserPath + Sep + ConfigFile)
@@ -65,6 +86,9 @@ func ReadConfig() {
 	ConfogGridColor, _ = Config.Get("canvas", "gridcolor")
 	ConfigShowBeads, _ = Config.Get("canvas", "showbeads")
 	ConfigBackgroundColor, _ = Config.Get("canvas", "backgroundcolor")
+	ConfigShowAll, _ = Config.Get("beads", "showall")
+	ConfigGreyscale, _ = Config.Get("beads", "greyscale")
+	ConfigInStock, _ = Config.Get("beads", "instock")
 }
 
 func CheckConfigFile() bool {
@@ -89,5 +113,9 @@ func CreateDefaultConfig() {
 	Config.Set("canvas", "gridcolor", "#00ff00")
 	Config.Set("canvas", "showbeads", "false")
 	Config.Set("canvas", "backgroundcolor", "#ffffff")
+	Config.AddSection("beads")
+	Config.Set("beads", "showall", "true")
+	Config.Set("beads", "greyscale", "false")
+	Config.Set("beads", "instock", "false")
 	Config.SaveWithDelimiter(UserPath+Sep+ConfigFile, "=")
 }
