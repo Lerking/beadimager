@@ -27,6 +27,7 @@ type (
 		Red             byte
 		Green           byte
 		Blue            byte
+		TextColor       walk.Color
 	}
 
 	Serie struct {
@@ -41,6 +42,16 @@ type (
 		Number int
 	}
 )
+
+func (bc *BeadColor) SetColor(r byte, g byte, b byte) {
+	bc.Red = r
+	bc.Green = g
+	bc.Blue = b
+}
+
+func (bc *BeadColor) SetTextColor() {
+	bc.TextColor = walk.RGB(255-bc.Red, 255-bc.Green, 255-bc.Blue)
+}
 
 func ShowBeads(mw *MyMainWindow, serie string) {
 	for _, bead := range mw.beads {
@@ -74,13 +85,6 @@ func CreateBeadsGroup(mw *MyMainWindow) {
 	gb, _ := walk.NewGroupBox(mw.leftPanel)
 	gb.SetTitle("Beads")
 	gb.SetLayout(walk.NewVBoxLayout())
-	btn, _ := walk.NewPushButton(gb)
-	btn.SetText("Select all colors")
-	btn.Clicked().Attach(func() {
-		for _, bead := range mw.beads {
-			bead.Checkbox.SetChecked(true)
-		}
-	})
 	mw.colors, _ = walk.NewScrollView(gb)
 	mw.colors.SetLayout(walk.NewVBoxLayout())
 	LoadBeads(mw)
@@ -123,14 +127,11 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	color := new(BeadColor)
 	color.Color = cm
 	color.SetBackgroundColor(walk.RGB(red, green, blue))
-	color.Checkbox, err = walk.NewCheckBox(cm)
-	if err != nil {
-		log.Panic(err)
-	}
-	err = color.Checkbox.SetText(name)
-	if err != nil {
-		log.Panic(err)
-	}
+	color.SetColor(red, green, blue)
+	color.SetTextColor()
+	lbl, _ := walk.NewLabel(cm)
+	lbl.SetTextColor(color.TextColor)
+	lbl.SetText(name)
 	walk.NewHSpacer(cm)
 	color.add, err = walk.NewImageView(cm)
 	if err != nil {
@@ -233,7 +234,9 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	color.ErrorTooltip.AddTool(color.error)
 	color.error.SetVisible(false)
 
-	lbl, _ := walk.NewLabel(cm)
+	//Setup color label
+	lbl, _ = walk.NewLabel(cm)
+	lbl.SetTextColor(color.TextColor)
 	lbl.SetText(fmt.Sprint("Color ID: ", id))
 	cm.SetBackground(color.backgroundColor)
 
