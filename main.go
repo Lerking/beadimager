@@ -32,8 +32,8 @@ type MyMainWindow struct {
 
 const (
 	AppName   string = "BeadImager"
-	Version   string = "0.5.0"
-	CopyRight string = "©2022 Jan Lerking"
+	Version   string = "0.5.1"
+	CopyRight string = "©2022-'23 Jan Lerking"
 	STD_MESS  string = "Ready"
 	LogFile   string = "BeadImager.log"
 	Sep       string = "\\"
@@ -108,6 +108,22 @@ func main() {
 	mw.brand_model = CreateBrandsList(mw)
 	CreatePalletteGroup(mw)
 	CreateBeadsGroup(mw)
+	switch ConfigShowAll {
+	case "true":
+		//ShowAll(mw)
+	case "false":
+		//ShowGreyscale(mw)
+	}
+	switch ConfigGreyscale {
+	case "true":
+		//ShowGreyscale(mw)
+	case "false":
+		//ShowAll(mw)
+	}
+	switch ConfigInStock {
+	case "true":
+		//ShowInStock(mw)
+	}
 	CreateCanvasGroup(mw)
 	CreateProperties(mw)
 

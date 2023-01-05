@@ -28,6 +28,7 @@ type (
 		Green           byte
 		Blue            byte
 		TextColor       walk.Color
+		GreyScale       bool
 	}
 
 	Serie struct {
@@ -96,7 +97,7 @@ func LoadBeads(mw *MyMainWindow) {
 		if brand.BrandName == mw.brand_combo.Text() {
 			for _, bead := range brand.Colors {
 				if !bead.Disabled {
-					bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.Red, bead.Green, bead.Blue)
+					bc := NewBeadColor(mw, bead.ColorName, bead.ColorIndex, bead.Red, bead.Green, bead.Blue, bead.IsGrayscale)
 					for _, s := range bead.Series.Serie {
 						se := new(Serie)
 						se.Name = s.Name
@@ -117,7 +118,7 @@ func LoadBeads(mw *MyMainWindow) {
 	}
 }
 
-func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, blue byte) *BeadColor {
+func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, blue byte, greyscale bool) *BeadColor {
 	var err error
 	cm, _ := walk.NewComposite(mw.colors)
 	cm.SetAlignment(walk.AlignHNearVCenter)
@@ -128,6 +129,7 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	color.Color = cm
 	color.SetBackgroundColor(walk.RGB(red, green, blue))
 	color.SetColor(red, green, blue)
+	color.SetGreyscale(greyscale)
 	color.SetTextColor()
 	lbl, _ := walk.NewLabel(cm)
 	lbl.SetTextColor(color.TextColor)
@@ -241,6 +243,10 @@ func NewBeadColor(mw *MyMainWindow, name string, id int, red byte, green byte, b
 	cm.SetBackground(color.backgroundColor)
 
 	return color
+}
+
+func (bc *BeadColor) SetGreyscale(grey bool) {
+	bc.GreyScale = grey
 }
 
 func (bc *BeadColor) SetBackgroundColor(col walk.Color) {

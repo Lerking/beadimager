@@ -39,6 +39,72 @@ type (
 	}
 )
 
+func ShowInStock(mw *MyMainWindow) {
+	for _, bead := range mw.beads {
+		for _, s := range bead.Series {
+			if s.Name == mw.serie_combo.Text() {
+				if s.inStock {
+					bead.Color.SetVisible(true)
+				} else {
+					bead.Color.SetVisible(false)
+				}
+				break
+			}
+			break
+		}
+	}
+}
+
+func ShowGreyscale(mw *MyMainWindow) {
+	mw.properties.propBeads.showAll.SetChecked(false)
+	mw.properties.propBeads.greyScale.SetChecked(true)
+	for _, bead := range mw.beads {
+		if bead.GreyScale {
+			if mw.properties.propBeads.inStock.Checked() {
+				for _, s := range bead.Series {
+					if s.Name == mw.serie_combo.Text() {
+						if s.inStock {
+							bead.Color.SetVisible(true)
+						} else {
+							bead.Color.SetVisible(false)
+						}
+						break
+					}
+					break
+				}
+				break
+			} else {
+				bead.Color.SetVisible(true)
+			}
+		} else {
+			bead.Color.SetVisible(false)
+		}
+	}
+}
+
+func ShowAll(mw *MyMainWindow) {
+	mw.properties.propBeads.showAll.SetChecked(true)
+	mw.properties.propBeads.greyScale.SetChecked(false)
+	for _, bead := range mw.beads {
+		if mw.properties.propBeads.inStock.Checked() {
+			for _, s := range bead.Series {
+				if s.Name == mw.serie_combo.Text() {
+					if s.inStock {
+						bead.Color.SetVisible(true)
+					} else {
+						bead.Color.SetVisible(false)
+					}
+					break
+				}
+				break
+			}
+			break
+		} else {
+			bead.Color.SetVisible(true)
+		}
+	}
+}
+
 func CreateProperties(mw *MyMainWindow) {
 	mw.properties = new(properties)
 	mw.properties.propColor = new(PropColor)
@@ -413,16 +479,12 @@ func CreateBeadsProperties(mw *MyMainWindow) {
 		mw.properties.propBeads.showAll.SetChecked(false)
 	}
 	mw.properties.propBeads.showAll.CheckedChanged().Attach(func() {
-		log.Println("Show all changed")
-		if mw.properties.propBeads.showAll.Checked() && mw.properties.propBeads.greyScale.Checked() {
-			mw.properties.propBeads.greyScale.SetChecked(false)
-		}
-		if !mw.properties.propBeads.showAll.Checked() {
-			SetConfigShowAll("false")
-			mw.properties.propBeads.greyScale.SetChecked(true)
-		} else {
+		log.Println("Show all checkbox changed")
+		if mw.properties.propBeads.showAll.Checked() {
 			SetConfigShowAll("true")
-			mw.properties.propBeads.greyScale.SetChecked(false)
+			SetConfigGreyscale("false")
+			mw.properties.propBeads.greyScale.SetChecked(!mw.properties.propBeads.showAll.Checked())
+			//ShowAll(mw)
 		}
 	})
 	walk.NewHSpacer(grcom)
@@ -445,16 +507,12 @@ func CreateBeadsProperties(mw *MyMainWindow) {
 		mw.properties.propBeads.greyScale.SetChecked(false)
 	}
 	mw.properties.propBeads.greyScale.CheckedChanged().Attach(func() {
-		log.Println("Greyscale changed")
-		if mw.properties.propBeads.showAll.Checked() && mw.properties.propBeads.greyScale.Checked() {
-			mw.properties.propBeads.showAll.SetChecked(false)
-		}
-		if !mw.properties.propBeads.greyScale.Checked() {
-			SetConfigGreyscale("false")
-			mw.properties.propBeads.showAll.SetChecked(true)
-		} else {
+		log.Println("Greyscale checkbox changed")
+		if mw.properties.propBeads.greyScale.Checked() {
 			SetConfigGreyscale("true")
-			mw.properties.propBeads.showAll.SetChecked(false)
+			SetConfigShowAll("false")
+			mw.properties.propBeads.showAll.SetChecked(!mw.properties.propBeads.greyScale.Checked())
+			//ShowGreyscale(mw)
 		}
 	})
 	mw.properties.propBeads.inStock, err = walk.NewCheckBox(mw.properties.propBeads.property)
@@ -481,6 +539,7 @@ func CreateBeadsProperties(mw *MyMainWindow) {
 			mw.properties.propBeads.greyScale.SetChecked(false)
 		}
 		if mw.properties.propBeads.inStock.Checked() {
+			//ShowInStock(mw)
 			SetConfigInStock("true")
 		} else {
 			SetConfigInStock("false")
